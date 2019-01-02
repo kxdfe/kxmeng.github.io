@@ -56,10 +56,10 @@ label::before {
 	transition: height 0.5s;
 	color: #000;
 }
-input:checked ~ .collapsible ~ .syllabustable {
+input:checked + .collapsible + .syllabustable {
 	height: 100%;
 }
-input:checked ~ label::before {
+input:checked + label::before {
 	content: "-";
 }
 .syllabuscontent {
