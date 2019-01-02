@@ -72,6 +72,3 @@ input:checked ~ label::before {
 	width: 40%;
 	margin: 10px;
 }
-.collapsible {
-	background-color: #4286f4;
-}
