@@ -9,7 +9,7 @@
 }
 header {
 	grid-area: header;
-	background-color: blue;
+	background-color: #c9fff7;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
