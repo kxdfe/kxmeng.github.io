@@ -63,7 +63,7 @@ label::before {
 	color: #fff;
 }
 input:checked ~ .collapsible ~ .syllabustable {
-	height: 250px;
+	height: 100%;
 }
 input:checked ~ label::before {
 	content: "-";
