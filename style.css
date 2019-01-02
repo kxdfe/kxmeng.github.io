@@ -28,3 +28,8 @@ h1 {
 #current {
 	font-weight: bold;
 }
+.syllabustable {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
