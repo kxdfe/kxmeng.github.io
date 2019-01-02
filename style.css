@@ -51,7 +51,7 @@ label::before {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	height: 0px;
+	height: 0;
 	overflow: hidden;
 	transition: all 0.5s;
 	color: #000;
@@ -63,6 +63,6 @@ input:checked + label::before {
 	content: "-";
 }
 .syllabuscontent {
-	width: 40%;
+	width: 45%;
 	margin: 10px;
 }
