@@ -60,7 +60,7 @@ label::before {
 	height: 0px;
 	overflow: hidden;
 	transition: height 0.5s;
-	color: #fff;
+	color: #000;
 }
 input:checked ~ .collapsible ~ .syllabustable {
 	height: 100%;
