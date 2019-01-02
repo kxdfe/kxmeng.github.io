@@ -28,10 +28,45 @@ h1 {
 #current {
 	font-weight: bold;
 }
+input {
+	display: none;
+	visibility: hidden;
+}
+label {
+	display: block;
+	padding: 0.5em;
+	border-bottom: 1px solid #ccc
+	color: #666;
+}
+label:hover {
+	color: 000;
+}
+label::before {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
 .syllabustable {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	height: 0px;
+	overflow: hidden;
+	transition: height 0.5s;
+	color: #fff;
+}
+input:checked ~ .syllabustable {
+	height: 250px;
+}
+input:checked ~ label::before {
+	content: "-";
 }
 .syllabuscontent {
 	width: 50%;
