@@ -62,7 +62,7 @@ label::before {
 	transition: height 0.5s;
 	color: #fff;
 }
-input:checked ~ .syllabustable {
+input:checked .syllabustable {
 	height: 250px;
 }
 input:checked ~ label::before {
