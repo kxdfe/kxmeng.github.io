@@ -17,7 +17,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header id="header">
 			<nav class="navbar navbar-expand-lg navbar-dark mb-4" style="background-color: #870606;" id="algebra">
 				<a class="navbar-brand" href="#">Maths</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
 								<a class="nav-link" href="#">6. Calculus</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">7. Options</a>
+								<a class="nav-link" href="#">Options</a>
 							</li>
 						</ul>
 					</div>
@@ -1020,7 +1020,7 @@
 						</div>
 					</li>
 					<li class="list-group-item">
-						<div class="row" id="options">
+						<div class="row">
 							<div class="col-1">
 								<p>6.7</p>
 							</div>
@@ -1046,7 +1046,7 @@
 
 
 
-
+				<div id="options"></div>
 				<h1 class="text-center">9. Calculus (option)</h1>
 				<ul class="list-group-flush" style="color: #870606;">
 					<li class="list-group-item">
@@ -1217,5 +1217,11 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 			crossorigin="anonymous"></script>
+		<script>
+			$(document).ready ( function(){
+				alert('ok');
+				document.getElementById("options").style.marginTop = $('#header').height();
+			});​
+		</script>
 	</body>
 </html>
