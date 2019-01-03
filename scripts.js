@@ -1,3 +1,3 @@
-$(document).ready(function() {
-    alert("test");
+$(document).ready(function(){
+	$("#options").height($("header").height());
 });
