@@ -1,4 +1,4 @@
 $(document).ready(function(){
-	$("#options").height($("header").height());
-	alert("test height");
+	$("#algebra, #functions, #trigonometry, #vectors, #statistics, #calculus, #options").height($("header").height());
+	alert("test all heights");
 });
