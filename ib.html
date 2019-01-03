@@ -821,7 +821,8 @@
 								<p>In order to define a line, we need either two points, or a point and a direction. The equation of a line can be thought of as a position vector, \(\textbf{a}\) (i.e. we go to the line) plus a variable amount of a direction vector, \(\textbf{b}\) (i.e. once we go to the line, we can move any distance in the direction of the line). This is the vector equation of the line \(l = \textbf{a} + \lambda\textbf{b}\) where \(\lambda\) is a variable.</p>
 								<p>The parametric form of a line is simply the vector equation, but split into the separate \(x\), \(y\) and \(z\) components.</p>
 								<p>The cartesian form of a line can be found by eliminating \(\lambda\) from the parametric form i.e. rearranging the three equations for \(\lambda\) and setting them equal to each other.</p>
-								<p>These equations are related by: \(\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} + \lambda \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix} \leftrightarrow \dfrac{x-a_1}{b_1} = \dfrac{y-a_2}{b_2} = \dfrac{z-a_3}{b_3}\)</p>
+								<p>These equations are related by: \(\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} + \lambda \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix} \leftrightarrow \dfrac{x-a_1}{b_1} = \dfrac{y-a_2}{b_2} = \dfrac{z-a_3}{b_3}\).</p>
+								<p>The angle between two lines can be found by looking at their direction vectors only, and using the scalar product.</p>
 							</div>
 						</div>
 					</li>
@@ -843,7 +844,9 @@
 						</div>
 						<div class="collapse mt-2" id="notes44">
 							<div class="card card-body" style="background-color: #f2f3ae; color: #69140e;">
-								Notes will go here.
+								<p>To determine the different cases of lines, write the lines in their parametric forms and set the \(x\), \(y\), and \(z\) values to be equal. Then solve the simultaneous equations for the two variables. Remember not to use \(\lambda\) as the variable for both lines and to change one of them to another letter (e.g. \(\mu\)!</p>
+								<p>If all three equations agree on a single value for both of the variables, then at those values, there is a single point which both lines go through. These lines intersect. If their direction vectors are either identical or a scalar multiple of each other, then these are the same lines and are coincident.</p>
+								<p>If there is no value for both variables that satisfies all three equations (remember there is always a way to satisfy two of the equations), then at no point do the lines go through the same point. These lines do not meet. If their direction vectors are either identical or a scalar multiple of each other, then they are parallel; if not, they are skew.</p>
 							</div>
 						</div>
 					</li>
