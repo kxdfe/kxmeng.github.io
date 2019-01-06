@@ -1,39 +1,118 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Test Webpage</title>
 		<!--MathJax Config-->
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
 			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
 			displayAlign: "left"
-    		});
-  		</script>
-  		<!--MathJax-->
-  		<script type="text/javascript" async
-  			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-  		</script>
+			});
+		</script>
+		<!--MathJax-->
+		<script type="text/javascript" async
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+		</script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<style>
+			nav {
+				background-color: #69140e;
+			}
+			h1 + ul {
+				color: #3c1518;
+			}
+			.btn-dark {
+				background-color: #3c1518;
+			}
+			.btn-dark:hover{
+				background-color: #69140e;
+			}
+			.card {
+				background-color: #f2f3ae;
+				color: #69140e;
+			}
+			.question {
+				color: #000000;
+			}
+			.border-bottom {
+				border-color: #000000!important;
+			}
+		</style>
 	</head>
 
 	<body>
-		<div id="container">
-			<header>
-				<h4><a href="ib.html">IB</a></h4>
-				<h4><a href="alevel.html">A Level</a></h4>
-				<h4><a href="fm.html">Further Maths</a></h4>
-			</header>
-			<div id="main">
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+				<a class="navbar-brand" href="#">Maths</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/ib.html">IB Higher</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/al.html">AL Single</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/fm.html">AL Further</a>
+						</li>
+					</ul>
+					<div class="input-group">
+						<ul class="navbar-nav ml-auto small">
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-4">
+				<a class="navbar-brand" href="#">Maths</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/ib.html">IB Higher</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/al.html">AL Single</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/fm.html">AL Further</a>
+						</li>
+					</ul>
+					<div class="input-group">
+						<ul class="navbar-nav ml-auto small">
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div id="main">
+			<div class="container">
+
+				<div class="row">
+					<div class="col" id="ibhigher">IB Higher Level</div>
+					<div class="col" id="alsingle">A Level (Edexcel)</div>
+					<div class="col" id="alfurther">A Level Further Maths (OCR)</div>
+				</div>
 
 			</div>
-			<footer>
-				
-			</footer>
-			<!--jQuery-->
-			<script
-  				src="https://code.jquery.com/jquery-3.3.1.min.js"
-  				integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  				crossorigin="anonymous"></script>
-		</div>
+		<footer>
+			Some stuff goes here.
+		</footer>
+		<!--jQuery-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+			crossorigin="anonymous"></script>
+		<script src="/scripts.js"></script>
 	</body>
 </html>
