@@ -22,6 +22,7 @@
 				background-color: #555b6e;
 			}
 			#ibhigher {
+				color: rgba(255,255,255,0.5);
 				background-color: #69140e;
 			}
 			#alsingle{
@@ -30,13 +31,12 @@
 			#alfurther{
 				background-color: #293241;
 			}
-			#ibhigher a{
+			a #ibhigher{
+			}
+			a #alsingle{
 				color: rgba(255,255,255,0.5);
 			}
-			#alsingle a{
-				color: rgba(255,255,255,0.5);
-			}
-			#alfurther a{
+			a #alfurther{
 				color: rgba(255,255,255,0.5);
 			}
 		</style>
@@ -78,9 +78,9 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="col" id="ibhigher"><p class="text-center"><a href="/ib.html">IB Higher Level</a></p></div>
-					<div class="col" id="alsingle"><p class="text-center"><a href="/al.html">A Level (Edexcel)</a></p></div>
-					<div class="col" id="alfurther"><p class="text-center"><a href="/fm.html">A Level Further Maths (OCR)</a></p></div>
+					<a href="/ib.html"><div class="col" id="ibhigher"><p class="text-center">IB Higher Level</p></div></a>
+					<a href="/al.html"><div class="col" id="alsingle"><p class="text-center">A Level (Edexcel)</p></div></a>
+					<a href="/fm.html"><div class="col" id="alfurther"><p class="text-center">A Level Further Maths (OCR)</p></div></a>
 				</div>
 
 			</div>
