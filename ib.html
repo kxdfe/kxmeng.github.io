@@ -1445,8 +1445,11 @@
 										<p>This simplifies to \(\displaystyle\sum_{r=0}^nr\begin{pmatrix}n\\r\end{pmatrix}\dfrac{2^r}{3^n}\)</p>
 										<p>b) Differentiating the expression gives \(n(1+x)^{n-1}\).</p>
 										<p>Writing out the expansion gives: \(\begin{pmatrix}n\\0\end{pmatrix}x^0 + \begin{pmatrix}n\\1\end{pmatrix}x^1 + \begin{pmatrix}n\\2\end{pmatrix}x^2 + ... \begin{pmatrix}n\\n\end{pmatrix}x^n\).</p>
-										<p>Differentiating this expression gives: \(\begin{pmatrix}n\\1\end{pmatrix}x^0 + \begin{pmatrix}n\\2\end{pmatrix}2x^1 + ... \begin{pmatrix}n\\n\end{pmatrix}nx^{n-1}\)</p>
-										<p></p>
+										<p>Differentiating this gives: \(\begin{pmatrix}n\\1\end{pmatrix}x^0 + \begin{pmatrix}n\\2\end{pmatrix}2x^1 + ... \begin{pmatrix}n\\n\end{pmatrix}nx^{n-1}\)</p>
+										<p>In sigma notation: \(\displaystyle\sum_{r=1}^n\begin{pmatrix}n\\r\end{pmatrix}rx^{r-1}\)</p>
+										<p>Equating these: \(\displaystyle\sum_{r=1}^n\begin{pmatrix}n\\r\end{pmatrix}rx^{r-1} = n(1+x)^{n-1}\)</p>
+										<p>Let \(x=2\): \(\displaystyle\sum_{r=1}^n\begin{pmatrix}n\\r\end{pmatrix}r2^{r-1} = n3^{n-1}\)</p>
+										<p>Multiply by \(2\) and divide by \(3^n\): \(\displaystyle\sum_{r=1}^n\begin{pmatrix}n\\r\end{pmatrix}r\dfrac{2^r}{3^n} = \displaystyle\sum_{r=0}^n\begin{pmatrix}n\\r\end{pmatrix}r\dfrac{2^r}{3^n} = \dfrac{2n}{3}\)</p>
 									</div>
 								</div>
 							</div>
