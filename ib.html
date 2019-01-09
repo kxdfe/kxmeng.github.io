@@ -1437,15 +1437,16 @@
 									<div class="col question">
 										<div class="marks">[6 marks]</div>
 										<p>Alfred and Beatrice play \(n\) games against each other. In each game, one of the two wins. The probability that Alfred wins any one of these games is \(\dfrac{2}{3}\).</p>
-										<p>a) The expected value of the number of games Alfred wins, \(A\) can be written as \(\displaystyle\mathrm{E}(A) = \sum_{r=0}^nr\begin{pmatrix}n\\r\end{pmatrix}\dfrac{a^r}{b^n}\). Find the values of \(a\) and \(b)</p>
-										<p>b) By differentiating the expansion of \(1+x)^n\), prove that the expected number of games Alfred wins is \(\dfrac{2n}{3}\)</p>
+										<p>a) The expected value of the number of games Alfred wins, \(A\) can be written as \(\displaystyle\mathrm{E}(A) = \sum_{r=0}^nr\begin{pmatrix}n\\r\end{pmatrix}\dfrac{a^r}{b^n}\). Find the values of \(a\) and \(b\)</p>
+										<p>b) By differentiating the expansion of \((1+x)^n\), prove that the expected number of games Alfred wins is \(\dfrac{2n}{3}\)</p>
 									</div>
 									<div class="col answer">
 										<p>a) The expected number of games Alfred wins is the sum of the number of wins multiplied by the probability of that number of wins i.e. \(\displaystyle\sum_{r=0}^nr\begin{pmatrix}n\\r\end{pmatrix}\dfrac{2}{3}^r\dfrac{1}{3}^{n-r}\) where \(r\) is the number of wins in each case.</p>
 										<p>This simplifies to \(\displaystyle\sum_{r=0}^nr\begin{pmatrix}n\\r\end{pmatrix}\dfrac{2^r}{3^n}\)</p>
 										<p>b) Differentiating the expression gives \(n(1+x)^{n-1}\).</p>
-										<p>Substituting \(m = n-1\): \((n(1+x)^{n-1} = (m+1)(1+x)^m\)</p>
-										<p>Using the binomial theorem: \(\displaystyle(m+1)(1+x)^m = (m+1)\sum_{r=0}^n\begin{pmatrix}n\\r\end{pmatrix}x^r\)</p>
+										<p>Writing out the expansion gives: \(\begin{pmatrix}n\\0\end{pmatrix}x^0 + \begin{pmatrix}n\\1\end{pmatrix}x^1 + \begin{pmatrix}n\\2\end{pmatrix}x^2 + ... \begin{pmatrix}n\\n\end{pmatrix}x^n\).</p>
+										<p>Differentiating this expression gives: \(\begin{pmatrix}n\\1\end{pmatrix}x^0 + \begin{pmatrix}n\\2\end{pmatrix}2x^1 + ... \begin{pmatrix}n\\n\end{pmatrix}nx^{n-1}\)</p>
+										<p></p>
 									</div>
 								</div>
 							</div>
