@@ -667,10 +667,15 @@
 							<div class="card card-body">
 								<div class="row">
 									<div class="col question">
-										Question
+										<div class="marks">[7 marks]</div>
+										<p>a) Prove that the equation \(3x^2 + 2kx + k − 1 = 0\) has two distinct real roots for all values of \(k\in \mathbb{R}\)</p>
+										<p>b) Find the value of \(k\) for which the two roots of the equation are closest together.</p>
 									</div>
 									<div class="col answer">
-										Answer
+										<p>Quadratic equation with \(a=3\), \(b=2k\) and \(c = k-1\). \(\Delta = b^2-4ac = 4k^2-12(k-1)\)</p>
+										<p>Two distinct real roots if \(\Delta>0\). Complete the square on the determinant to give \(\Delta = 4[k^2-3k+3] = 4\left[(k-\dfrac{3}{2})^2-\dfrac{3}{2}^2+3\right] = 4\left[(k-\dfrac{3}{2})^2+\dfrac{3}{12}\right]\)</p>
+										<p>The term in brackets must be \(\geq 0\) since it is being squared, and the other term is positive, so \(\Delta \geq \dfrac{1}{4} \geq 0\)</p>
+										<p>From the quadratic equation, the roots are closest when \(\Delta\) is a minimum. This is when the term in brackets is \(0\) i.e. \(k=\dfrac{3}{2}\).</p>
 									</div>
 								</div>
 							</div>
@@ -1109,6 +1114,29 @@
 						</div>
 						<div class="collapse mt-2" id="notes43">
 							<div class="card card-body">
+								<div class="row border-bottom">
+									<div class="col question">
+										<div class="marks">[20 marks]</div>
+										<p>Consider the points \(\mathrm{P}(−3, −1, 2)\) and \(\mathrm{Q}(5, 5, 6)\).</p>
+										<p>a) Find a vector equation for the line, \(L_1\), which passes through the points \(\mathrm{P}\) and \(\mathrm{Q}\).</p>
+										<p>The line \(L_2\) has equation \(\textbf{r} = \begin{pmatrix}-4\\0\\4\end{pmatrix} + s\begin{pmatrix}5\\2\\0\end{pmatrix}\)</p>
+										<p>b) Show that \(L_1\) and \(L_2\) intersect at the point \(\mathrm{R}(1,2,4)\)</p>
+										<p>c) Find the acute angle between \(L_1\) and \(L_2\)</p>
+										<p>Let S be a point on \(L_2\) such that \(|\overrightarrow{\mathrm{RP}}| = |\overrightarrow{\mathrm{RS}}|\)</p>
+										<p>d) Show that one of the possible positions for \(\mathrm{S}\) is \(\mathrm{S}_1(−4, 0, 4)\) and find the coordinates of the other possible position, \(\mathrm{S}_2\)</p>
+										<p>e) Find a vector equation of the line which passes through \(\mathrm{R}\) and bisects \(\mathrm{PRS}_1\) </p>
+									</div>
+									<div class="col answer">
+										<p>Begin by converting the equations into vector form:</p>
+										<p>For \(l_1\): \(\dfrac{x-3}{2}=\lambda \Rightarrow x = 3 + 2\lambda\), \(\dfrac{y+2}{-1} = \lambda \Rightarrow y = -2 -\lambda\) and \(\dfrac{z}{\sqrt{3}} = \lambda \Rightarrow z = \sqrt{3}\lambda\).</p>
+										<p>The vector equation of the lines:</p>
+										<p>\(l_1: \begin{pmatrix}3\\-2\\0\end{pmatrix} + \lambda\begin{pmatrix}2\\-1\\\sqrt{3}\end{pmatrix}\), \(l_2: \begin{pmatrix}-1\\2\\1\end{pmatrix} + \lambda\begin{pmatrix}1\\1\\\sqrt{3}\end{pmatrix}\).</p>
+										<p>The direction of the lines are the vectors that are being multiplied by \(\lambda\) i.e. \(\textbf{d}_1=\begin{pmatrix}2\\-1\\\sqrt{3}\end{pmatrix}\) and \(\textbf{d}_2=\begin{pmatrix}1\\1\\\sqrt{3}\end{pmatrix}\).</p>
+										<p>To find the angle we can use the scalar/dot product. \(\textbf{d}_1\cdot\textbf{d}_2 = 4\).</p>
+										<p>This is also equal to \(\textbf{d}_1\cdot\textbf{d}_2 = \sqrt{2^1+(-1)^2+\sqrt{3}^2}\sqrt{1^2+1^2+\sqrt{3}^2}\cos\theta\).</p>
+										<p>Rearranging gives \(\cos\theta = \dfrac{4}{\sqrt{8}{\sqrt{5}}}\) and \(\theta = 0.89 = 50.8^{\circ}\).</p>
+									</div>
+								</div>
 								<div class="row">
 									<div class="col question">
 										<p>Find the acute angle between the lines \(l_1: \dfrac{x-3}{2}=\dfrac{y+2}{-1}=\dfrac{z}{\sqrt{3}}\) and \(l_2: \dfrac{x+1}{1}=\dfrac{y-2}{1}=\dfrac{z-1}{\sqrt{3}}\).</p>
@@ -1495,7 +1523,7 @@
 						</div>
 						<div class="collapse mt-2" id="notes56">
 							<div class="card card-body">
-								<div class="row">
+								<div class="row border-bottom">
 									<div class="col question">
 										<div class="marks">[13 marks]</div>
 										<p>Alfred and Beatrice play 6 different games against each other. In each game, one of the two wins. The probability that Alfred wins any one of these games is \(\dfrac{2}{3}\)</p>
@@ -1520,6 +1548,25 @@
 										<p>e) Over the two days, there are 12 games. The probability of winning 6 games over the two days is given in d, but can also be found using binomial distribution with \(n=12\) and \(x=6\).</p>
 										<p>\(P(6\ \mathrm{out}\ \mathrm{of}\ 12) = \begin{pmatrix}12\\6\end{pmatrix}\dfrac{2}{3}^6\dfrac{1}{3}^6\)</p>
 										<p>This expression must be identical to the one found in d, so the identity must be true.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col question">
+										<div class="marks">[7 marks]</div>
+										<p>A ferry carries cars across a river. There is a fixed time of \(T\) minutes between crossings. The arrival of cars at the crossing can be assumed to follow a Poisson distribution with a mean of one car every four minutes. Let \(X\) denote the number of cars that arrive in \(T\) minutes.</p>
+										<p>a) Find \(T\), to the nearest minute, if \(P(X \leq 3) = 0.6\)</p>
+										<p>It is now decided that the time between crossings, T , will be 10 minutes. The ferry can carry a maximum of three cars on each trip.</p>
+										<p>One day all the cars waiting at 13:00 get on the ferry. Find the probability that all the cars that arrive in the next 20 minutes will get on either the 13:10 or the 13:20 ferry.</p>
+									</div>
+									<div class="col answer">
+										<p>a) Average number of cars is \(0.25\) per minute. In \(T\) minutes, average number is \(0.25T\) which is \(m\), the average number per unit time in the Poisson distribution.</p>
+										<p>Depending on the calculator, may have to do this by trial and error to get \(m = 3.21131\) and \(T = 12.84 = 13\) minutes</p>
+										<p>b) Poisson distribution with average number of cars \(0.25T = 2.5\).</p>
+										<p>All cars can get on if fewer than 3 cars arrive in the first 10 minutes and the second 10 minutes. Probability of this is \(P(X\leq 3)\times P(X\leq 3) = 0.75758^2 = 0.57392\)</p>
+										<p>If 4 cars arrive in the first 10 minutes, at most 2 can arrive in the second 10 minutes. Probability of this is \(\(P(X = 4)\times P(X\leq 2) = 0.13360\times 0.54381 = 0.07265\)</p>
+										<p>If 5 cars arrive in the first 10 minutes, at most 1 can arrive in the second 10 minutes. Probability of this is \(\(P(X = 5)\times P(X\leq 1) = 0.06680\times 0.28730 = 0.01919\)</p>
+										<p>If 6 cars arrive in the first 10 minutes, at most 0 can arrive in the second 10 minutes. Probability of this is \(\(P(X = 6)\times P(X = 0) = 0.02783\times 0.08208 = 0.00228\)</p>
+										<p>Total probability is \(0.668\)</p>
 									</div>
 								</div>
 							</div>
