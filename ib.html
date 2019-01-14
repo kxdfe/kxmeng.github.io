@@ -489,10 +489,28 @@
 							<div class="card card-body">
 								<div class="row">
 									<div class="col question">
-										Question
+										<div class="marks">[19 marks]</div>
+										<p>The function \(f\) has inverse \(f^{-1}\) and derivative \(f'(x)\) for all \(x\in\mathbb{R}\). For all functions with these properties you are given the result that for \(a \in \mathbb{R}\) with \(b = f(a)\) and \(f'(a) \neq 0\)</p>
+										<p>\((f^{-1})'(b) = \dfrac{1}{f'(a)}\)</p>
+										<p>a) Verify that this is true for \(f(x) = x^3 + 1\_ at \(x = 2\).</p>
+										<p>b) Given that \(g(x) = xe^{x^2}\), show that \(g'(x) > 0\) for all values of \(x\).</p>
+										<p>c) Using the result given at the start of the question, find the value of the gradient function of \(y = g^{−1}(x)\) at \(x = 2\).</p>
+										<p>d) i) With \(f\) and \(g\) as defined in parts a and b, solve \(g\circ f(x) = 2\)</p>
+										<p>ii) Let \(h(x) = (g\circ f(x))^{-1}(x)\). Find \(h'(2)\)</p>
 									</div>
 									<div class="col answer">
-										Answer
+										<p>The inverse function of \(f(x)\) can be found by rearranging the function in terms of \(x\), then swapping the \(f(x)\) and \(x\) terms. This gives \(f^{-1}(x) = (x-1)^{1/3}\)</p>
+										<p>Differentiating this function gives \(f^{-1}'(x) = \dfrac{1}{3}(x-1)^{-2/3}\)</p>
+										<p>If \(x=2\) then \(a = 2\) and \(b = f(2) = 2^3+1 = 9\)</p>
+										<p>\(f^{-1}'(9) = \dfrac{1}{3}(9-1)^{-2/3} = \dfrac{1}{3}\times\dfrac{1}{4} = \dfrac{1}{12}\)</p>
+										<p>\(f'(x) = 3x^2\). \(f'(2) = 3\times 2^2 = 12\). Therefore, \(\dfrac{1}{f'(a)} = \dfrac{1}{12}\) as above.</p>
+										<p>b) Differentiate this using the product rule, using \(u = x\) and \(v = e^{x^2}\). This gives \(u' = 1\) and \(v' = 2xe^{x^2}\).</p>
+										<p>\(g'(x) = 2x^2e^{x^2} + e^{x^2}\). Both terms are positive.</p>
+										<p>c) The gradient function of \(y\) is \((g^{-1})'(x)\). At \(x=2\), this gives \(b = 2 = g(a)\). This means \(2 = ae^{a^2} \Rightarrow a=0.89605...\) from the calculator.</p>
+										<p>The gradient is therefore \(\dfrac{1}{g'(0.89605...)} = 0.172\)</p>
+										<p>d) i) \(g\circ f(x) = g(f(x)) = f(x)e^{f(x)^2}\). Setting this equal to \(2\) gives \(2 = (x^3+1)e^{(x^3+1)^2}\). Solving on a calculator gives \(x=-0.470191...\)</p>
+										<p>ii) From the question, \(h'(b) = (g\circ f)^{-1}'(b) = \dfrac{1}{(g\circ f)'(a)}\), and from part i, when \(b=2\), \(a=0.470191...\)</p>
+										<p>\((g\circ f)'(x)\) = 3x^2e^{(x^2+1)^2} + 6x^2(x^3+1)^2e\)</p>
 									</div>
 								</div>
 							</div>
