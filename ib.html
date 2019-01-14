@@ -1127,14 +1127,22 @@
 										<p>e) Find a vector equation of the line which passes through \(\mathrm{R}\) and bisects \(\mathrm{PRS}_1\) </p>
 									</div>
 									<div class="col answer">
-										<p>Begin by converting the equations into vector form:</p>
-										<p>For \(l_1\): \(\dfrac{x-3}{2}=\lambda \Rightarrow x = 3 + 2\lambda\), \(\dfrac{y+2}{-1} = \lambda \Rightarrow y = -2 -\lambda\) and \(\dfrac{z}{\sqrt{3}} = \lambda \Rightarrow z = \sqrt{3}\lambda\).</p>
-										<p>The vector equation of the lines:</p>
-										<p>\(l_1: \begin{pmatrix}3\\-2\\0\end{pmatrix} + \lambda\begin{pmatrix}2\\-1\\\sqrt{3}\end{pmatrix}\), \(l_2: \begin{pmatrix}-1\\2\\1\end{pmatrix} + \lambda\begin{pmatrix}1\\1\\\sqrt{3}\end{pmatrix}\).</p>
-										<p>The direction of the lines are the vectors that are being multiplied by \(\lambda\) i.e. \(\textbf{d}_1=\begin{pmatrix}2\\-1\\\sqrt{3}\end{pmatrix}\) and \(\textbf{d}_2=\begin{pmatrix}1\\1\\\sqrt{3}\end{pmatrix}\).</p>
-										<p>To find the angle we can use the scalar/dot product. \(\textbf{d}_1\cdot\textbf{d}_2 = 4\).</p>
-										<p>This is also equal to \(\textbf{d}_1\cdot\textbf{d}_2 = \sqrt{2^1+(-1)^2+\sqrt{3}^2}\sqrt{1^2+1^2+\sqrt{3}^2}\cos\theta\).</p>
-										<p>Rearranging gives \(\cos\theta = \dfrac{4}{\sqrt{8}{\sqrt{5}}}\) and \(\theta = 0.89 = 50.8^{\circ}\).</p>
+										<p>The equation of a line in vector form is \(\textbf{r} = \textbf{a} + \lambda\textbf{b}\), where \(\textbf{a}\) is a point on the line and \(\textbf{b}\) is the direction of the line.</p>
+										<p>The vector \(\overrightarrow{\mathrm{PQ}} = (5 - (-3), 5 - (-1), 6 - 2) = (8, 6, 4)\) is the direction of the line (alternatively, \(\overrightarrow{\mathrm{QP}} = (-8, -6, -4)\) also works)</p>
+										<p>\(\mathrm{P}\) is on the line (alternatively, \(\mathrm{Q}\) is on the line) so one equation is \(\textbf{r} = \begin{pmatrix}-3\\-1\\2\end{pmatrix} + \lambda\begin{pmatrix}8\\6\\4\end{pmatrix}\) (NB 1 mark will be lost for omitting \(\textbf{r} = \)</p>
+										<p>b) The \(x\) coordinate of \(L_1\) is \(-3 + 8\lambda\), and for \(L_2\) is \(-4 + 5s\). When the lines meet, the \(x\) coordinates must be the same, so \(-3 + 8\lambda = -4 + 5s \Rightarrow s = \dfrac{1 + 8\lambda}{5}\).</p>
+										<p>Repeating for the \(y\) coordinates gives \(-1 + 6\lambda = 2s = 2\dfrac{1 + 8\lambda}{5}\)</p>
+										<p>Solving this gives \(\lambda = 0.5\), and \(s = 1\)</p>
+										<p>With these values, the \(z\) coordinates are \(2+4\lambda = 2 + 2 = 4\) and are consistent across both equations of the lines. Therefore, they meet at \((1,2,4)\)</p>
+										<p>c) The angle between the lines relies on their direction vectors only i.e. for \(L_1\) this is \(\textbf{d}_1 = (8,6,4)\) and for \(L_2\) this is \(\textbf{d}_2 = (5,2,0)\)</p>
+										<p>\(\textbf{d}_1\cdot\textbf{d}_2 = 8\times5 + 6\times2 +4\times0 = 52\)</p>
+										<p>But \(\textbf{d}_1\cdot\textbf{d}_2 = |\textbf{d}_1||\textbf{d}_2|\cos\theta\) where \(\theta\) is the angle between. \(|\textbf{d}_1| = \sqrt{8^2+6^2+4^2} = \sqrt{116}\) and \(|\textbf{d}_2| = \sqrt{5^2+2^2+0^2} = \sqrt{29}\)</p>
+										<p>\(\cos\theta = \dfrac{52}{\sqrt{116}\times\sqrt{29} \Rightarrow \theta = 26.3^{\circ} = 0.459\)</p>
+										<p>d) \(\overrightarrow{\mathrm{RP}} = (-3 - 1, -1 - 2, 2 - 4) = (-4, -3, -2)\), \(|\overrightarrow{\mathrm{RP}}| =\sqrt{29}\)</p>
+										<p>\(\mathrm{S}\) is on the line \(L_2\) and must satisfy the equation of the line. \(\overrightarrow{\mathrm{RS}} = \begin{pmatrix}-4+5s\\2s\\4\end{pmatrix} - \begin{pmatrix}1\\2\\4\end{pmatrix} = \begin{pmatrix}5s-5\\2s-2\\0\end{pmatrix}\)</p>
+										<p>\(|\overrightarrow{\mathrm{RS}}|^2 = 29 = (5s-5)^2 + (2s-2)^2</p>
+										<p>\(29s^2-58s+29=29 \Rightarrow s(s-2) = 0 \Rightarrow s=0,2\)</p>
+										<p>Putting this into the equation of the line gives \((-4,0,4)\) and \((6,4,4)\)</p>
 									</div>
 								</div>
 								<div class="row">
