@@ -2239,10 +2239,20 @@
 							<div class="card card-body">
 								<div class="row">
 									<div class="col question">
-										Question
+										<div class="marks">[14 marks]</div>
+										<img src="https://i.imgur.com/mPRMYUI.png" alt="Riemann sums" style="width:50%;">
+										<p>The above diagram shows the graph of \(y=\frac{1}{x}\) together with line segments parallel to the coordinate axes.</p>
+										<p>a) i) By considering the areas of appropriate rectangles, show that</p>
+										<p>\(\dfrac{2a+1}{a(a+1)} < \ln\left(\dfrac{a+1}{a-1}\right) < \dfrac{2a-1}{a(a-1)}\)</p>
+										<p>ii) Hence find upper and lower bounds for \(\ln 1.2\)</p>
 									</div>
 									<div class="col answer">
-										Answer
+										<p>a) i) The smaller of the two rectanges between \(a-1\) and \(a\) has the same height as the graph of \(\dfrac{1}{x}\) at \(x = a\) and a width of \(a - (a-1) = 1\). The area is \(\dfrac{1}{a}\)</p>
+										<p>The smaller of the two rectangles between \(a\) and \(a+1\) has area \(\dfrac{1}{a+1}\) using similar logic. The sum of these two areas is \(\dfrac{1}{a} + \dfrac{1}{a+1} = \dfrac{2a+1}{a(a+1)}\)</p>
+										<p>The area of these rectanges summed up is smaller than the area under the graph of \(y=\dfrac{1}{x}\). This has an area of \(\displaystyle\int_{a-1}^{a+1}\dfrac{1}{x}\ \mathrm{d}x\). Evaluating this gives \(\ln(a+1) - \ln(a-1) = \ln\left(\dfrac{a+1}{a-1}\right)\)</p>
+										<p>The areas of the larger rectangles are \(\dfrac{1}{a-1}\) and \(\dfrac{1}{a}\), and the sum is \(\dfrac{1}{a-1} + \dfrac{1}{a} = \dfrac{2a-1}{a(a-1)}\). This area is larger than the area under the graph.</p>
+										<p>Putting these together gives \(\dfrac{2a+1}{a(a+1)} < \ln\left(\dfrac{a+1}{a-1}\right) < \dfrac{2a-1}{a(a-1)}\)</p>
+										<p>ii) \(\ln 1.2 = \ln\dfrac{12}{10}\). This gives \(a=11\) and the bounds \(\dfrac{23}{132}\) and \(\dfrac{21}{110}\)</p>
 									</div>
 								</div>
 							</div>
