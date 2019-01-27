@@ -2005,7 +2005,22 @@
 						</div>
 						<div class="collapse mt-2" id="notes66">
 							<div class="card card-body">
-								<div class="row">
+								<div class="row border-bottom">
+									<div class="col question">
+										<div class="marks">[6 marks]</div>
+										<p>The acceleration of a car is \(\dfrac{1}{40}(60 - v) \mathrm{ms}^{−2}\), when its velocity is \(v \mathrm{ms}^{−1}\). Given the car starts from rest, find the velocity of the car after 30 seconds.</p>
+									</div>
+									<div class="col answer">
+										<p>\(a = \dfrac{\mathrm{d}v}{\mathrm{d}t} = \dfrac{1}{40}(60 - v)\)</p>
+										<p>Rearranging gives \(\dfrac{\mathrm{d}v}{60-v} = \dfrac{\mathrm{d}t}{40}\)</p>
+										<p>Integrating both sides gives \(-\ln|60-v| = \dfrac{t}{40} + c\)</p>
+										<p>At \(t=0\), \(v=0\) since it starts from rest: \(-\ln60 = c\)</p>
+										<p>At \(t=30\), \(-\ln|60-v| = \dfrac{30}{40} - \ln60\)</p>
+										<p>\(\ln|60-v| = \ln60 - \dfrac{3}{4}\)</p>
+										<p>\(60 - v = e^{\ln60 - 0.75} = \dfrac{e^{\ln60}}{e^{0.75}}\)</p>
+										<p>\(60 - v = 60e^{-0.75}\) so \(v = 60 - 60e^{-0.75} = 31.7\)</p>
+									</div>
+								</div><div class="row">
 									<div class="col question">
 										<div class="marks">[21 marks]</div>
 										<p>A particle, A, is moving along a straight line. The velocity, \(v_A \mathrm{ms}^{−1}\), of \(A\) \(t\) seconds after its motion begins is given by \(v_A = t^3-5t^2+6t\).</p>
