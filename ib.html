@@ -285,8 +285,12 @@
 									</div>
 									<div class="col answer">
 										<p>Test case: when \(n=1\), \(5^2 - 24 - 1 = 0\), which is divisible by \(576\) so this is true.</p>
-										<p>Assume: true when \(n=k\) for some number \(k\) so that \(5^{2k} - 24k - 1 = 576N\) where N is some number.</p>
-										<p>Consider: \(n=k+1\): \(5^{2(k+1)} - 24(k+1) - 1 = 25\times 5^{2k} - 24k - 25\)</p>
+										<p>Assume true when \(n=k\) for some number \(k\): that \(5^{2k} - 24k - 1 = 576N\) where N is some number.</p>
+										<p>Consider \(n=k+1\): \(5^{2(k+1)} - 24(k+1) - 1 = 25\times 5^{2k} - 24k - 25\)</p>
+										<p>From the assumption, \(5^{2k} = 576N + 24k + 1\)</p>
+										<p>Substituting this in gives \(25\times(576N + 24k + 1) - 24k - 25\)</p>
+										<p>Expanding this out gives \(576k + 576N\times 25 = 576(k+25N)\) which is a multiple of 576</p>
+										<p>Proof: If \(n=k\) is true, then true for \(n = k+1\). True for \(n=1\) so true for all \(n\in\mathbb{Z}^+\)</p>
 									</div>
 								</div>
 							</div>
