@@ -2308,7 +2308,7 @@
 						</div>
 						<div class="collapse mt-2" id="notes95">
 							<div class="card card-body">
-								<div class="row">
+								<div class="row border-bottom">
 									<div class="col question">
 										<div class="marks">[15 marks]</div>
 										<p>Consider the differential equation \(\dfrac{\mathrm{d}y}{\mathrm{d}x} + y\tan x = \cos^2x\), given that \(y=2\) when \(x=0\).</p>
@@ -2326,6 +2326,29 @@
 										<p>ii) Multiply by the integrating factor to give \(\sec x\dfrac{\mathrm{d}y}{\mathrm{d}x} + y\sec x\tan x = \cos x\)</p>
 										<p>Both sides can be integrated by inspection to give \(y\sec x =\sin x + c\)</p>
 										<p>At \(x=0\), \(y=2\) so \(2=c\) and \(y = \cos x(\sin x + 2)\)</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col question">
+										<div class="marks">[12 marks]</div>
+										<p>Consider the differential equation \(\dfrac{\mathrm{d}y}{\mathrm{d}x} = \dfrac{y}{x+\sqrt{xy}}\), for \(x,y > 0\).</p>
+										<p>a) Use the substitution \(y=vx\) to show that \(x\dfrac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{v}{1+\sqrt{v}}-v\)</p>
+										<p>b) Hence find the solution of the differential equation in the form \(f(x,y) = 0\), given that \(y=2\) when \(x=1\)</p>
+										<p>c) Find the value of \(y\) when \(x = 1.6\)</p>
+									</div>
+									<div class="col answer">
+										<p>a) By product rule, \(\dfrac{\mathrm{d}y}{\mathrm{d}x} = v + x\(\dfrac{\mathrm{d}v}{\mathrm{d}x}\)</p>
+										<p>Making the substitution gives \(v + x\(\dfrac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{vx}{x+\sqrt{vx^2}\)</p>
+										<p>Since \(x > 0\), \(\sqrt{x^2} = x\) and \(v + x\(\dfrac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{vx}{x+x\sqrt{v}\)</p>
+										<p>\(x\(\dfrac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{v}{1+\sqrt{v} - v\)</p>
+										<p>b) Writing the right hand side as a single fraction gives \(x\(\dfrac{\mathrm{d}v}{\mathrm{d}x} = \dfrac{v - v(1+\sqrt{v})}{1+\sqrt{v} = \dfrac{-v\sqrt{v})}{1+\sqrt{v}\)</p>
+										<p>Separating the \(v\)s and \(x\)s gives \(\dfrac{1+\sqrt{v}}{-v\sqrt{v}}\mathrm{d}v = \dfrac{1}{x}\mathrm{d}x\)</p>
+										<p>The left hand side can be written as \(-v^{3/2} - \dfrac{1}{v}\)</p>
+										<p>Integrating gives \(\dfrac{2}{\sqrt{v}} - \ln v = \ln x + c\)</p>
+										<p>\(y = 2\) when \(x = 1\) means \(v = \dfrac{y}{x} = 2\)</p>
+										<p>Putting in the intial values gives \(\sqrt{2} - \ln 2 = \ln 1 + c\) giving \(c = \sqrt{2} - \ln 2\)</p>
+										<p>Substituting \(y\) back into the equation gives \(2\sqrt{\dfrac{x}{y}} - \ln \dfrac{y}{x} - \ln x - \sqrt{2} + \ln 2 = 0\)</p>
+										<p>c) Putting in \(x= 1.6\) gives \(2\sqrt{\dfrac{1.6}{y}} - \ln \dfrac{y}{1.6} - \ln 1.6 - \sqrt{2} + \ln 2 = 0\) which can be solved on a calculator to give \(y=2.45\)</p>
 									</div>
 								</div>
 							</div>
