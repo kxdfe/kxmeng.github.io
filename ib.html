@@ -2160,7 +2160,7 @@
 						</div>
 						<div class="collapse mt-2" id="notes92">
 							<div class="card card-body">
-								<div class="row">
+								<div class="row border-bottom">
 									<div class="col question">
 										<div class="marks">[11 marks]</div>
 										<p>Consider the infinite series \(\displaystyle\sum_{n=1}^{\infty}\dfrac{n^2}{2^n}x^n\)</p>
@@ -2178,6 +2178,25 @@
 										<p>When \(x = -2\), the series becomes \(\displaystyle\sum (-1)^nn^2\) which is also clearly divergent as the terms do not converge to zero</p>
 										<p>Therefore the interval of convergence is \(]-2,2[\)</p>
 										<p>c) Setting \(x=-0.1\) and using a calculator gives the sum of the first few terms as -0.05, -0.04, -0.041125, -0.041025, -0.0410328, etc. To 3 sf, this is -0.0410</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col question">
+										<div class="marks">[10 marks]</div>
+										<p>Consider the infinite series \(\displaystyle\sum_{n=1}^{\infty}\dfrac{2}{n^2+3n}\)</p>
+										<p>a) Use a comparison test to show that the series converges</p>
+										<p>b) Express \(\dfrac{2}{n^2+3n}\) in partial fractions</p>
+										<p>c) Hence find the value of \(\displaystyle\sum_{n=1}^{\infty}\dfrac{2}{n^2+3n}\)</p>
+									</div>
+									<div class="col answer">
+										<p>a) The series is less than \(\displaystyle\sum_{n=1}^{\infty}\dfrac{2}{n^2}\) which converges. Therefore the series converges using the comparison test</p>
+										<p>Alternatively, using the limit comparison test, the ratio of the \(n\)<sup>th</sup> term of this series to the \(n\)<sup>th</sup> term of the \(1/n^2\) series is \(\dfrac{2}{n^2+3n}\div\dfrac{1}{n^2} = \dfrac{2n^2}{n^2+3n}\). The limit of this as \(n\to\infty\) is 2 so the the series converges.</p>
+										<p>b) \(\dfrac{2}{n^2+3n} = \dfrac{A}{n} + \dfrac{B}{n+3} = \dfrac{A(n+3)+Bn}{n(n+3)}\)</p>
+										<p>Comparing coefficients: \(3A = 2 \Rightarrow A = \dfrac{2}{3}\)</p>
+										<p>\(An+Bn = 0 \Rightarrow B = -\dfrac{2}{3}\)</p>
+										<p>\(\dfrac{2}{n^2+3n} = \dfrac{2}{3}\left(\dfrac{1}{n} - \dfrac{1}{n+3}\right)\)</p>
+										<p>c) Using partial fractions, the first terms of the series are \(\dfrac{2}{3}\left(\dfrac{1}{1}-\dfrac{1}{4}+\dfrac{1}{2}-\dfrac{1}{5} +\dfrac{1}{3}-\dfrac{1}{6}+\dfrac{1}{4}...\right)\)</p>
+										<p>All the terms cancel out except three \(\dfrac{1}{1} + \dfrac{1}{2} + \dfrac{1}{3}\) to give the sum of the series as \(\dfrac{2}{3}\left\dfrac{1}{1} + \dfrac{1}{2} + \dfrac{1}{3}\right) = \dfrac{11}{9}\)</p>
 									</div>
 								</div>
 							</div>
