@@ -417,10 +417,25 @@
 							<div class="card card-body">
 								<div class="row">
 									<div class="col question">
-										Question
+										<div class="marks">[7 marks]</div>
+										<p>Consider the complex number \(z=\cos\theta + \mathrm{i}\sin\theta\)</p>
+										<p>a) Use De Moivre's theorem to show that \(z^n+z^{-n} = 2\cos n\theta,\ n\in\mathrbb{Z}^+\)</p>
+										<p>b) Expand \(\left(z+z^{-1}\right)^4\)</p>
+										<p>c) Hence show that \(\cos^4\theta = p\cos4\theta + q\cos2\theta + r\), where \(p\), \(q\) and \(r\) are constants to be determined.</p>
 									</div>
 									<div class="col answer">
-										Answer
+										<p>a) \(z^n = \cos n\theta + \mathrm{i}\sin n\theta\), \(z^{-n} = \cos -n\theta + \mathrm{i}\sin -n\theta\)</p>
+										<p>By symmetry, \(\cos -n\theta = \cos n\theta\) and \(\sin -n\theta = -\sin n\theta\)</p>
+										<p>\(z^n + z^{-n} = \cos n\theta + \cos n\theta + \mathrm{i}\sin n\theta - \mathrm{i}\sin n\theta\)</p>
+										<p>\(=2\cos n\theta\)</p>
+										<p>b) Expand the brackets to give \(\left(z+z^{-1}\right)^4 = z^4 + 4\dfrac{z^3z^{-1} + 6z^2z^{-2} + 4zz^{-3}+z^{-4}\)</p>
+										<p>c) Using part a, \(z + z^{-1} = 2\cos\theta\)</p>
+										<p>Using part b, \((2\cos\theta)^4 = z^4 + 4\dfrac{z^3z^{-1} + 6z^2z^{-2} + 4zz^{-3}+z^{-4}\)</p>
+										<p>Simplifying this gives \(z^4 + 4\dfrac{z^2 + 6 + 4z^{-2}+z^{-4}\)</p>
+										<p>Rearranging gives \(\left(z^4 + z^{-4}\right) + 4\left(z^2+z^{-2}\right)+6\)</p>
+										<p>Using part a again, \(z^4+z^{-4} = 2\cos4\theta\) and \(z^2+z^{-2} = 2\cos2\theta\)</p>
+										<p>Finally, \(2\cos\theta)^4 = 16\cos^4\theta = 2\cos4\theta + 8\cos2\theta + 6\)</p>
+										<p>\(\cos^4\theta = \dfrac{1}{8}\cos4\theta + \dfrac{1}{2}\cos2\theta + \dfrac{3}{8}\)</p>
 									</div>
 								</div>
 							</div>
