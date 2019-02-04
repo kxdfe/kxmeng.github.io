@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Webpage</title>
+		<!--MathJax Config-->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+			displayAlign: "left"
+			});
+		</script>
+		<!--MathJax-->
+		<script type="text/javascript" async
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+		</script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<style>
+			nav {
+				background-color: #0e3b43;
+			}
+			h1 + ul {
+				color: #3c1518;
+			}
+			.btn-dark {
+				background-color: #3c1518;
+			}
+			.btn-dark:hover{
+				background-color: #0e3b43;
+			}
+			.card {
+				background-color: #f2f3ae;
+				color: #0e3b43;
+			}
+			.question {
+				color: #000000;
+			}
+			.border-bottom {
+				border-color: #000000!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-dark mb-4">
+				<a class="navbar-brand" href="#">Maths</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/ib.html">Syllabus <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Practice Questions</a>
+						</li>
+					</ul>
+					<div class="input-group">
+						<ul class="navbar-nav ml-auto small">
+							<li class="nav-item">
+								<a class="nav-link" href="#">1. Algebra</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">2. Functions</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">3. Trigonometry</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">4. Vectors</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">5. Statistics</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">6. Calculus</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Options</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-4">
+				<a class="navbar-brand" href="#">Maths</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/ib.html">Syllabus <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Practice Questions</a>
+						</li>
+					</ul>
+					<div class="input-group">
+						<ul class="navbar-nav ml-auto small">
+							<li class="nav-item">
+								<a class="nav-link" href="#algebra">1. Algebra</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#functions">2. Functions</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#trigonometry">3. Trigonometry</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#vectors">4. Vectors</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#statistics">5. Statistics</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#calculus">6. Calculus</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#options">7. Options</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div id="main">
+			<div class="container">
+
+				<div id="algebra"></div>
+				<h1 class="text-center">1. Algebra</h1>
+				<ul class="list-group-flush">
+					<li class="list-group-item">
+						<div class="row">
+							<div class="col-2">
+								<p>1.1</p>
+								<button type="button" class="btn btn-dark border-0" data-toggle="collapse" data-target="#notes11" aria-expanded="false" aria-controls="notes11">Examples</button>
+							</div>
+							<div class="col">
+								<ul class="list-unstyled">
+									<li>Arithmetic sequences and series; sum of finite arithmetic series; geometric sequences and series; sum of finite and infinite geometric series.</li>
+									<li>Sigma notation.</li>
+									<li>Applications.</li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul class="list-unstyled">
+									<li>Sequences can be generated and displayed in several ways, including recursive functions. Link infinite geometric series with limits of convergence.</li>
+									<li>Examples include compound interest and population growth.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="collapse mt-2" id="notes11">
+							<div class="card card-body">
+								<div class="row border-bottom">
+									<div class="col question">
+										<div class="marks">[6 marks]</div>
+										<p>The first terms of an arithmetic sequence are \(\dfrac{1}{\log_2x},\dfrac{1}{\log_8x},\dfrac{1}{\log_{32}x},\dfrac{1}{\log_{128}x},...\)</p>
+										<p>Find \(x\) if the sum of the first \(20\) terms of the sequence is equal to \(100\).</p>
+									</div>
+									<div class="col answer">
+										<p>Find common difference \(d = \dfrac{1}{\log_8x} - \dfrac{1}{\log_2x}\).</p>
+										<p>but \(\log_8x = \dfrac{\log_2x}{\log_28}\)</p>
+										<p>so \(d = \dfrac{\log_28}{\log_2x} - \dfrac{1}{\log_2x} - \dfrac{2}{\log_2x}\).</p>
+										<p>Sum of 20 terms: \(\dfrac{n}{2}\left(2a_1 + (n-1)d\right)\).</p>
+										<p>\(100 = \dfrac{20}{2}\left(2\times\dfrac{1}{\log_2x} + 19\times\dfrac{2}{\log_2x}\right) = \dfrac{400}{\log_2x}\).</p>
+										<p>\(\log_2x = 4 \Rightarrow x = 16\).</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col question">
+										<div class="marks">[x marks]</div>
+										<p>Question</p>
+									</div>
+									<div class="col answer">
+										<p>Answer</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+
+
+
+			</div>
+		<footer>
+			Some stuff goes here.
+		</footer>
+		<!--jQuery-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+			crossorigin="anonymous"></script>
+		<script src="/scripts.js"></script>
+	</body>
+</html>
