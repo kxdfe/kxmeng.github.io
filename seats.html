@@ -59,21 +59,21 @@
 
 		<div id="main">
 			<div class="container">
-				<button type="button" class="btn btn-outline-info" data-toggle="button" onclick="randomiseFM()">FM Pairs</button>
-				<button type="button" class="btn btn-outline-primary" data-toggle="button" onclick="randomiseMA()">MA Pairs</button>
-				<button type="button" class="btn btn-outline-secondary" data-toggle="button" onclick="randomiseL5()">L5 Seats</button>
-				<button type="button" class="btn btn-outline-success" data-toggle="button" onclick="randomise4()">4 Seats</button>
-				<button type="button" class="btn btn-outline-danger" data-toggle="button" onclick="randomise8()">8 Seats</button>
-
 				<div class="btn-group btn-group-toggle" data-toggle="buttons">
 					<label class="btn btn-outline-info" onclick="randomiseFM()">
 						<input type="radio" name="options" id="option1" autocomplete="off"> FM Pairs
 					</label>
-					<label class="btn btn-info">
-						<input type="radio" name="options" id="option2" autocomplete="off"> Radio
+					<label class="btn btn-outline-info" onclick="randomiseMA()">
+						<input type="radio" name="options" id="option2" autocomplete="off"> MA Pairs
 					</label>
-					<label class="btn btn-info">
-						<input type="radio" name="options" id="option3" autocomplete="off"> Radio
+					<label class="btn btn-outline-info" onclick="randomiseL5()">
+						<input type="radio" name="options" id="option3" autocomplete="off"> L5 Seats
+					</label>
+					<label class="btn btn-outline-info" onclick="randomise4()">
+						<input type="radio" name="options" id="option3" autocomplete="off"> 4 Seats
+					</label>
+					<label class="btn btn-outline-info" onclick="randomise8()">
+						<input type="radio" name="options" id="option3" autocomplete="off"> 8 Seats
 					</label>
 				</div>
 
