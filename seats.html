@@ -59,6 +59,7 @@
 
 		<div id="main">
 			<div class="container">
+				<button onclick="randomize()">Click me</button>
 				<div class="row">
 					<div class="col" id="r1c1">row 1 col 1</div>
 					<div class="col" id="r1c2">row 1 col 2</div>
@@ -113,5 +114,30 @@
 			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 			crossorigin="anonymous"></script>
 		<script src="/scripts.js"></script>
+		<script>
+			var studentsl5 = ["Daniel","Sasha","James","Samuel","Anish","Sanjay","Harrison","William","Rhys","Finn K","George","Josh","Learoyd","David","Lundie","Cameron","Harry","Finn O","Kaspar","Oliver","Andrea","Hugo","Yusuf","Liam"];
+
+			function shuffle(array) {
+				var currentIndex = array.length, temporaryValue, randomIndex;
+
+				// While there remain elements to shuffle...
+				while (0 !== currentIndex) {
+
+				// Pick a remaining element...
+				randomIndex = Math.floor(Math.random() * currentIndex);
+				currentIndex -= 1;
+
+				// And swap it with the current element.
+				temporaryValue = array[currentIndex];
+				array[currentIndex] = array[randomIndex];
+				array[randomIndex] = temporaryValue;
+				};
+				return array;
+			};
+			function randomise () {
+				var shuffledStudents = shuffle(studentsl5);
+				document.getElementById("r1c1").innerHTML = shuffledStudents[0];
+			}
+		</script>
 	</body>
 </html>
