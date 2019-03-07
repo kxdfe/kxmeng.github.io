@@ -37,6 +37,24 @@
 			.border-bottom {
 				border-color: #000000!important;
 			}
+			.limitsoption1 {
+				color: #52050a;
+			}
+			.limitsoption2 {
+				color: #99b2dd;
+			}
+			.limitsoption3 {
+				color: #8d80ad;
+			}
+			.limitsoption4 {
+				color: #2a4d14;
+			}
+			.limitsoption5 {
+				color: #2a2e45;
+			}
+			.limitsoption6 {
+				color: #554971;
+			}
 		</style>
 	</head>
 
@@ -2509,12 +2527,12 @@
 							<div class="card card-body">
 								<div class="row">
 									<div class="col">
-										<p style="color:#52050a">1. Does it look familiar? \(\displaystyle\sum\dfrac{1}{n^p}\) is a \(p\)-series which converges when \(p > 1\). \(\displaystyle\sum ar^n\) is a geometric series (may need rearranging beforehand) which converges if \(|r| < 1\).</p>
-										<p style="color:#99b2dd">2. Does it look similar to these? If \(a_n\) is some polynomial or rational function, including roots of polynomials, use a comparison test by discarding all but the highest power of \(n\).</p>
-										<p style="color:#8d80ad">3. If \(a_n\neq 0\) as \(n\rightarrow\infty\), test for divergence.</p>
-										<p style="color:#2a4d14">4. If the series alternates between positive and negative, use alternating series test.</p>
-										<p style="color:#2a2e45">5. If there are factorials or numbers raised to the power of \(n\), use the ratio test. Do not use this for polynomials (i.e. if \(n\) is not in the power) since this will not work.</p>
-										<p style="color:#554971">6. If \(a_n\) can be easily integrated, use the integral test.</p>
+										<p class="limitsoption1">1. Does it look familiar? \(\displaystyle\sum\dfrac{1}{n^p}\) is a \(p\)-series which converges when \(p > 1\). \(\displaystyle\sum ar^n\) is a geometric series (may need rearranging beforehand) which converges if \(|r| < 1\).</p>
+										<p class="limitsoption2">2. Does it look similar to these? If \(a_n\) is some polynomial or rational function, including roots of polynomials, use a comparison test by discarding all but the highest power of \(n\).</p>
+										<p class="limitsoption3">3. If \(a_n\neq 0\) as \(n\rightarrow\infty\), test for divergence.</p>
+										<p class="limitsoption4">4. If the series alternates between positive and negative, use alternating series test.</p>
+										<p class="limitsoption5">5. If there are factorials or numbers raised to the power of \(n\), use the ratio test. Do not use this for polynomials (i.e. if \(n\) is not in the power) since this will not work.</p>
+										<p class="limitsoption6">6. If \(a_n\) can be easily integrated, use the integral test.</p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2522,7 +2540,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits1" aria-expanded="false" aria-controls="limits1">\(\dfrac{n^2-1}{n^2+1}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits1">
-										<p style="color:#8d80ad">These clearly do not tend to zero so use divergence test.</p>
+										<p class="limitsoption3">These clearly do not tend to zero so use divergence test.</p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2530,7 +2548,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits2" aria-expanded="false" aria-controls="limits2">\(\dfrac{n-1}{n^2+n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits2">
-										<p style="color:#99b2dd">Rational function of two polynomials. Discard all but the highest powers, then use comparison test.</p>
+										<p class="limitsoption2">Rational function of two polynomials. Discard all but the highest powers, then use comparison test.</p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2538,7 +2556,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits3" aria-expanded="false" aria-controls="limits3">\(\dfrac{1}{n^2+n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits3">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2546,7 +2564,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits4" aria-expanded="false" aria-controls="limits4">\((-1)^{n-1}\dfrac{n-1}{n^2+n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits4">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2554,7 +2572,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits5" aria-expanded="false" aria-controls="limits5">\(\dfrac{(-3)^{n+1}}{2^{3n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits5">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2562,7 +2580,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits6" aria-expanded="false" aria-controls="limits6">\(\dfrac{1}{n+n\cos^2n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits6">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2570,7 +2588,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits7" aria-expanded="false" aria-controls="limits7">\(\dfrac{1}{n\sqrt{\ln n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits7">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2578,7 +2596,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits8" aria-expanded="false" aria-controls="limits8">\(\dfrac{2^kk!}{(k+2)!}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits8">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2586,7 +2604,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits9" aria-expanded="false" aria-controls="limits9">\(k^2e^{-k}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits9">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2594,7 +2612,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits10" aria-expanded="false" aria-controls="limits10">\(n^2e^{-n^3}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits10">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2602,7 +2620,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits11" aria-expanded="false" aria-controls="limits11">\(\dfrac{(-1)^{n+1}}{n\ln n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits11">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2610,7 +2628,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits12" aria-expanded="false" aria-controls="limits12">\(\dfrac{(-1)^nn}{n^2+25}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits12">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2618,7 +2636,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits13" aria-expanded="false" aria-controls="limits13">\(\dfrac{3^nn^2}{n!}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits13">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2626,7 +2644,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits14" aria-expanded="false" aria-controls="limits14">\(\sin n\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits14">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2634,7 +2652,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits15" aria-expanded="false" aria-controls="limits15">\(\dfrac{n!}{2\times5\times8\times...(3n+2)}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits15">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2642,7 +2660,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits16" aria-expanded="false" aria-controls="limits16">\(\dfrac{n^2+1}{n^3+1}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits16">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2650,7 +2668,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits17" aria-expanded="false" aria-controls="limits17">\((-1)^n2^{1/n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits17">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2658,7 +2676,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits18" aria-expanded="false" aria-controls="limits18">\(\dfrac{(-1)^{n-1}}{\sqrt{n}-1}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits18">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2666,7 +2684,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits19" aria-expanded="false" aria-controls="limits19">\(\dfrac{(-1)^n\ln n}{\sqrt{n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits19">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2674,7 +2692,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits20" aria-expanded="false" aria-controls="limits20">\(\dfrac{k+5}{5^k}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits20">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2682,7 +2700,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits21" aria-expanded="false" aria-controls="limits21">\(\dfrac{(-2)^{2n}}{n^n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits21">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2690,7 +2708,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits22" aria-expanded="false" aria-controls="limits22">\(\dfrac{\sqrt{n^2-1}}{n^3+2n^2+5}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits22">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2698,7 +2716,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits23" aria-expanded="false" aria-controls="limits23">\(\tan\dfrac{1}{n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits23">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2706,7 +2724,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits24" aria-expanded="false" aria-controls="limits24">\(\dfrac{\cos(n/2)}{n^2+4n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits24">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2714,7 +2732,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits25" aria-expanded="false" aria-controls="limits25">\(\dfrac{n!}{e^{n^2}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits25">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2722,7 +2740,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits26" aria-expanded="false" aria-controls="limits26">\(\dfrac{n^2+1}{5^n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits26">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2730,7 +2748,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits27" aria-expanded="false" aria-controls="limits27">\(\dfrac{k\ln k}{(k+1)^3}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits27">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2738,7 +2756,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits28" aria-expanded="false" aria-controls="limits28">\(\dfrac{e^{1/n}}{n^2}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits28">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2746,7 +2764,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits29" aria-expanded="false" aria-controls="limits29">\(\dfrac{\tan^{-1}n}{n\sqrt{n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits29">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2754,7 +2772,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits30" aria-expanded="false" aria-controls="limits30">\(\dfrac{(-1)^n\sqrt{n}}{n+5}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits30">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2762,7 +2780,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits31" aria-expanded="false" aria-controls="limits31">\(\dfrac{5^k}{3^k+4^k}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits31">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2770,7 +2788,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits32" aria-expanded="false" aria-controls="limits32">\(\dfrac{1}{(\ln n)^{\ln n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits32">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2778,7 +2796,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits33" aria-expanded="false" aria-controls="limits33">\(\dfrac{\sin(1/n)}{\sqrt{n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits33">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 								<div class="row" style="border-bottom: 20px;">
@@ -2786,7 +2804,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits34" aria-expanded="false" aria-controls="limits34">\(\sqrt[n]{2}-1\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits34">
-										Solutions.
+										<p style="color:#"></p>
 									</div>
 								</div>
 							</div>
