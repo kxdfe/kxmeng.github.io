@@ -2529,9 +2529,9 @@
 									<div class="col">
 										<p class="limitsoption1">1. Does it look familiar? \(\displaystyle\sum\dfrac{1}{n^p}\) is a \(p\)-series which converges when \(p > 1\). \(\displaystyle\sum ar^n\) is a geometric series (may need rearranging beforehand) which converges if \(|r| < 1\).</p>
 										<p class="limitsoption2">2. Does it look similar to these? If \(a_n\) is some polynomial or rational function, including roots of polynomials, use a comparison test by discarding all but the highest power of \(n\).</p>
-										<p class="limitsoption3">3. If \(a_n\neq 0\) as \(n\rightarrow\infty\), test for divergence.</p>
-										<p class="limitsoption4">4. If the series alternates between positive and negative, use alternating series test.</p>
-										<p class="limitsoption5">5. If there are factorials or numbers raised to the power of \(n\), use the ratio test. Do not use this for polynomials (i.e. if \(n\) is not in the power) since this will not work.</p>
+										<p class="limitsoption3">3. If there are factorials or numbers raised to the power of \(n\), use the ratio test. Do not use this for polynomials (i.e. if \(n\) is not in the power) since this will not work.</p>
+										<p class="limitsoption4">4. If \(a_n\neq 0\) as \(n\rightarrow\infty\), test for divergence.</p>
+										<p class="limitsoption5">5. If the series alternates between positive and negative, use alternating series test.</p>
 										<p class="limitsoption6">6. If \(a_n\) can be easily integrated, use the integral test.</p>
 									</div>
 								</div>
@@ -2540,7 +2540,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits1" aria-expanded="false" aria-controls="limits1">\(\dfrac{n^2-1}{n^2+1}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits1">
-										<p class="limitsoption3">These clearly do not tend to zero so use divergence test.</p>
+										<p class="limitsoption4">This clearly does not tend to zero so use divergence test.</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2556,7 +2556,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits3" aria-expanded="false" aria-controls="limits3">\(\dfrac{1}{n^2+n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits3">
-										<p class="limitsoption"></p>
+										<p class="limitsoption2">Rational function of two polynomials. Discard all but the highest powers, then use comparison test.</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2564,7 +2564,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits4" aria-expanded="false" aria-controls="limits4">\((-1)^{n-1}\dfrac{n-1}{n^2+n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits4">
-										<p class="limitsoption"></p>
+										<p class="limitsoption5">Alternating series.</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2572,7 +2572,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits5" aria-expanded="false" aria-controls="limits5">\(\dfrac{(-3)^{n+1}}{2^{3n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits5">
-										<p class="limitsoption"></p>
+										<p class="limitsoption3">\(n) is a power so must use ratio test.</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2580,7 +2580,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits6" aria-expanded="false" aria-controls="limits6">\(\dfrac{1}{n+n\cos^2n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits6">
-										<p class="limitsoption"></p>
+										<p class="limitsoption2">Looks similar to \(\dfrac{1}{n}\) so use comparison test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2588,7 +2588,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits7" aria-expanded="false" aria-controls="limits7">\(\dfrac{1}{n\sqrt{\ln n}}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits7">
-										<p class="limitsoption"></p>
+										<p class="limitsoption6">This looks similar to the derivative of \((\ln x)^{1/2}\), so use the integral test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2596,7 +2596,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits8" aria-expanded="false" aria-controls="limits8">\(\dfrac{2^kk!}{(k+2)!}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits8">
-										<p class="limitsoption"></p>
+										<p class="limitsoption3">Contains factorials and \(k\) as a power, must use ratio test.</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2604,7 +2604,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits9" aria-expanded="false" aria-controls="limits9">\(k^2e^{-k}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits9">
-										<p class="limitsoption"></p>
+										<p class="limitsoption3">\(k\) is a power, use ratio test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2612,7 +2612,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits10" aria-expanded="false" aria-controls="limits10">\(n^2e^{-n^3}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits10">
-										<p class="limitsoption"></p>
+										<p class="limitsoption3">\(n\) is a power, use ratio test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2620,7 +2620,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits11" aria-expanded="false" aria-controls="limits11">\(\dfrac{(-1)^{n+1}}{n\ln n}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits11">
-										<p class="limitsoption"></p>
+										<p class="limitsoption5">Alternating series test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2628,7 +2628,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits12" aria-expanded="false" aria-controls="limits12">\(\dfrac{(-1)^nn}{n^2+25}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits12">
-										<p class="limitsoption"></p>
+										<p class="limitsoption5">Alternating series test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2636,7 +2636,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits13" aria-expanded="false" aria-controls="limits13">\(\dfrac{3^nn^2}{n!}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits13">
-										<p class="limitsoption"></p>
+										<p class="limitsoption3">Contains both factorials and \(n\) as a power, ratio test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2644,7 +2644,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits14" aria-expanded="false" aria-controls="limits14">\(\sin n\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits14">
-										<p class="limitsoption"></p>
+										<p class="limitsoption4">Oscillating function, clearly does not tend towards zero so test for divergence</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2652,7 +2652,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits15" aria-expanded="false" aria-controls="limits15">\(\dfrac{n!}{2\times5\times8\times...(3n+2)}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits15">
-										<p class="limitsoption"></p>
+										<p class="limitsoption3">Contains factorials, use ratio test</p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
@@ -2660,7 +2660,7 @@
 										<button type="button" class="btn btn-light" data-toggle="collapse" data-target="#limits16" aria-expanded="false" aria-controls="limits16">\(\dfrac{n^2+1}{n^3+1}\)</button>
 									</div>
 									<div class="col collapse mt-2" id="limits16">
-										<p class="limitsoption"></p>
+										<p class="limitsoption">Ratio of </p>
 									</div>
 								</div>
 								<div class="row" style="padding-bottom: 20px;">
