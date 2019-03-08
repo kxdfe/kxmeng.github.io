@@ -2450,11 +2450,17 @@
 							<div class="card card-body">
 								<div class="row">
 									<div class="col question">
-										<div class="marks">[x marks]</div>
-										
+										<p>a) Approximate the function \(f(x) = sqrt[3]{x}\) by a Taylor polynomial of degree 2 at \(a=8\)</p>
+										<p>b) How accurate is this approximation when \(7\leq x\leq 9\)?</p>
 									</div>
 									<div class="col answer">
-										Answer
+										<p>a) \(T_2(x) = f(8) + \dfrac{f'(8)}{1!}(x-8) + \dfrac{f''(8)}{2!}(x-8)^2\)</p>
+										<p>\(f(x) \approx T_2(x) = 2 + \dfrac{x-8}{12} - \dfrac{(x-8)^2}{288}\)</p>
+										<p>b) Use the Lagrange form of the remainder to give \(R_2(x) = \dfrac{f'''(c)}{3!}(x-8)^3 = \dfrac{5(x-8)^3}{81c^{8/3}}\)</p>
+										<p>In this form, the maximum error can be found by maximising the numerator and minimising the denominator.</p>
+										<p>\((x-8)^3 \leq 1\) since \(7\leq x\leq 9\)</p>
+										<p>\(c^{8/3} \geq 7^{8/3}\) since \(c\) lies between \(a = 8\) and \(x\); the minimum value for \(c\) is when \(x = 7\).</p>
+										<p>This gives us a maximum error of \(0.0004\)</p>
 									</div>
 								</div>
 							</div>
