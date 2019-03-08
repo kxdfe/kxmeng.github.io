@@ -2463,6 +2463,27 @@
 										<p>This gives us a maximum error of \(0.0004\)</p>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col question">
+										<p>Prove that the Maclaurin series for \(\sin x\) represents \(\sin x\) for all \(x\)</p>
+									</div>
+									<div class="col answer">
+										<p>A Maclaurin seiries is a Taylor series with \(a = 0\). The remainder for this is \(R_n(x) = \dfrac{f^{(n+1)}(c)}{(n+1)!}x^{n+!}\)</p>
+										<p>Regardless of what \(c\) is, \(|f^{(n+1)}(c)| \leq 1\), so this term tends to zero as \(n\) increases.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col question">
+										<p>Find the smallest \(n\) for which the \(n\)<sup>th</sup> degree Maclaurin series for \(f(x) = e^{2x}\) in the range \(0\leq x\leq 1\) has an error no greater than \(10^{-6}\)</p>
+									</div>
+									<div class="col answer">
+										<p>Differentiating the function gives \(f'(x) = 2e^{2x}\), \(f''(x) = 2^2e^{2x}\), \(f^{(3)}(x) = 2^3e^{2x}\) etc.</p>
+										<p>\(R_n(x) = \dfrac{2^{n+1}e^{2c}}{(n+1)!}x^{n+1}\)</p>
+										<p>The maximum error requires the maximum values on the numerator. \(x^{n+1} \leq 1\) since \(\(0\leq x\leq 1\)\), and \(e^{2c} \leq e^2\) since \(c\) lies between \(a = 0\) and \(x\), which has a maximum value of \(1\).</p>
+										<p>The maximum error can be found using \(|R_n(x)| = \dfrac{2^{n+1}e^2}{(n+1)!}\)</p>
+										<p>Using a calculator, the smallest \(n\) for which this expression is \(< 10^{-6}\) is \(n= 14\)</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
