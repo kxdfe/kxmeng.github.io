@@ -37,8 +37,9 @@
 			.border-bottom {
 				border-color: #000000!important;
 			}
-			a {
-				cursor: pointer;
+			p a {
+				cursor: pointer !important;
+				color: #0e3b43 !important;
 			}
 		</style>
 	</head>
@@ -141,7 +142,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="logarithms">Logarithms</p>
+								<p id="logarithms"><a>Logarithms</a></p>
 							</div>
 							<div class="col">
 								<p id="trigTransformations">Transformations of trig graphs</p>
@@ -149,7 +150,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="integration">Integration of polynomials</p>
+								<p id="integration"><a>Integration of polynomials</a></p>
 							</div>
 							<div class="col">
 								<p id="factorTheorem">Factor theorem, algebraic division</p>
@@ -165,7 +166,7 @@
 					<li class="list-group-item">
 						<div class="row">
 							<div class="col">
-								<p id="integrationAreas">Integration and areas</p>
+								<p id="integrationAreas"><a>Integration and areas</a></p>
 							</div>
 							<div class="col">
 								<p id="logGraphs">Logarithmic graphs</p>
@@ -173,7 +174,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="areasBetweenCurves">Areas between two curves</p>
+								<p id="statsSampling"><a>Statistics - sampling</a></p>
 							</div>
 							<div class="col">
 								<p id="functions">Functions</p>
@@ -181,7 +182,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="statsLocationSpread">Statistics - measures of location and spread</p>
+								<p id="statsLocationSpread"><a>Statistics - measures of location and spread</a></p>
 							</div>
 							<div class="col">
 								<p id="functionsModulus">Functions, including modulus</p>
@@ -189,7 +190,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="statsSampling">Statistics - sampling and representation</p>
+								<p id="statsRepresentation"><a>Statistics - representation</a></p>
 							</div>
 							<div class="col">
 								<p id="radians">Radians</p>
@@ -197,7 +198,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="statsRegression">Statistics - regression and conditional probability</p>
+								<p id="statsRegression"><a>Statistics - regression</a></p>
 							</div>
 							<div class="col">
 								<p  id="smallAngleApproximations">Small angle approximations</p>
@@ -205,7 +206,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="discreteDistributions">Statistics - discrete distributions, including binomial</p>
+								<p id="statsProbability"><a>Statistics - conditional probability</a></p>
 							</div>
 							<div class="col">
 								<p id="trigReciprocal">Reciprocal trigonometric functions</p>
@@ -213,7 +214,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="statsHypothesisTesting">Statistics - hypothesis testing</p>
+								<p id="statsDiscreteDistributions"><a>Statistics - discrete distributions</a></p>
 							</div>
 							<div class="col">
 								<p id="trigInverse">Inverse trigonometric functions</p>
@@ -221,10 +222,18 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="differentiationExponentials">Differentiation of e and ln</p>
+								<p id="statsHypothesisTesting"><a>Statistics - hypothesis testing</a></p>
 							</div>
 							<div class="col">
 								<p id="trigIdentities">Trigonometric identities</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<p id="differentiationExponentials"><a>Differentiation of e and ln</a></p>
+							</div>
+							<div class="col">
+								<p>[blank]</p>
 							</div>
 						</div>
 					</li>
@@ -237,7 +246,7 @@
 					<li class="list-group-item">
 						<div class="row">
 							<div class="col">
-								<p id="chainProductQuotient">Chain, product, quotient rules</p>
+								<p id="chainProductQuotient"><a>Chain, product, quotient rules</a></p>
 							</div>
 							<div class="col">
 								<p id="proofs">Proofs</p>
@@ -245,7 +254,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="modelling">Modelling questions (revision)</p>
+								<p id="modelling"><a>Modelling questions (revision)</a></p>
 							</div>
 							<div class="col">
 								<p>Revision</p>
@@ -362,13 +371,6 @@
 						<hr>
 						Differentiate \(x^n\), for rational values of \(n\), and related constant multiples, sums and differences.
 						<hr>
-						Differentiate \(e^{kx}\) and \(a^{kx}\), \(\sin kx\), \(\cos kx\), \(\tan kx\) and related sums, differences and constant multiples. Understand and use the derivative of \(\ln x\)
-						<hr>
-						Differentiate using the product rule, the quotient rule and the chain rule, including problems involving connected rates of change and inverse functions.
-						<hr>
-						Differentiate simple functions and relations defined implicitly or parametrically, for first derivative only.
-						<hr>
-						Construct simple differential equations in pure mathematics and in context, (contexts may include kinematics, population growth and modelling the relationship between price and demand).
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -546,6 +548,346 @@
 		<script>
 			$( "#logarithms" ).click(function() {
 				$('#modalLogarithms').modal("toggle");
+			});
+		</script>
+
+		<!-- Integration -->
+		<div class="modal fade" id="modalIntegration" tabindex="-1" role="dialog" aria-labelledby="integrationTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="integrationTitle">Integration</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Know and use the Fundamental Theorem of Calculus
+						<hr>
+						Integrate \(x^n\) (excluding \(n = −1\)) and related sums, differences and constant multiples.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#integration" ).click(function() {
+				$('#modalIntegration').modal("toggle");
+			});
+		</script>
+
+		<!-- Integration of areas -->
+		<div class="modal fade" id="modalIntegrationAreas" tabindex="-1" role="dialog" aria-labelledby="integrationAreasTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="integrationAreasTitle">Integration for areas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Evaluate definite integrals; use a definite integral to find the area under a curve and the area between two curves
+						<hr>
+						Understand and use integration as the limit of a sum.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#integrationAreas" ).click(function() {
+				$('#modalIntegrationAreas').modal("toggle");
+			});
+		</script>
+
+		<!-- Differentiation of e and ln -->
+		<div class="modal fade" id="modalDifferentiationExponentials" tabindex="-1" role="dialog" aria-labelledby="differentiationExponentialsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="differentiationExponentialsTitle">Integration for areas</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Differentiate \(e^{kx}\) and \(a^{kx}\) and related sums, differences and constant multiples. Understand and use the derivative of \(\ln x\)
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#differentiationExponentials" ).click(function() {
+				$('#modalDifferentiationExponentials').modal("toggle");
+			});
+		</script>
+
+		<!-- Chain, product, quotient rules -->
+		<div class="modal fade" id="modalChainProductQuotient" tabindex="-1" role="dialog" aria-labelledby="chainProductQuotientTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="chainProductQuotientTitle">Chain, product, quotient rules</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Differentiate using the product rule, the quotient rule and the chain rule, including problems involving connected rates of change and inverse functions.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#chainProductQuotient" ).click(function() {
+				$('#modalChainProductQuotient').modal("toggle");
+			});
+		</script>
+
+		<!-- Modelling questions -->
+		<div class="modal fade" id="modalModelling" tabindex="-1" role="dialog" aria-labelledby="modellingTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="modellingTitle">Modelling</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Construct simple differential equations in pure mathematics and in context, (contexts may include kinematics, population growth and modelling the relationship between price and demand).
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#modelling" ).click(function() {
+				$('#modalModelling').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Location, spread -->
+		<div class="modal fade" id="modalStatsLocationSpread" tabindex="-1" role="dialog" aria-labelledby="statsLocationSpreadTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsLocationSpreadTitle">Location and Spread</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Interpret measures of central tendency (mean, median, mode) and variation (variance, standard deviation, range and interpecentile ranges). Use of linear interpolation to calculate percentiles from grouped data is expected
+						<hr>
+						Be able to calculate standard deviation, including from summary statistics
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsLocationSpread" ).click(function() {
+				$('#modalStatsLocationSpread').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Sampling -->
+		<div class="modal fade" id="modalStatsSampling" tabindex="-1" role="dialog" aria-labelledby="statsSamplingTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsSamplingTitle">Sampling</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use the terms "population" and "sample", including the advantages and disadvantages of a census versus a sample.
+						<hr>
+						Use samples to make informal inferences about the population.
+						<hr>
+						Understand and use sampling techniques, including simple random sampling, stratified sampling, systematic sampling, quota sampling, and opportunity sampling.
+						<hr>
+						Select or critique sampling techniques in the context of solving a statistical problem, including understanding that different samples can lead to different conclusions about the population.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsSampling" ).click(function() {
+				$('#modalStatsSampling').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Representation -->
+		<div class="modal fade" id="modalStatsRepresentation" tabindex="-1" role="dialog" aria-labelledby="statsRepresentationTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsRepresentationTitle">Representation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Interpret diagrams (histograms, frequency polygons, box and whisker plots including outliers, and cumulative frequency diagrams) for single variable data, including understanding that area in a histogram represents frequency.
+						<hr>
+						Connect to probability distributions.
+						<hr>
+						Recognise and interpret possible outliers in data sets and statistical diagrams. Rules for outliers will be specified in the question.
+						<hr>
+						Select or critique data presentation techniques in the context of a statistical problem, including drawing simple inferences and giving interpretations to measures of central tendency and variation.
+						<hr>
+						Be able to clean data, including dealing with missing data, errors and outliers e.g. identifying outliers on a box plot or scatter diagram.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsRepresentation" ).click(function() {
+				$('#modalStatsRepresentation').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Regression -->
+		<div class="modal fade" id="modalStatsRegression" tabindex="-1" role="dialog" aria-labelledby="statsRegressionTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsRegressionTitle">Regression</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Interpret scatter diagrams and regression lines for bivariate data, including recognition of scatter diagrams which include distinct sections of the population (calculations involving regression lines are excluded). Familiarity with the terms explanatory (independent) and response (dependent) variables.
+						<hr>
+						Use of interpolation and the dangers of extrapolation. Variables other than \(x\) and \(y\) may be used.
+						<hr>
+						Understand informal interpretation of correlation. Use of terms such as positive, negative, zero, strong and weak are expected.
+						<hr>
+						Understand that correlation does not imply causation.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsRegression" ).click(function() {
+				$('#modalStatsRegression').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Probability -->
+		<div class="modal fade" id="modalStatsProbability" tabindex="-1" role="dialog" aria-labelledby="statsProbabilityTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsProbabilityTitle">Probability</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use mutually exclusive and independent events when calculating probabilities. Venn diagrams or tree diagrams may be used. Set notation to describe events may be used.
+						<hr>
+						Link to discrete and continuous distributions. Understand that area under the curve represents probability in the case of a continuous distribution.
+						<hr>
+						Understand and use conditional probability, including the use of tree diagrams, Venn diagrams, two-way tables.
+						<hr>
+						Modelling with probability, including critiquing assumptions made and the likely effect of more realistic assumptions. For example, questioning the assumption that a die or coin is fair.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsProbability" ).click(function() {
+				$('#modalStatsProbability').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Distributions -->
+		<div class="modal fade" id="modalStatsDiscreteDistributions" tabindex="-1" role="dialog" aria-labelledby="statsDiscreteDistributionsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsDiscreteDistributionsTitle">Discrete distributions</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use simple, discrete probability distributions, including the binomial distribution, as a model; calculate probabilities using the binomial distribution. The notation \(X \sim B(n,p)\) may be used
+						<hr>
+						Know and be able to identify the discrete uniform distribution.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsDiscreteDistributions" ).click(function() {
+				$('#modalStatsDiscreteDistributions').modal("toggle");
+			});
+		</script>
+
+		<!-- Stats: Hypothesis Testing -->
+		<div class="modal fade" id="modalStatsHypothesisTesting" tabindex="-1" role="dialog" aria-labelledby="statsHypothesisTestingTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="statsHypothesisTestingTitle">Hypothesis tests</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and apply the language of statistical hypothesis testing, developed through a binomial model: null hypothesis, alternative hypothesis, significance level, test statistic, 1-tail test, 2-tail test, critical value, critical region, acceptance region, p-value.
+						<hr>
+						Conduct a statistical hypothesis test for the proportion in the binomial distribution and interpret the results in context.
+						<hr>
+						Understand that a sample is being used to make an inference about the population.
+						<hr>
+						Appreciate that the significance level is the probability of incorrectly rejecting the null hypothesis.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#statsHypothesisTesting" ).click(function() {
+				$('#modalStatsHypothesisTesting').modal("toggle");
 			});
 		</script>
 	</body>
