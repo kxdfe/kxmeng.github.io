@@ -37,6 +37,9 @@
 			.border-bottom {
 				border-color: #000000!important;
 			}
+			a {
+				cursor: pointer;
+			}
 		</style>
 	</head>
 
@@ -82,7 +85,7 @@
 					<li class="list-group-item">
 						<div class="row">
 							<div class="col">
-								<p id="surdsIndices">(1) <a href="#">Surds and indices</a></p>
+								<p id="surdsIndices"><a>Surds and indices</a></p>
 							</div>
 							<div class="col">
 								<p id="coordSystem">Coordinates, points and lines</p>
@@ -90,7 +93,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="quadratics">(2) Quadratics</p>
+								<p id="quadratics"><a>Quadratics</a></p>
 							</div>
 							<div class="col">
 								<p id="coordGeometry">Coordinate geometry</p>
@@ -98,7 +101,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="differentiation">Differentiation</p>
+								<p id="differentiation"><a>Differentiation</a></p>
 							</div>
 							<div class="col">
 								<p id="circles">Circles</p>
@@ -106,7 +109,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="sketching">Graph sketching</p>
+								<p id="graphSketching"><a>Graph sketching</a></p>
 							</div>
 							<div class="col">
 								<p id="inequalities">Quadratic Inequalities, regions on graphs</p>
@@ -114,7 +117,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="transformations">Transformations</p>
+								<p id="transformations"><a>Transformations</a></p>
 							</div>
 							<div class="col">
 								<p id="simultaneousEquations">Simultaneous equations</p>
@@ -122,7 +125,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="differentiationApplications">Applications of differentiation</p>
+								<p id="differentiationApplications"><a>Applications of differentiation</a></p>
 							</div>
 							<div class="col">
 								<p id="binomialExpansion">Binomial expansion (integers)</p>
@@ -130,7 +133,7 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<p id="exponentials">Exponentials</p>
+								<p id="exponentials"><a>Exponentials</a></p>
 							</div>
 							<div class="col">
 								<p id="trigEquations">Trigonometric equations</p>
@@ -258,32 +261,10 @@
 						</div>
 					</li>
 				</ul>
-
-<!-- Surds and Indices pop up -->
-<div class="modal fade" id="modalSurdsIndices" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Surds and indices</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Understand and use the laws of indices for all rational exponents.
-        <hr>
-        Use and manipulate surds, including rationalising the denominator.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 			</div>
+
+
+
 		<footer>
 			
 		</footer>
@@ -298,9 +279,273 @@
 			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 			crossorigin="anonymous"></script>
 		<script src="/scripts.js"></script>
+
+		<!-- Below - modal pop ups -->
+		<!-- Surds and Indices -->
+		<div class="modal fade" id="modalSurdsIndices" tabindex="-1" role="dialog" aria-labelledby="surdsIndicesTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="surdsIndicesTitle">Surds and indices</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use the laws of indices for all rational exponents.
+						<hr>
+						Use and manipulate surds, including rationalising the denominator.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script>
 			$( "#surdsIndices" ).click(function() {
 				$('#modalSurdsIndices').modal("toggle");
+			});
+		</script>
+
+		<!-- Quadratics -->
+		<div class="modal fade" id="modalQuadratics" tabindex="-1" role="dialog" aria-labelledby="quadraticsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="quadraticsTitle">Quadratics</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Work with quadratic functions and their graphs.
+						<hr>
+						The discriminant of a quadratic function, including the conditions for real and repeated roots.
+						<hr>
+						Completing the square.
+						<hr>
+						Solution of quadratic equations,
+						<hr>
+						including solving quadratic equations in a function of the unknown.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#quadratics" ).click(function() {
+				$('#modalQuadratics').modal("toggle");
+			});
+		</script>
+
+		<!-- Differentiation -->
+		<div class="modal fade" id="modalDifferentiation" tabindex="-1" role="dialog" aria-labelledby="differentiationTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="differentiationTitle">Differentiation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use the derivative of \(f(x)\) as the gradient of the tangent to the graph of \(y = f(x)\) at a general point \((x, y)\); the gradient of the tangent as a limit; interpretation as a rate of change;
+						<hr>
+						sketching the gradient function for a given curve;
+						<hr>
+						differentiation from first principles for small positive integer powers of \(x\) and for \(\sin x\) and \(\cos x\)
+						<hr>
+						Understand and use the second derivative as the rate of change of gradient; connection to convex and concave sections of curves and points of inflection.
+						<hr>
+						Differentiate \(x^n\), for rational values of \(n\), and related constant multiples, sums and differences.
+						<hr>
+						Differentiate \(e^{kx}\) and \(a^{kx}\), \(\sin kx\), \(\cos kx\), \(\tan kx\) and related sums, differences and constant multiples. Understand and use the derivative of \(\ln x\)
+						<hr>
+						Differentiate using the product rule, the quotient rule and the chain rule, including problems involving connected rates of change and inverse functions.
+						<hr>
+						Differentiate simple functions and relations defined implicitly or parametrically, for first derivative only.
+						<hr>
+						Construct simple differential equations in pure mathematics and in context, (contexts may include kinematics, population growth and modelling the relationship between price and demand).
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#differentiation" ).click(function() {
+				$('#modalDifferentiation').modal("toggle");
+			});
+		</script>
+
+		<!-- Graph Sketching -->
+		<div class="modal fade" id="modalGraphSketching" tabindex="-1" role="dialog" aria-labelledby="graphsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="graphsTitle">Graphs</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use graphs of functions; sketch curves defined by simple equations including polynomials,
+						<hr>
+						the modulus of a linear function,
+						<hr>
+						\(y = \dfrac{a}{x}\) and \(y = \dfrac{a}{x^2}\), including their vertical and horizontal asymptotes
+						<hr>
+						Interpret algebraic solution of equations graphically; use intersection points of graphs to solve equations.
+						<hr>
+						Understand and use proportional relationships and their graphs.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#graphSketching" ).click(function() {
+				$('#modalGraphSketching').modal("toggle");
+			});
+		</script>
+
+		<!-- Transformations -->
+		<div class="modal fade" id="modalTransformations" tabindex="-1" role="dialog" aria-labelledby="transformationsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="transformationsTitle">Transformations</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand the effect of simple transformations on the graph of \(y = f(x)\), including sketching associated graphs:
+						<hr>
+						\(y = af(x)\)
+						<hr>
+						\(y = f(x) + a\)
+						<hr>
+						\(y = f(x + a)\)
+						<hr>
+						\(y = f(ax)\)
+						<hr>
+						and combinations of these transformations
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#transformations" ).click(function() {
+				$('#modalTransformations').modal("toggle");
+			});
+		</script>
+
+		<!-- Applications of Differentiation -->
+		<div class="modal fade" id="modalDifferentiationApplications" tabindex="-1" role="dialog" aria-labelledby="differentiationApplicationsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="differentiationApplicationsTitle">Applications of Differentiation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Apply differentiation to find gradients, tangents and normals, maxima and minima and stationary points, and points of inflection.
+						<hr>
+						Identify where functions are increasing or decreasing.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#differentiationApplications" ).click(function() {
+				$('#modalDifferentiationApplications').modal("toggle");
+			});
+		</script>
+
+		<!-- Exponentials -->
+		<div class="modal fade" id="modalExponentials" tabindex="-1" role="dialog" aria-labelledby="exponentialsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exponentialsTitle">Exponentials</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Know and use the function \(a^x\) and its graph, where \(a\) is positive.
+						<hr>
+						Know and use the function \(e^x\) and its graph.
+						<hr>
+						Know that the gradient of \(e^{kx}\) is equal to \(ke^{kx}\) and hence understand why the exponential model is suitable in many applications.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#exponentials" ).click(function() {
+				$('#modalExponentials').modal("toggle");
+			});
+		</script>
+
+		<!-- Logarithms -->
+		<div class="modal fade" id="modalLogarithms" tabindex="-1" role="dialog" aria-labelledby="logarithmsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="logarithmsTitle">Logarithms</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Know and use the definition of \(\log_a x\) as the inverse of \(a^x\), where \(a\) is positive and \(x \geq 0\).
+						<hr>
+						Know and use the function \(\ln x\) and its graph.
+						<hr>
+						Know and use \(\ln x\) as the inverse function of \(e^x\).
+						<hr>
+						Understand and use the laws of logarithms:
+						<hr>
+						\(\log_a x + \log_a y = \log_a (xy)\)
+						<hr>
+						\(\log_a x - \log_a y = \log_a (\frac{x}{y})\)
+						<hr>
+						\(\log_a x^k = k\log_a x\)
+						<hr>
+						Solve equations of the form \(a^x = b\)
+						<hr>
+						Use logarithmic graphs to estimate parameters in relationships of the form \(y = ax^n\) and \(y = kb^x\), given data for \(x\) and \(y\).
+						<hr>
+						Understand and use exponential growth and decay; use in modelling (examples may include the use of \(e\) in continuous compound interest, radioactive decay, drug concentration decay, exponential growth as a model for population growth); consideration of limitations and refinements of exponential models.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#logarithms" ).click(function() {
+				$('#modalLogarithms').modal("toggle");
 			});
 		</script>
 	</body>
