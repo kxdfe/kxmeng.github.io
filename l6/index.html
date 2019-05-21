@@ -97,7 +97,7 @@
 								<p id="surdsIndices"><a>Surds and indices</a></p>
 							</div>
 							<div class="col">
-								<p id="coordSystem">Coordinates, points and lines</p>
+								<p id="coordSystem"><a>Coordinates, points and lines</a></p>
 							</div>
 						</div>
 						<div class="row">
@@ -113,7 +113,7 @@
 								<p id="differentiation"><a>Differentiation</a></p>
 							</div>
 							<div class="col">
-								<p id="circles">Circles</p>
+								<p id="circles"><a>Circles</a></p>
 							</div>
 						</div>
 						<div class="row">
@@ -899,7 +899,7 @@
 			});
 		</script>
 
-		<!-- Stats: Hypothesis Testing -->
+		<!-- Coordinate Geometry -->
 		<div class="modal fade" id="modalCoordSystem" tabindex="-1" role="dialog" aria-labelledby="coordSystemTitle" aria-hidden="true">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
@@ -915,6 +915,8 @@
 						Gradient conditions for two straight lines to be parallel or perpendicular.
 						<hr>
 						Be able to use straight line models in a variety of contexts.
+						<hr>
+						Including the equation of a line through two given points, and the equation of a line parallel (or perpendicular) to a given line through a given point. 
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -925,6 +927,37 @@
 		<script>
 			$( "#coordSystem" ).click(function() {
 				$('#modalCoordSystem').modal("toggle");
+			});
+		</script>
+
+		<!-- Circles -->
+		<div class="modal fade" id="modalCircles" tabindex="-1" role="dialog" aria-labelledby="circlesTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="circlesTitle">Circles</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use the coordinate geometry of the circle including using the equation of a circle in the form \((x – a)^2 + (y – b)^2 = r^2\) and \(x^2 + y^2 + fx + gy + c = 0\)
+						<hr>
+						Completing the square to find the centre and radius of a circle.
+						<hr>
+						use of the following properties: the angle in a semicircle is a right angle; the perpendicular from the centre to a chord bisects the chord; the radius of a circle at a given point on its circumference is perpendicular to the tangent to the circle at that point.
+						<hr>
+						Students should be able to find the equation of a tangent at a specified point, using the perpendicular property of tangent and radius.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#circles" ).click(function() {
+				$('#modalCircles').modal("toggle");
 			});
 		</script>
 	</body>
