@@ -27,15 +27,8 @@
 			.btn-dark:hover{
 				background-color: #0e3b43;
 			}
-			.card {
-				background-color: #f2f3ae;
-				color: #0e3b43;
-			}
-			.question {
-				color: #000000;
-			}
-			.border-bottom {
-				border-color: #000000!important;
+			.highlight {
+				background-color: #DAF7A6 ;
 			}
 		</style>
 	</head>
@@ -133,6 +126,10 @@
 				<div class="row" style="padding-top: 20px;">
 					<div class="text-center w-100"><h2 id="backofclass"></h2></div>
 				</div>
+
+				<div class="row" style="padding-top: 20px;">
+					<div class="text-center w-100"><h1 id="randomName"></h1></div>
+				</div>
 				
 
 
@@ -174,7 +171,7 @@
 				};
 				return array;
 			};
-			
+
 			$("#l5randomise").click(
 				function randomiseL5 () {
 					var shuffledStudents = shuffle(studentsL5);
@@ -314,9 +311,13 @@
 					$("#r3c6").html(shuffledStudents[13]);
 				});
 
-			function randomSelection () {
-				
-			}
+			function randomStudent(){
+				$(".seat").removeClass("highlight");
+				shuffle($(".seat:not(:empty)")).slice(0, 1).addClass("highlight");
+				$("#randomName").html($(".highlight").text());
+			};
+
+			setInterval(randomStudent,5000);
 		</script>
 	</body>
 </html>
