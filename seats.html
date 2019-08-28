@@ -60,19 +60,19 @@
 		<div id="main">
 			<div class="container">
 				<div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons" style="padding-bottom: 30px;">
-					<label class="btn btn-outline-info" onclick="randomiseFM()">
+					<label class="btn btn-outline-info" id="fmrandomise">
 						<input type="radio" name="options" id="option1" autocomplete="off"> FM
 					</label>
-					<label class="btn btn-outline-info" onclick="randomiseMA()">
+					<label class="btn btn-outline-info" id="marandomise">
 						<input type="radio" name="options" id="option2" autocomplete="off"> MA
 					</label>
-					<label class="btn btn-outline-info" onclick="randomiseL5()">
+					<label class="btn btn-outline-info" id="l5randomise">
 						<input type="radio" name="options" id="option3" autocomplete="off"> L5
 					</label>
-					<label class="btn btn-outline-info" onclick="randomise4()">
+					<label class="btn btn-outline-info" id="4randomise">
 						<input type="radio" name="options" id="option3" autocomplete="off"> 4
 					</label>
-					<label class="btn btn-outline-info" onclick="randomise8()">
+					<label class="btn btn-outline-info" id="8randomise">
 						<input type="radio" name="options" id="option3" autocomplete="off"> 8
 					</label>
 				</div>
@@ -174,135 +174,146 @@
 				};
 				return array;
 			};
-			function randomiseL5 () {
-				var shuffledStudents = shuffle(studentsL5);
-				$("#frontofclass").text("Front");
-				$("#backofclass").text("Back");
-				$(".seat").text("");
-				$("#r1c2").html(shuffledStudents[0]);
-				$("#r1c3").html(shuffledStudents[1]);
-				$("#r1c5").html(shuffledStudents[2]);
-				$("#r1c6").html(shuffledStudents[3]);
-				$("#r1c8").html(shuffledStudents[4]);
-				$("#r1c9").html(shuffledStudents[5]);
-				$("#r2c2").html(shuffledStudents[6]);
-				$("#r2c3").html(shuffledStudents[7]);
-				$("#r2c5").html(shuffledStudents[8]);
-				$("#r2c6").html(shuffledStudents[9]);
-				$("#r2c8").html(shuffledStudents[10]);
-				$("#r2c9").html(shuffledStudents[11]);
-				$("#r3c2").html(shuffledStudents[12]);
-				$("#r3c3").html(shuffledStudents[13]);
-				$("#r3c5").html(shuffledStudents[14]);
-				$("#r3c6").html(shuffledStudents[15]);
-				$("#r3c8").html(shuffledStudents[16]);
-				$("#r3c9").html(shuffledStudents[17]);
-				$("#r4c2").html(shuffledStudents[18]);
-				$("#r4c3").html(shuffledStudents[19]);
-				$("#r4c5").html(shuffledStudents[20]);
-				$("#r4c6").html(shuffledStudents[21]);
-				$("#r4c8").html(shuffledStudents[22]);
-				$("#r4c9").html(shuffledStudents[23]);
-			};
-			function randomise4 () {
-				var shuffledStudents = shuffle(students4);
-				$("#frontofclass").text("Front");
-				$("#backofclass").text("Back");
-				$(".seat").text("");
-				$("#r1c1").html(shuffledStudents[0]);
-				$("#r1c2").html(shuffledStudents[1]);
-				$("#r1c3").html(shuffledStudents[2]);
-				$("#r1c4").html(shuffledStudents[3]);
-				$("#r1c5").html(shuffledStudents[24]);
-				$("#r1c7").html(shuffledStudents[4]);
-				$("#r1c8").html(shuffledStudents[5]);
-				$("#r1c9").html(shuffledStudents[6]);
-				$("#r1c10").html(shuffledStudents[7]);
-				$("#r2c1").html(shuffledStudents[8]);
-				$("#r2c2").html(shuffledStudents[9]);
-				$("#r2c3").html(shuffledStudents[10]);
-				$("#r2c4").html(shuffledStudents[11]);
-				$("#r2c7").html(shuffledStudents[12]);
-				$("#r2c8").html(shuffledStudents[13]);
-				$("#r2c9").html(shuffledStudents[14]);
-				$("#r2c10").html(shuffledStudents[15]);
-				$("#r3c1").html(shuffledStudents[16]);
-				$("#r3c2").html(shuffledStudents[17]);
-				$("#r3c3").html(shuffledStudents[18]);
-				$("#r3c4").html(shuffledStudents[19]);
-				$("#r3c7").html(shuffledStudents[20]);
-				$("#r3c8").html(shuffledStudents[21]);
-				$("#r3c9").html(shuffledStudents[22]);
-				$("#r3c10").html(shuffledStudents[23]);
-			};
-			function randomise8 () {
-				var shuffledStudents = shuffle(students8);
-				$("#frontofclass").text("Front");
-				$("#backofclass").text("Back");
-				$(".seat").text("");
-				$("#r1c2").html(shuffledStudents[0]);
-				$("#r1c3").html(shuffledStudents[1]);
-				$("#r1c5").html(shuffledStudents[2]);
-				$("#r1c6").html(shuffledStudents[3]);
-				$("#r1c8").html(shuffledStudents[4]);
-				$("#r1c9").html(shuffledStudents[5]);
-				$("#r2c2").html(shuffledStudents[6]);
-				$("#r2c3").html(shuffledStudents[7]);
-				$("#r2c5").html(shuffledStudents[8]);
-				$("#r2c6").html(shuffledStudents[9]);
-				$("#r2c8").html(shuffledStudents[10]);
-				$("#r2c9").html(shuffledStudents[11]);
-				$("#r3c2").html(shuffledStudents[12]);
-				$("#r3c3").html(shuffledStudents[13]);
-				$("#r3c5").html(shuffledStudents[14]);
-				$("#r3c6").html(shuffledStudents[15]);
-				$("#r3c8").html(shuffledStudents[16]);
-				$("#r3c9").html(shuffledStudents[17]);
-				$("#r4c2").html(shuffledStudents[18]);
-				$("#r4c3").html(shuffledStudents[19]);
-				$("#r4c5").html(shuffledStudents[20]);
-				$("#r4c6").html(shuffledStudents[21]);
-				$("#r4c8").html(shuffledStudents[22]);
-				$("#r4c9").html(shuffledStudents[23]);
-			};
-			function randomiseFM () {
-				var shuffledStudents = shuffle(studentsFM);
-				$("#frontofclass").text("");
-				$("#backofclass").text("");
-				$(".seat").text("");
-				$("#r1c1").html(shuffledStudents[0]);
-				$("#r1c2").html(shuffledStudents[1]);
-				$("#r1c5").html(shuffledStudents[2]);
-				$("#r1c6").html(shuffledStudents[3]);
-				$("#r1c9").html(shuffledStudents[4]);
-				$("#r1c10").html(shuffledStudents[5]);
-				$("#r2c1").html(shuffledStudents[6]);
-				$("#r2c2").html(shuffledStudents[7]);
-				$("#r2c5").html(shuffledStudents[8]);
-				$("#r2c6").html(shuffledStudents[9]);
-				$("#r2c9").html(shuffledStudents[10]);
-				$("#r2c10").html(shuffledStudents[11]);
-				$("#r3c5").html(shuffledStudents[12]);
-				$("#r3c6").html(shuffledStudents[13]);
-			};
-			function randomiseMA () {
-				var shuffledStudents = shuffle(studentsMA);
-				$("#frontofclass").text("");
-				$("#backofclass").text("");
-				$(".seat").text("");
-				$("#r1c1").html(shuffledStudents[0]);
-				$("#r1c2").html(shuffledStudents[1]);
-				$("#r1c5").html(shuffledStudents[2]);
-				$("#r1c6").html(shuffledStudents[3]);
-				$("#r1c9").html(shuffledStudents[4]);
-				$("#r1c10").html(shuffledStudents[5]);
-				$("#r2c1").html(shuffledStudents[6]);
-				$("#r2c2").html(shuffledStudents[7]);
-				$("#r2c5").html(shuffledStudents[8]);
-				$("#r2c6").html(shuffledStudents[9]);
-				$("#r2c9").html(shuffledStudents[10]);
-				$("#r2c10").html(shuffledStudents[11]);
-			};
+			
+			$("#l5randomise").click(
+				function randomiseL5 () {
+					var shuffledStudents = shuffle(studentsL5);
+					$("#frontofclass").text("Front");
+					$("#backofclass").text("Back");
+					$(".seat").text("");
+					$("#r1c2").html(shuffledStudents[0]);
+					$("#r1c3").html(shuffledStudents[1]);
+					$("#r1c5").html(shuffledStudents[2]);
+					$("#r1c6").html(shuffledStudents[3]);
+					$("#r1c8").html(shuffledStudents[4]);
+					$("#r1c9").html(shuffledStudents[5]);
+					$("#r2c2").html(shuffledStudents[6]);
+					$("#r2c3").html(shuffledStudents[7]);
+					$("#r2c5").html(shuffledStudents[8]);
+					$("#r2c6").html(shuffledStudents[9]);
+					$("#r2c8").html(shuffledStudents[10]);
+					$("#r2c9").html(shuffledStudents[11]);
+					$("#r3c2").html(shuffledStudents[12]);
+					$("#r3c3").html(shuffledStudents[13]);
+					$("#r3c5").html(shuffledStudents[14]);
+					$("#r3c6").html(shuffledStudents[15]);
+					$("#r3c8").html(shuffledStudents[16]);
+					$("#r3c9").html(shuffledStudents[17]);
+					$("#r4c2").html(shuffledStudents[18]);
+					$("#r4c3").html(shuffledStudents[19]);
+					$("#r4c5").html(shuffledStudents[20]);
+					$("#r4c6").html(shuffledStudents[21]);
+					$("#r4c8").html(shuffledStudents[22]);
+					$("#r4c9").html(shuffledStudents[23]);
+				});
+
+			$("#4randomise").click(
+				function randomise4 () {
+					var shuffledStudents = shuffle(students4);
+					$("#frontofclass").text("Front");
+					$("#backofclass").text("Back");
+					$(".seat").text("");
+					$("#r1c1").html(shuffledStudents[0]);
+					$("#r1c2").html(shuffledStudents[1]);
+					$("#r1c3").html(shuffledStudents[2]);
+					$("#r1c4").html(shuffledStudents[3]);
+					$("#r1c5").html(shuffledStudents[24]);
+					$("#r1c7").html(shuffledStudents[4]);
+					$("#r1c8").html(shuffledStudents[5]);
+					$("#r1c9").html(shuffledStudents[6]);
+					$("#r1c10").html(shuffledStudents[7]);
+					$("#r2c1").html(shuffledStudents[8]);
+					$("#r2c2").html(shuffledStudents[9]);
+					$("#r2c3").html(shuffledStudents[10]);
+					$("#r2c4").html(shuffledStudents[11]);
+					$("#r2c7").html(shuffledStudents[12]);
+					$("#r2c8").html(shuffledStudents[13]);
+					$("#r2c9").html(shuffledStudents[14]);
+					$("#r2c10").html(shuffledStudents[15]);
+					$("#r3c1").html(shuffledStudents[16]);
+					$("#r3c2").html(shuffledStudents[17]);
+					$("#r3c3").html(shuffledStudents[18]);
+					$("#r3c4").html(shuffledStudents[19]);
+					$("#r3c7").html(shuffledStudents[20]);
+					$("#r3c8").html(shuffledStudents[21]);
+					$("#r3c9").html(shuffledStudents[22]);
+					$("#r3c10").html(shuffledStudents[23]);
+				});
+
+			$("#8randomise").click(
+				function randomise8 () {
+					var shuffledStudents = shuffle(students8);
+					$("#frontofclass").text("Front");
+					$("#backofclass").text("Back");
+					$(".seat").text("");
+					$("#r1c2").html(shuffledStudents[0]);
+					$("#r1c3").html(shuffledStudents[1]);
+					$("#r1c5").html(shuffledStudents[2]);
+					$("#r1c6").html(shuffledStudents[3]);
+					$("#r1c8").html(shuffledStudents[4]);
+					$("#r1c9").html(shuffledStudents[5]);
+					$("#r2c2").html(shuffledStudents[6]);
+					$("#r2c3").html(shuffledStudents[7]);
+					$("#r2c5").html(shuffledStudents[8]);
+					$("#r2c6").html(shuffledStudents[9]);
+					$("#r2c8").html(shuffledStudents[10]);
+					$("#r2c9").html(shuffledStudents[11]);
+					$("#r3c2").html(shuffledStudents[12]);
+					$("#r3c3").html(shuffledStudents[13]);
+					$("#r3c5").html(shuffledStudents[14]);
+					$("#r3c6").html(shuffledStudents[15]);
+					$("#r3c8").html(shuffledStudents[16]);
+					$("#r3c9").html(shuffledStudents[17]);
+					$("#r4c2").html(shuffledStudents[18]);
+					$("#r4c3").html(shuffledStudents[19]);
+					$("#r4c5").html(shuffledStudents[20]);
+					$("#r4c6").html(shuffledStudents[21]);
+					$("#r4c8").html(shuffledStudents[22]);
+					$("#r4c9").html(shuffledStudents[23]);
+				});
+
+			$("#marandomise").click(
+				function randomiseMA () {
+					var shuffledStudents = shuffle(studentsMA);
+					$("#frontofclass").text("");
+					$("#backofclass").text("");
+					$(".seat").text("");
+					$("#r1c1").html(shuffledStudents[0]);
+					$("#r1c2").html(shuffledStudents[1]);
+					$("#r1c5").html(shuffledStudents[2]);
+					$("#r1c6").html(shuffledStudents[3]);
+					$("#r1c9").html(shuffledStudents[4]);
+					$("#r1c10").html(shuffledStudents[5]);
+					$("#r2c1").html(shuffledStudents[6]);
+					$("#r2c2").html(shuffledStudents[7]);
+					$("#r2c5").html(shuffledStudents[8]);
+					$("#r2c6").html(shuffledStudents[9]);
+					$("#r2c9").html(shuffledStudents[10]);
+					$("#r2c10").html(shuffledStudents[11]);
+				});
+
+			$("#fmrandomise").click(
+				function randomiseFM () {
+					var shuffledStudents = shuffle(studentsFM);
+					$("#frontofclass").text("");
+					$("#backofclass").text("");
+					$(".seat").text("");
+					$("#r1c1").html(shuffledStudents[0]);
+					$("#r1c2").html(shuffledStudents[1]);
+					$("#r1c5").html(shuffledStudents[2]);
+					$("#r1c6").html(shuffledStudents[3]);
+					$("#r1c9").html(shuffledStudents[4]);
+					$("#r1c10").html(shuffledStudents[5]);
+					$("#r2c1").html(shuffledStudents[6]);
+					$("#r2c2").html(shuffledStudents[7]);
+					$("#r2c5").html(shuffledStudents[8]);
+					$("#r2c6").html(shuffledStudents[9]);
+					$("#r2c9").html(shuffledStudents[10]);
+					$("#r2c10").html(shuffledStudents[11]);
+					$("#r3c5").html(shuffledStudents[12]);
+					$("#r3c6").html(shuffledStudents[13]);
+				});
+
 			function randomSelection () {
 				
 			}
