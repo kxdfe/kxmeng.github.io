@@ -72,7 +72,7 @@
 
 
 				<div class="row" style="padding-bottom: 20px;">
-					<div class="text-center w-100"><h2 id="frontofclass"></h2></div>
+					<div class="text-center w-100"><h2>Front</h2></div>
 				</div>
 				<div class="row" style="padding-bottom: 20px;">
 					<div class="col seat" id="r1c1"></div>
@@ -124,11 +124,11 @@
 				</div>
 
 				<div class="row" style="padding-top: 20px;">
-					<div class="text-center w-100"><h2 id="backofclass"></h2></div>
+					<div class="text-center w-100"><h2>Back</h2></div>
 				</div>
 
 				<div class="row" style="padding-top: 20px;">
-					<div class="text-center w-100"><h1 id="randomName"></h1></div>
+					<div class="text-center w-100"><h1 id="randomName">click here to find a random student</h1></div>
 				</div>
 				
 
@@ -148,12 +148,34 @@
 			crossorigin="anonymous"></script>
 		<script src="/scripts.js"></script>
 		<script>
-			var studentsL5 = ["Jonathan","Piers","Felix","Chris","Oliver","Ryan","Xavier","Ed","Sonny","Alexis","Marcus","Arun","Alex","Balthazar","Raphael","Harry","William","Mark","Saaim","Joshua","Anton","Otto","Mathieu","Alexander"];
+			// Lists for classes and the names of students in them
+			var studentsl5 = ["Jonathan","Piers","Felix","Chris","Oliver","Ryan","Xavier","Ed","Sonny","Alexis","Marcus","Arun","Alex","Balthazar","Raphael","Harry","William","Mark","Saaim","Joshua","Anton","Otto","Mathieu","Alexander"];
 			var students4 = ["Abhay","Ameet","Jay","Joshua","Ben","Luke","Jack","Gus","Angus","Ben","Charlie","Charlie","Aidan","Nyle","Jack","John","Marcus","Adithya","Dylan","Vanya","Guy","Will","Jack","Max","Serkan"];
 			var students8 = ["Fred","Alex","Dylan","Ben","Alex","Fredi","Dhruv","Andreas","Arya","Julian","Joohun","Matthew","Edward","Barney","Rowan","Luke","Elijah","Robert","Krush","Nicholas","Gal","Ivan","Jack","Tommaso"];
 			var studentsFM = ["Umair","Aiman","Hugo","Oliver","Sami","Freya","Luke","Pranav","William","Raffaele","Krish","Rohan","Alex","Edward"];
 			var studentsMA = ["Lily","Benjamin C","Elliot","Alexander","Maddie","Nathan","Rory","Alex","Andrew","Alexandre","Benjamin S","Kishan"];
+			// Big array of all students.
+			var studentsAll = [students8,students4,studentsl5,studentsMA,studentsFM];
 
+			// Lists for rooms and where there are seats. There are 3 rows and 10 columns in total.
+			var q10 = ["#r1c2","#r1c3","#r1c5","#r1c6","#r1c8","#r1c9","#r2c2","#r2c3","#r2c5","#r2c6","#r2c8","#r2c9","#r3c2","#r3c3","#r3c5","#r3c6","#r3c8","r#3c9"];
+			var q11 = ["#r1c2","#r1c3","#r1c5","#r1c6","#r1c8","#r1c9","#r2c2","#r2c3","#r2c5","#r2c6","#r2c8","#r2c9","#r3c2","#r3c3","#r3c5","#r3c6","#r3c8","r#3c9"];
+			var q12 = ["#r1c1","#r1c2","#r1c3","#r1c4","#r1c7","#r1c8","#r1c9","#r1c10","#r2c1","#r2c2","#r2c3","#r2c4","#r2c7","#r2c8","#r2c9","#r2c10","#r3c1","#r3c2","#r3c3","#r3c4","#r3c7","#r3c8","#r3c9","#r3c10"];
+			var q13 = ["#r1c1","#r1c2","#r1c4","#r1c5","#r1c6","#r1c7","#r1c9","#r1c10","#r2c1","#r2c2","#r2c4","#r2c5","#r2c6","#r2c7","#r2c9","#r2c10","#r3c1","#r3c2","#r3c4","#r3c5","#r3c6","#r3c7","#r3c9","#r3c10"];
+			var q14 = ["#r1c1","#r1c2","#r1c3","#r1c4","#r1c7","#r1c8","#r1c9","#r1c10","#r2c1","#r2c2","#r2c3","#r2c4","#r2c7","#r2c8","#r2c9","#r2c10","#r3c1","#r3c2","#r3c3","#r3c4","#r3c7","#r3c8","#r3c9","#r3c10"];
+			var q15 = ["#r1c1","#r1c2","#r1c3","#r1c4","#r1c7","#r1c8","#r1c9","#r1c10","#r2c1","#r2c2","#r2c3","#r2c4","#r2c7","#r2c8","#r2c9","#r2c10","#r3c1","#r3c2","#r3c3","#r3c4","#r3c7","#r3c8","#r3c9","#r3c10"];
+			var q19 = ["#r1c1","#r1c2","#r1c3","#r1c4","#r1c7","#r1c8","#r1c9","#r1c10","#r2c1","#r2c2","#r2c3","#r2c4","#r2c7","#r2c8","#r2c9","#r2c10","#r3c1","#r3c2","#r3c3","#r3c4","#r3c7","#r3c8","#r3c9","#r3c10"];
+
+			// Timetable for classes and rooms. Sun, Mon, Tue, Wed, Thu, Fri, Sat. Enter any classroom with enough seats for Sat and Sun.
+			var days8 = [q15,q15,q19,q13,q14,q15,q15];
+			var days4 = [q15,q14,q19,q14,q14,q15,q15];
+			var daysl5 = [q15,q15,q15,q19,q15,q12,q15];
+			var daysMA = [q11,q11,q11,q11,q11,q11,q11];
+			var daysFM = [q11,q11,q10,q11,q14,q11,q11];
+			// Big array of classrooms and days for all classes
+			var daysAll = [days8,days4,daysl5,daysMA,daysFM];
+
+			// Function to shuffle a list into a random order. Use by using shuffle(list)
 			function shuffle(array) {
 				var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -172,152 +194,55 @@
 				return array;
 			};
 
-			$("#l5randomise").click(
-				function randomiseL5 () {
-					var shuffledStudents = shuffle(studentsL5);
-					$("#frontofclass").text("Front");
-					$("#backofclass").text("Back");
-					$(".seat").text("");
-					$("#r1c2").html(shuffledStudents[0]);
-					$("#r1c3").html(shuffledStudents[1]);
-					$("#r1c5").html(shuffledStudents[2]);
-					$("#r1c6").html(shuffledStudents[3]);
-					$("#r1c8").html(shuffledStudents[4]);
-					$("#r1c9").html(shuffledStudents[5]);
-					$("#r2c2").html(shuffledStudents[6]);
-					$("#r2c3").html(shuffledStudents[7]);
-					$("#r2c5").html(shuffledStudents[8]);
-					$("#r2c6").html(shuffledStudents[9]);
-					$("#r2c8").html(shuffledStudents[10]);
-					$("#r2c9").html(shuffledStudents[11]);
-					$("#r3c2").html(shuffledStudents[12]);
-					$("#r3c3").html(shuffledStudents[13]);
-					$("#r3c5").html(shuffledStudents[14]);
-					$("#r3c6").html(shuffledStudents[15]);
-					$("#r3c8").html(shuffledStudents[16]);
-					$("#r3c9").html(shuffledStudents[17]);
-					$("#r4c2").html(shuffledStudents[18]);
-					$("#r4c3").html(shuffledStudents[19]);
-					$("#r4c5").html(shuffledStudents[20]);
-					$("#r4c6").html(shuffledStudents[21]);
-					$("#r4c8").html(shuffledStudents[22]);
-					$("#r4c9").html(shuffledStudents[23]);
-				});
+			// Randomise each class' list
+			function randomiseSeats (year) {
+				// Start by shuffling the list of names from the class
+				var shuffledStudents = shuffle(studentsAll[year]);
+				// Remove any highlighting done if page has been used before
+				$(".seat").text("");
+				// Find today's date
+				var d = new Date();
+				// Find a list of seats that need to be filled based on the day
+				var seatsAvailable = daysAll[year][d.getDay()];
+				var i;
+				// Fill in the seats with the random names generated from before
+				for (i = 0; i < shuffledStudents.length; i++) {
+					$(seatsAvailable[i]).html(shuffledStudents[i]);
+				};
+			}
 
-			$("#4randomise").click(
-				function randomise4 () {
-					var shuffledStudents = shuffle(students4);
-					$("#frontofclass").text("Front");
-					$("#backofclass").text("Back");
-					$(".seat").text("");
-					$("#r1c1").html(shuffledStudents[0]);
-					$("#r1c2").html(shuffledStudents[1]);
-					$("#r1c3").html(shuffledStudents[2]);
-					$("#r1c4").html(shuffledStudents[3]);
-					$("#r1c5").html(shuffledStudents[24]);
-					$("#r1c7").html(shuffledStudents[4]);
-					$("#r1c8").html(shuffledStudents[5]);
-					$("#r1c9").html(shuffledStudents[6]);
-					$("#r1c10").html(shuffledStudents[7]);
-					$("#r2c1").html(shuffledStudents[8]);
-					$("#r2c2").html(shuffledStudents[9]);
-					$("#r2c3").html(shuffledStudents[10]);
-					$("#r2c4").html(shuffledStudents[11]);
-					$("#r2c7").html(shuffledStudents[12]);
-					$("#r2c8").html(shuffledStudents[13]);
-					$("#r2c9").html(shuffledStudents[14]);
-					$("#r2c10").html(shuffledStudents[15]);
-					$("#r3c1").html(shuffledStudents[16]);
-					$("#r3c2").html(shuffledStudents[17]);
-					$("#r3c3").html(shuffledStudents[18]);
-					$("#r3c4").html(shuffledStudents[19]);
-					$("#r3c7").html(shuffledStudents[20]);
-					$("#r3c8").html(shuffledStudents[21]);
-					$("#r3c9").html(shuffledStudents[22]);
-					$("#r3c10").html(shuffledStudents[23]);
-				});
+			//When each individual ID is clicked, run the randomiseSeats function to generate a random seating plan
+			$("#8randomise").click(function() {
+				randomiseSeats(0);
+			});
 
-			$("#8randomise").click(
-				function randomise8 () {
-					var shuffledStudents = shuffle(students8);
-					$("#frontofclass").text("Front");
-					$("#backofclass").text("Back");
-					$(".seat").text("");
-					$("#r1c2").html(shuffledStudents[0]);
-					$("#r1c3").html(shuffledStudents[1]);
-					$("#r1c5").html(shuffledStudents[2]);
-					$("#r1c6").html(shuffledStudents[3]);
-					$("#r1c8").html(shuffledStudents[4]);
-					$("#r1c9").html(shuffledStudents[5]);
-					$("#r2c2").html(shuffledStudents[6]);
-					$("#r2c3").html(shuffledStudents[7]);
-					$("#r2c5").html(shuffledStudents[8]);
-					$("#r2c6").html(shuffledStudents[9]);
-					$("#r2c8").html(shuffledStudents[10]);
-					$("#r2c9").html(shuffledStudents[11]);
-					$("#r3c2").html(shuffledStudents[12]);
-					$("#r3c3").html(shuffledStudents[13]);
-					$("#r3c5").html(shuffledStudents[14]);
-					$("#r3c6").html(shuffledStudents[15]);
-					$("#r3c8").html(shuffledStudents[16]);
-					$("#r3c9").html(shuffledStudents[17]);
-					$("#r4c2").html(shuffledStudents[18]);
-					$("#r4c3").html(shuffledStudents[19]);
-					$("#r4c5").html(shuffledStudents[20]);
-					$("#r4c6").html(shuffledStudents[21]);
-					$("#r4c8").html(shuffledStudents[22]);
-					$("#r4c9").html(shuffledStudents[23]);
-				});
+			$("#4randomise").click(function() {
+				randomiseSeats(1);
+			});
 
-			$("#marandomise").click(
-				function randomiseMA () {
-					var shuffledStudents = shuffle(studentsMA);
-					$("#frontofclass").text("");
-					$("#backofclass").text("");
-					$(".seat").text("");
-					$("#r1c1").html(shuffledStudents[0]);
-					$("#r1c2").html(shuffledStudents[1]);
-					$("#r1c5").html(shuffledStudents[2]);
-					$("#r1c6").html(shuffledStudents[3]);
-					$("#r1c9").html(shuffledStudents[4]);
-					$("#r1c10").html(shuffledStudents[5]);
-					$("#r2c1").html(shuffledStudents[6]);
-					$("#r2c2").html(shuffledStudents[7]);
-					$("#r2c5").html(shuffledStudents[8]);
-					$("#r2c6").html(shuffledStudents[9]);
-					$("#r2c9").html(shuffledStudents[10]);
-					$("#r2c10").html(shuffledStudents[11]);
-				});
+			$("#l5randomise").click(function() {
+				randomiseSeats(2);
+			});
 
-			$("#fmrandomise").click(
-				function randomiseFM () {
-					var shuffledStudents = shuffle(studentsFM);
-					$("#frontofclass").text("");
-					$("#backofclass").text("");
-					$(".seat").text("");
-					$("#r1c1").html(shuffledStudents[0]);
-					$("#r1c2").html(shuffledStudents[1]);
-					$("#r1c5").html(shuffledStudents[2]);
-					$("#r1c6").html(shuffledStudents[3]);
-					$("#r1c9").html(shuffledStudents[4]);
-					$("#r1c10").html(shuffledStudents[5]);
-					$("#r2c1").html(shuffledStudents[6]);
-					$("#r2c2").html(shuffledStudents[7]);
-					$("#r2c5").html(shuffledStudents[8]);
-					$("#r2c6").html(shuffledStudents[9]);
-					$("#r2c9").html(shuffledStudents[10]);
-					$("#r2c10").html(shuffledStudents[11]);
-					$("#r3c5").html(shuffledStudents[12]);
-					$("#r3c6").html(shuffledStudents[13]);
-				});
+			$("#marandomise").click(function() {
+				randomiseSeats(3);
+			});
 
+			$("#fmrandomise").click(function() {
+				randomiseSeats(4);
+			});
+
+			// Function to find a random student and highlight them
 			function randomStudent(){
 				$(".seat").removeClass("highlight");
 				shuffle($(".seat:not(:empty)")).slice(0, 1).addClass("highlight");
 				$("#randomName").html($(".highlight").text());
 			};
 
-			setInterval(randomStudent,5000);
+			// Highlight a random student and repeat every 5 seconds when the button is pressed
+			$("#randomName").click(function() {
+				setInterval(randomStudent,5000);
+			});
 		</script>
 	</body>
 </html>
