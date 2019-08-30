@@ -128,7 +128,7 @@
 				</div>
 
 				<div class="row" style="padding-top: 20px;">
-					<div class="text-center w-100"><h1 id="randomName">click here to find a random student</h1></div>
+					<div class="text-center w-100"><button type="button" class="btn btn-primary btn-lg" id="randomName">Randomise</button></div>
 				</div>
 				
 
@@ -241,6 +241,8 @@
 
 			// Highlight a random student and repeat every 5 seconds when the button is pressed
 			$("#randomName").click(function() {
+				$("#randomName").removeClass("btn-primary");
+				$("#randomName").addClass("btn-dark");
 				setInterval(randomStudent,5000);
 			});
 		</script>
