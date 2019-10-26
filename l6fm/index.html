@@ -551,5 +551,32 @@
 				$('#modalTrigReciprocal').modal("toggle");
 			});
 		</script>
+
+		<!-- Trig Addition -->
+		<div class="modal fade" id="modalTrigAddition" tabindex="-1" role="dialog" aria-labelledby="trigAdditionTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="trigAdditionTitle">Addition Formulae</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Underst and and use double angle formulae; use of formulae for \(\sin (A\pm B)\), \(\cos (A\pm B)\),and \(\tan (A\pm B)\), understand geometrical proofs of these formulae.
+						<hr>
+						to include application to half angles
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#trigAddition" ).click(function() {
+				$('#modalTrigAddition').modal("toggle");
+			});
+		</script>
 	</body>
 </html>
