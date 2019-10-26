@@ -563,7 +563,7 @@
 					</button>
 					</div>
 					<div class="modal-body">
-						Underst and and use double angle formulae; use of formulae for \(\sin (A\pm B)\), \(\cos (A\pm B)\),and \(\tan (A\pm B)\), understand geometrical proofs of these formulae.
+						Understand and use double angle formulae; use of formulae for \(\sin (A\pm B)\), \(\cos (A\pm B)\),and \(\tan (A\pm B)\), understand geometrical proofs of these formulae.
 						<hr>
 						to include application to half angles
 					</div>
@@ -576,6 +576,114 @@
 		<script>
 			$( "#trigAddition" ).click(function() {
 				$('#modalTrigAddition').modal("toggle");
+			});
+		</script>
+
+		<!-- Trig Polar -->
+		<div class="modal fade" id="modalTrigPolar" tabindex="-1" role="dialog" aria-labelledby="trigPolarTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="trigPolarTitle">Polar Trigonometry</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use expressions for \(a\cos\theta + b\sin\theta\) in the equivalent forms of \(r\cos (\theta\pm\alpha)\) or \(r \sin (\theta\pm\alpha)\)
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#trigPolar" ).click(function() {
+				$('#modalTrigPolar').modal("toggle");
+			});
+		</script>
+
+		<!-- Trapezium Rule -->
+		<div class="modal fade" id="modalTrapeziumRule" tabindex="-1" role="dialog" aria-labelledby="trapeziumRuleTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="trapeziumRuleTitle">Trapezium Rule</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Understand and use numerical integration of functions, including the use of the trapezium rule and estimating the approximate area under a curve and limits that it must lie between.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#trapeziumRule" ).click(function() {
+				$('#modalTrapeziumRule').modal("toggle");
+			});
+		</script>
+
+		<!-- Iteration -->
+		<div class="modal fade" id="modalIteration" tabindex="-1" role="dialog" aria-labelledby="iterationTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="iterationTitle">Iteration</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Locate roots of \(f(x) = 0\) by considering changes of sign of \(f(x)\) in an interval of \(x\) on which \(f(x)\) is sufficiently well behaved (continuous).
+						<hr>
+						Understand how change of sign methods can fail e.g. when the interval is too large sign may not change as there may be an even number of roots, or if the function is not continuous
+						<hr>
+						Solve equations approximately using simple iterative methods; be able to draw associated cobweb and staircase diagrams
+						<hr>
+						Understand that many mathematical problems cannot be solved analytically, but numerical methods permit solution to a required level of accuracy.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#iteration" ).click(function() {
+				$('#modalIteration').modal("toggle");
+			});
+		</script>
+
+		<!-- Newton Raphson -->
+		<div class="modal fade" id="modalNewtonRaphson" tabindex="-1" role="dialog" aria-labelledby="newtonRaphsonTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="newtonRaphsonTitle">Newton Raphson</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						Solve equations using the Newton-Raphson method and other recurrence relations of the form \(x_{n+1}=g(x_n)\)
+						<hr>
+						Understand how such methods can fail
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#newtonRaphson" ).click(function() {
+				$('#modalNewtonRaphson').modal("toggle");
 			});
 		</script>
 	</body>
