@@ -97,9 +97,55 @@
 								<hr>
 								Understand the effect of simple transformations on the graph of \(y = f(x)\), including sketching associated graphs: \(y = af(x)\), \(y = f(x) + a\), \(y = f(x + a)\), \(y = f(ax)\) and combinations of these transformations e.g. \(y=-\cos\left(x+\dfrac{\pi}{4}\right)\)
 							</div>
-							<div class="tab-pane fade" id="list-trigautumn" role="tabpanel" aria-labelledby="list-trigautumn-list">...</div>
-							<div class="tab-pane fade" id="list-functions" role="tabpanel" aria-labelledby="list-functions-list">...</div>
-							<div class="tab-pane fade" id="list-nummethods" role="tabpanel" aria-labelledby="list-nummethods-list">...</div>
+							<div class="tab-pane fade" id="list-trigautumn" role="tabpanel" aria-labelledby="list-trigautumn-list">
+								Understand and use the definitions of sine, cosine and tangent for all arguments
+								<hr>
+								Understand and use the sine, cosine and tangent functions; their graphs, symmetries and periodicity.
+								<hr>
+								Know and use exact values of \(\sin\), \(\cos\) and \(\tan\) for \(0, \dfrac{\pi}{6}, \dfrac{\pi}{4}, \dfrac{\pi}{3}, \dfrac{\pi}{2}, \pi\) and multiples thereof
+								<hr>
+								Understand and use \(\tan\theta = \dfrac{\sin\theta}{\cos\theta}\)
+								<hr>
+								Understand and use \(\sin^2\theta + \cos^2\theta = 1\)
+								<hr>
+								Solve simple trigonometric equations in a given interval, including quadratic equations in \(\sin, \cos\) and \(\tan\) and equations involving multiples of the unknown angle e.g. \(\sin(x+70^{\circ}) = 0.5\) or \(3+5\cos2x=1\) in radians and degrees
+								<hr>
+								Construct proofs involving trigonometric functions and identities.
+								<hr>
+								Work with radian measure, including use for arc length and area of sector.
+								<hr>
+								Understand and use the standard small angle approximations of sine, cosine and tangent
+								<hr>
+								Understand and use the definitions of secant, cosecant and cotangent and of arcsin, arccos and arctan; their relationships to sine, cosine and tangent; understanding of their graphs; their ranges and domains.
+								<hr>
+								Understand and use double angle formulae; use of formulae for \(\sin (A\pm B)\), \(\cos (A\pm B)\),and \(\tan (A\pm B)\), understand geometrical proofs of these formulae.
+								<hr>
+								to include application to half angles
+								<hr>
+								Understand and use expressions for \(a\cos\theta + b\sin\theta\) in the equivalent forms of \(r\cos (\theta\pm\alpha)\) or \(r \sin (\theta\pm\alpha)\)
+							</div>
+							<div class="tab-pane fade" id="list-functions" role="tabpanel" aria-labelledby="list-functions-list">
+								The modulus of a linear function.
+								<hr>
+								Understand and use composite functions
+								<hr>
+								The notation \(f(x)\) and \(f : x \mapsto\) may be used.
+							</div>
+							<div class="tab-pane fade" id="list-nummethods" role="tabpanel" aria-labelledby="list-nummethods-list">
+								Understand and use numerical integration of functions, including the use of the trapezium rule and estimating the approximate area under a curve and limits that it must lie between.
+								<hr>
+								Locate roots of \(f(x) = 0\) by considering changes of sign of \(f(x)\) in an interval of \(x\) on which \(f(x)\) is sufficiently well behaved (continuous).
+								<hr>
+								Understand how change of sign methods can fail e.g. when the interval is too large sign may not change as there may be an even number of roots, or if the function is not continuous
+								<hr>
+								Solve equations approximately using simple iterative methods; be able to draw associated cobweb and staircase diagrams
+								<hr>
+								Understand that many mathematical problems cannot be solved analytically, but numerical methods permit solution to a required level of accuracy.
+								<hr>
+								Solve equations using the Newton-Raphson method and other recurrence relations of the form \(x_{n+1}=g(x_n)\)
+								<hr>
+								Understand how such methods can fail
+							</div>
 						</div>
 					</div>
 				</div>
@@ -122,259 +168,5 @@
 			crossorigin="anonymous"></script>
 		<script src="/scripts.js"></script>
 
-		<!-- Below - modal pop ups -->
-
-		<!-- Trigonometric functions -->
-		<div class="modal fade" id="modalTrigonometricFunctions" tabindex="-1" role="dialog" aria-labelledby="trigonometricFunctionsTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigonometricFunctionsTitle">Trigonometric Functions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Understand and use the definitions of sine, cosine and tangent for all arguments
-						<hr>
-						Understand and use the sine, cosine and tangent functions; their graphs, symmetries and periodicity.
-						<hr>
-						Know and use exact values of \(\sin\), \(\cos\) and \(\tan\) for \(0, \dfrac{\pi}{6}, \dfrac{\pi}{4}, \dfrac{\pi}{3}, \dfrac{\pi}{2}, \pi\) and multiples thereof
-						<hr>
-						Understand and use \(\tan\theta = \dfrac{\sin\theta}{\cos\theta}\)
-						<hr>
-						Understand and use \(\sin^2\theta + \cos^2\theta = 1\)
-						<hr>
-						Solve simple trigonometric equations in a given interval, including quadratic equations in \(\sin, \cos\) and \(\tan\) and equations involving multiples of the unknown angle e.g. \(\sin(x+70^{\circ}) = 0.5\) or \(3+5\cos2x=1\) in radians and degrees
-						<hr>
-						Construct proofs involving trigonometric functions and identities.
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigonometricFunctions" ).click(function() {
-				$('#modalTrigonometricFunctions').modal("toggle");
-			});
-		</script>
-
-		<!-- Radians -->
-		<div class="modal fade" id="modalRadians" tabindex="-1" role="dialog" aria-labelledby="radiansTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="radiansTitle">Radians</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Work with radian measure, including use for arc length and area of sector.
-						<hr>
-						Understand and use the standard small angle approximations of sine, cosine and tangent
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#radians" ).click(function() {
-				$('#modalRadians').modal("toggle");
-			});
-		</script>
-
-		<!-- Modulus -->
-		<div class="modal fade" id="modalModulus" tabindex="-1" role="dialog" aria-labelledby="modulusTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="modulusTitle">Modulus, functions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						The modulus of a linear function.
-						<hr>
-						Understand and use composite functions
-						<hr>
-						The notation \(f(x)\) and \(f : x \mapsto\) may be used.
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#modulus" ).click(function() {
-				$('#modalModulus').modal("toggle");
-			});
-		</script>
-
-		<!-- Trig Reciprocal -->
-		<div class="modal fade" id="modalTrigReciprocal" tabindex="-1" role="dialog" aria-labelledby="trigReciprocalTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigReciprocalTitle">Reciprocal trigonometric functions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Understand and use the definitions of secant, cosecant and cotangent and of arcsin, arccos and arctan; their relationships to sine, cosine and tangent; understanding of their graphs; their ranges and domains.
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigReciprocal" ).click(function() {
-				$('#modalTrigReciprocal').modal("toggle");
-			});
-		</script>
-
-		<!-- Trig Addition -->
-		<div class="modal fade" id="modalTrigAddition" tabindex="-1" role="dialog" aria-labelledby="trigAdditionTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigAdditionTitle">Addition Formulae</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Understand and use double angle formulae; use of formulae for \(\sin (A\pm B)\), \(\cos (A\pm B)\),and \(\tan (A\pm B)\), understand geometrical proofs of these formulae.
-						<hr>
-						to include application to half angles
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigAddition" ).click(function() {
-				$('#modalTrigAddition').modal("toggle");
-			});
-		</script>
-
-		<!-- Trig Polar -->
-		<div class="modal fade" id="modalTrigPolar" tabindex="-1" role="dialog" aria-labelledby="trigPolarTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigPolarTitle">Polar Trigonometry</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Understand and use expressions for \(a\cos\theta + b\sin\theta\) in the equivalent forms of \(r\cos (\theta\pm\alpha)\) or \(r \sin (\theta\pm\alpha)\)
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigPolar" ).click(function() {
-				$('#modalTrigPolar').modal("toggle");
-			});
-		</script>
-
-		<!-- Trapezium Rule -->
-		<div class="modal fade" id="modalTrapeziumRule" tabindex="-1" role="dialog" aria-labelledby="trapeziumRuleTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trapeziumRuleTitle">Trapezium Rule</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Understand and use numerical integration of functions, including the use of the trapezium rule and estimating the approximate area under a curve and limits that it must lie between.
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trapeziumRule" ).click(function() {
-				$('#modalTrapeziumRule').modal("toggle");
-			});
-		</script>
-
-		<!-- Iteration -->
-		<div class="modal fade" id="modalIteration" tabindex="-1" role="dialog" aria-labelledby="iterationTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="iterationTitle">Iteration</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Locate roots of \(f(x) = 0\) by considering changes of sign of \(f(x)\) in an interval of \(x\) on which \(f(x)\) is sufficiently well behaved (continuous).
-						<hr>
-						Understand how change of sign methods can fail e.g. when the interval is too large sign may not change as there may be an even number of roots, or if the function is not continuous
-						<hr>
-						Solve equations approximately using simple iterative methods; be able to draw associated cobweb and staircase diagrams
-						<hr>
-						Understand that many mathematical problems cannot be solved analytically, but numerical methods permit solution to a required level of accuracy.
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#iteration" ).click(function() {
-				$('#modalIteration').modal("toggle");
-			});
-		</script>
-
-		<!-- Newton Raphson -->
-		<div class="modal fade" id="modalNewtonRaphson" tabindex="-1" role="dialog" aria-labelledby="newtonRaphsonTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="newtonRaphsonTitle">Newton Raphson</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Solve equations using the Newton-Raphson method and other recurrence relations of the form \(x_{n+1}=g(x_n)\)
-						<hr>
-						Understand how such methods can fail
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#newtonRaphson" ).click(function() {
-				$('#modalNewtonRaphson').modal("toggle");
-			});
-		</script>
 	</body>
 </html>
