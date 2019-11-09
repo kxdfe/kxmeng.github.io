@@ -74,7 +74,7 @@
 				<div class="row" style="padding-bottom: 20px;">
 					<div class="text-center w-100"><h2>Front</h2></div>
 				</div>
-				<div class="row" style="padding-bottom: 20px;">
+				<div class="row" style="padding-bottom: 10px;">
 					<div class="col seat" id="r1c1"></div>
 					<div class="col seat" id="r1c2"></div>
 					<div class="col seat" id="r1c3"></div>
@@ -86,7 +86,7 @@
 					<div class="col seat" id="r1c9"></div>
 					<div class="col seat" id="r1c10"></div>
 				</div>
-				<div class="row" style="padding-bottom: 20px;">
+				<div class="row" style="padding-bottom: 10px;">
 					<div class="col seat" id="r2c1"></div>
 					<div class="col seat" id="r2c2"></div>
 					<div class="col seat" id="r2c3"></div>
@@ -98,7 +98,7 @@
 					<div class="col seat" id="r2c9"></div>
 					<div class="col seat" id="r2c10"></div>
 				</div>
-				<div class="row" style="padding-bottom: 20px;">
+				<div class="row" style="padding-bottom: 10px;">
 					<div class="col seat" id="r3c1"></div>
 					<div class="col seat" id="r3c2"></div>
 					<div class="col seat" id="r3c3"></div>
@@ -110,7 +110,7 @@
 					<div class="col seat" id="r3c9"></div>
 					<div class="col seat" id="r3c10"></div>
 				</div>
-				<div class="row">
+				<div class="row" style="padding-bottom: 10px;">
 					<div class="col seat" id="r4c1"></div>
 					<div class="col seat" id="r4c2"></div>
 					<div class="col seat" id="r4c3"></div>
@@ -122,7 +122,7 @@
 					<div class="col seat" id="r4c9"></div>
 					<div class="col seat" id="r4c10"></div>
 				</div>
-				<div class="row">
+				<div class="row" style="padding-bottom: 10px;">
 					<div class="col seat" id="r5c1"></div>
 					<div class="col seat" id="r5c2"></div>
 					<div class="col seat" id="r5c3"></div>
@@ -134,7 +134,7 @@
 					<div class="col seat" id="r5c9"></div>
 					<div class="col seat" id="r5c10"></div>
 				</div>
-				<div class="row">
+				<div class="row" style="padding-bottom: 10px;">
 					<div class="col seat" id="r6c1"></div>
 					<div class="col seat" id="r6c2"></div>
 					<div class="col seat" id="r6c3"></div>
@@ -149,10 +149,6 @@
 
 				<div class="row" style="padding-top: 20px;">
 					<div class="text-center w-100"><h2>Back</h2></div>
-				</div>
-
-				<div class="row" style="padding-top: 20px;">
-					<div class="text-center w-100"><button type="button" class="btn btn-primary btn-lg" id="randomName">Randomise</button></div>
 				</div>
 			</div>
 		<!--jQuery-->
@@ -197,9 +193,9 @@
 			var studentsAll = [students8,students4,studentsl5,studentsMA,studentsFM];
 
 			// Lists for rooms and where there are seats. There are 3 rows and 10 columns in total.
-			var q10 = ["#r1c2","#r1c3","#r2c2","#r2c3","#r2c5","#r2c6","#r2c8","#r2c9","#r3c2","#r3c3","#r3c5","#r3c6","#r3c8","r#3c9","r#3c10"];
+			var q10 = ["#r1c2","#r1c3","#r2c2","#r2c3","#r3c2","#r3c3","#r4c2","#r4c3","#r5c2","#r5c3","#r6c2","#r6c3","#r5c5","#r6c5","#r5c6","#r6c6"];
 			var q11 = ["#r1c2","#r1c3","#r1c5","#r1c6","#r1c8","#r1c9","#r2c2","#r2c3","#r2c5","#r2c6","#r2c8","#r2c9","#r3c2","#r3c3","#r3c5","#r3c6","#r3c8","r#3c9"];
-			var q12 = ["#r1c1","#r1c2","#r1c7","#r1c8","#r2c1","#r2c2","#r2c7","#r2c8","#r3c1","#r3c2","#r3c7","#r3c8","r4c3","r4c4","r4c9","r4c10","r5c3","r5c4","r5c9","r5c10","r6c3","r6c4","r6c9","r6c10"];
+			var q12 = ["#r1c1","#r1c2","#r1c7","#r1c8","#r2c1","#r2c2","#r2c7","#r2c8","#r3c1","#r3c2","#r3c7","#r3c8","#r4c3","#r4c4","#r4c9","#r4c10","#r5c3","#r5c4","#r5c9","#r5c10","#r6c3","#r6c4","#r6c9","#r6c10"];
 			var q13 = ["#r1c1","#r1c2","#r1c4","#r1c5","#r1c6","#r1c7","#r1c9","#r1c10","#r2c1","#r2c2","#r2c4","#r2c5","#r2c6","#r2c7","#r2c9","#r2c10","#r3c1","#r3c2","#r3c4","#r3c5","#r3c6","#r3c7","#r3c9","#r3c10","#r1c3"];
 			var q14 = ["#r1c1","#r1c2","#r1c3","#r1c4","#r1c7","#r1c8","#r1c9","#r1c10","#r2c1","#r2c2","#r2c3","#r2c4","#r2c7","#r2c8","#r2c9","#r2c10","#r3c1","#r3c2","#r3c3","#r3c4","#r3c7","#r3c8","#r3c9","#r3c10","#r1c5"];
 			var q15 = ["#r1c1","#r1c2","#r1c3","#r1c4","#r1c7","#r1c8","#r1c9","#r1c10","#r2c1","#r2c2","#r2c3","#r2c4","#r2c7","#r2c8","#r2c9","#r2c10","#r3c1","#r3c2","#r3c3","#r3c4","#r3c7","#r3c8","#r3c9","#r3c10"];
@@ -278,10 +274,8 @@
 				$("#randomName").html($(".highlight").text());
 			};
 
-			// Highlight a random student and repeat every 5 seconds when the button is pressed
-			$("#randomName").click(function() {
-				$("#randomName").removeClass("btn-primary");
-				$("#randomName").addClass("btn-dark");
+			// Highlight a random student and repeat every 2 seconds when the button is pressed
+			document.addEventListener("DOMContentLoaded", function() {
 				setInterval(randomStudent,2000);
 			});
 		</script>
