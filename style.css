@@ -1,68 +1,58 @@
-#container {
-	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 50px auto 50px;
-	grid-template-areas: 
-		"header header header"
-		". main ."
-		"footer footer footer";
+html, body {
+	height:100%;
 }
-header {
-	grid-area: header;
-	background-color: #c9fff7;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+
+a:hover {
+	text-decoration: none;
 }
-footer {
-	grid-area: footer;
-	background-color: red;
+
+h1{
+	height: 0px;
+	transition: height ease 0.5s, padding-top ease 0.5s;
+	background: white;
 }
-div#main {
-	grid-area: main;
-	background-color: yellow;
+
+.col:hover h1 {
+	padding-top: 20%;
+	height: 20%;
 }
-h1 {
-	text-align: center;
+
+#y8 {
+	background: #e9b872;
 }
-#current {
-	font-weight: bold;
+
+#y8 h1 {
+	color: #e9b872;
 }
-input {
-	display: none;
-	visibility: hidden;
+
+#y9 {
+	background: #90a959;
 }
-label {
-	display: block;
-	padding: 0.5em;
+
+#y9 h1 {
+	color: #90a959;
 }
-label::before {
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 15px;
-  content: "+";
-  vertical-align: text-top;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
+
+#y10 {
+	background: #a63d40;
 }
-.syllabustable {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	height: 0;
-	overflow: hidden;
-	transition: all 0.5s;
-	color: #000;
+
+#y10 h1 {
+	color: #a63d40;
 }
-input:checked + .collapsible + .syllabustable {
-	height: 100%;
+
+#al {
+	background: #6494aa;
 }
-input:checked + label::before {
-	content: "-";
+
+#al h1 {
+	color: #6494aa;
 }
-.syllabuscontent {
-	width: 45%;
-	margin: 10px;
+
+#fm {
+	background: #2b2d42;
+}
+
+#fm h1 {
+	color: #2b2d42;
 }

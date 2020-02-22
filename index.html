@@ -9,80 +9,44 @@
 			displayAlign: "left"
 			});
 		</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<!--MathJax-->
 		<script type="text/javascript" async
 			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
 		</script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<style>
-			nav {
-				background-color: #555b6e;
-			}
-			footer{
-				background-color: #555b6e;
-			}
-			#ibhigher {
-				background-color: #69140e;
-			}
-			#alsingle{
-				background-color: #0e3b43;
-			}
-			#alfurther{
-				background-color: #293241;
-			}
-			#ibhigher a{
-				color: rgba(255,255,255,0.5);
-			}
-			#alsingle a{
-				color: rgba(255,255,255,0.5);
-			}
-			#alfurther a{
-				color: rgba(255,255,255,0.5);
-			}
-		</style>
 	</head>
 
 	<body>
-		<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4">
-				<a class="navbar-brand" href="#">Maths</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-					</ul>
-					<div class="input-group">
-						<ul class="navbar-nav ml-auto small">
-						</ul>
-					</div>
+		<div id="main" class="container-fluid flex-fill">
+			<div class="row" style="min-height:100vh;">
+				<div class="col" id="y8">
+					<a href="/y8">
+						<h1 class="text-center align-middle">Year 8</h1>
+					</a>
 				</div>
-			</nav>
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-4">
-				<a class="navbar-brand" href="#">Maths</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-					</ul>
-					<div class="input-group">
-						<ul class="navbar-nav ml-auto small">
-						</ul>
-					</div>
+				<div class="col" id="y9">
+					<a href="/4th">
+						<h1 class="text-center">Year 9</h1>
+					</a>
 				</div>
-			</nav>
-		</header>
-
-		<div id="main">
-			<div class="container">
-
-				<div class="row">
-					<div class="col" id="alsingle"><a href="/l6.html"><h1 class="text-center">A Level (Edexcel)</h1></a></div>
-					<div class="col" id="alfurther"><a href="/l6fm.html"><h1 class="text-center">Further Maths (OCR)</h1></a></div>
+				<div class="col" id="y10">
+					<a href="/l5">
+						<h1 class="text-center">Year 10</h1>
+					</a>
 				</div>
-
+				<div class="col" id="al">
+					<a href="/l6">
+						<h1 class="text-center">A Level</h1>
+					</a>
+				</div>
+				<div class="col" id="fm">
+					<a href="/l6fm">
+						<h1 class="text-center">Further Maths</h1>
+					</a>
+				</div>
 			</div>
+		</div>
 
 		<!--jQuery-->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
