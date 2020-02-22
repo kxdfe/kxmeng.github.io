@@ -12,6 +12,9 @@ h1{
 	background: white;
 }
 
+#main div {
+	min-height:100vh;
+}
 .col:hover h1 {
 	padding-top: 20%;
 	height: 20%;
