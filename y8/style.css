@@ -1,0 +1,58 @@
+html, body {
+	height:100%;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1{
+	height: 0px;
+	transition: height ease 0.5s, padding-top ease 0.5s;
+	background: white;
+}
+
+.col:hover h1 {
+	padding-top: 20%;
+	height: 20%;
+}
+
+.y8 {
+	background: #e9b872;
+}
+
+.y8 h1 {
+	color: #e9b872;
+}
+
+.y9 {
+	background: #90a959;
+}
+
+.y9 h1 {
+	color: #90a959;
+}
+
+.y10 {
+	background: #a63d40;
+}
+
+.y10 h1 {
+	color: #a63d40;
+}
+
+.al {
+	background: #6494aa;
+}
+
+.al h1 {
+	color: #6494aa;
+}
+
+.fm {
+	background: #2b2d42;
+}
+
+.fm h1 {
+	color: #2b2d42;
+}
