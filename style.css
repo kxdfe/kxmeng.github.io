@@ -3,7 +3,8 @@ html, body {
 }
 
 a:hover {
-	text-decoration: none;
+	text-decoration: none; !important
+	font-size: 150%;
 }
 
 h1{
