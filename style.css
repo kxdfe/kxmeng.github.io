@@ -6,34 +6,27 @@ a:hover {
 	text-decoration: none; !important
 }
 
-h1{
-	height: 0px;
-	transition: height ease 0.5s, padding-top ease 0.5s, font-size ease 0.5s, padding-bottom ease 0.5s;
-	background: white;
-}
-
 #main div {
 	min-height:100vh;
 }
 
-.col:hover h1 {
-	padding-top: 80%;
-	padding-bottom: 80%;
-	height: 80%;
+#mainpage .col:hover div {
 	font-size: 400%;
+	padding-top: 10%;
 }
 
-.cssbanner {
-	position: relative;
-	width: 80%;
-}
-
-.cssbanner:after {
-	content: "1";
+#mainpage .col div {
+	transition: all ease 0.2s;
 }
 
 .y8 {
 	background: #e9b872;
+}
+
+#y8background {
+	color: #e9b872;
+	filter: brightness(150%);
+	font-size: 300%;
 }
 
 .y8 h1 {
@@ -44,12 +37,24 @@ h1{
 	background: #90a959;
 }
 
+#y9background {
+	color: #90a959;
+	filter: brightness(150%);
+	font-size: 300%;
+}
+
 .y9 h1 {
 	color: #90a959;
 }
 
 .y10 {
 	background: #a63d40;
+}
+
+#y10background {
+	color: #a63d40;
+	filter: brightness(150%);
+	font-size: 300%;
 }
 
 .y10 h1 {
@@ -60,12 +65,24 @@ h1{
 	background: #6494aa;
 }
 
+#albackground {
+	color: #6494aa;
+	filter: brightness(150%);
+	font-size: 300%;
+}
+
 .al h1 {
 	color: #6494aa;
 }
 
 .fm {
 	background: #2b2d42;
+}
+
+#fmbackground {
+	color: #2b2d42;
+	filter: brightness(250%);
+	font-size: 300%;
 }
 
 .fm h1 {
