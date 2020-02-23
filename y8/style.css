@@ -53,7 +53,7 @@ h1{
 }
 
 .sidebar .nav-link.active {
-	color: #007bff;
+	background: #e9b872;
 }
 
 .col:hover h1 {
