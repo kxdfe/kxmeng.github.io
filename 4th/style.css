@@ -52,6 +52,10 @@ h1{
 	transition: background ease 0.5s;
 }
 
+.sidebar .nav-link.active {
+	background: #90a959;
+}
+
 .col:hover h1 {
 	padding-top: 20%;
 	height: 20%;
