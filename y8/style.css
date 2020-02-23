@@ -35,8 +35,21 @@ h1{
 	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
 .sidebar .nav-link {
-	color: #000;;
+	color: #000;
+	transition: background ease 1s;
+}
+
+.sidebar .nav-link:hover {
+	background: #e9b872;
+	transition: background ease 0.5s;
 }
 
 .sidebar .nav-link.active {
