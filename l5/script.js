@@ -21,85 +21,127 @@ var vectorstext = "<h2>Vectors</h2><ul><li>understand that a vector has both mag
 var transformationstext = "<h2>Transformations of trig graphs</h2><ul><li>apply to the graph of y = f(x) the transformations y = f(x)+a, f(ax), f(x+a), af(x) for sine and cosine functions</li></ul>";
 
 $("#surds").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(surdstext);
 });
 
 $("#recurring").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(recurringtext);
 });
 
 $("#brackets").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(bracketstext);
 });
 
 $("#quadratics").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(quadraticstext);
 });
 
 $("#trigonometry").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(trigonometrytext);
 });
 
 $("#sinecosine").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(sinecosinetext);
 });
 
 $("#area").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(areatext);
 });
 
 $("#triggraphs").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(triggraphstext);
 });
 
 $("#proportion").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(proportiontext);
 });
 
 $("#rearranging").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(rearrangingtext);
 });
 
 $("#algfractions").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(algfractionstext);
 });
 
 $("#circles").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(circlestext);
 });
 
 $("#chords").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(chordstext);
 });
 
 $("#constructions").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(constructionstext);
 });
 
 $("#sets").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(setstext);
 });
 
 $("#functions").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(functionstext);
 });
 
 $("#geometry").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(geometrytext);
 });
 
 $("#graphs").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(graphstext);
 });
 
 $("#graphical").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(graphicaltext);
 });
 
 $("#vectors").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(vectorstext);
 });
 
 $("#transformations").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(transformationstext);
 });
