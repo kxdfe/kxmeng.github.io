@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>L5</title>
+		<title>Lower 5th</title>
 		<!--MathJax Config-->
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
@@ -14,27 +14,14 @@
 			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
 		</script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<style>
-			nav {
-				background-color: #293241;
-			}
-			h1 + ul {
-				
-			}
-			p {
-				color: #A8B1C0;
-			}
-			p a {
-				cursor: pointer !important;
-				color: #293241 !important;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
-		<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4">
-				<a class="navbar-brand" href="#">L5</a>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark mb-4 y10">
+				<a class="navbar-brand" href="#">Lower 5th</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -59,13 +46,7 @@
 					<div class="input-group">
 						<ul class="navbar-nav ml-auto small">
 							<li class="nav-item">
-								<a class="nav-link" href="#autumn">Autumn</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#spring">Spring</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#summer">Summer</a>
+								<a class="nav-link" href="#">Extra space</a>
 							</li>
 						</ul>
 					</div>
@@ -73,171 +54,218 @@
 			</nav>
 		</header>
 
-		<div id="main">
-			<div class="container">
-				<div id="autumn"></div>
-				<h1 class="text-center">Autumn Term</h1>
-				<ul class="list-group-flush">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col">
-								<p id="surds">Surds, recurring decimals</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="indices">Indices</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Factorising, expanding brackets (up to 3)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Solving quadratics (factorising, formula)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Solving quadratics (factorising, formula)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Pythagoras (3D), trigonometry</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Sine/cosine rules</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Area of triangles</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Trigonometric graphs</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Proportion</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Rearranging formulae</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Algebraic fractions</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Algebraic fractions</p>
-							</div>
-						</div>
-					</li>
-				</ul>
+		<div id="main" class="container-fluid">
+			<div class="row">
+				<nav class="col-md-2 d-none d-md-block bg-white sidebar y10-sidebar">
+					<div class="sidebar-sticky">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="indices">
+									Indices
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="standardform">
+									Standard form
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="pythagoras">
+									Pythagoras
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="trigonometry">
+									Trigonometry
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="equations">
+									Linear equations
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="graphs">
+									Linear graphs
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="subject">
+									Changing the subject
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="simultaneous">
+									Simultaneous equations
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="brackets">
+									Multiplying brackets
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="factorising">
+									Factorising quadratics
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="quadratics">
+									Solving quadratics
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="percentages">
+									Percentages, proportional change
+								</a>
+							</li>
+						</ul>
+						<hr>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="area">
+									Area and volume
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="arc">
+									Arc, sector, segment
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="average">
+									Average, range
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="cfreq">
+									Cumulative freq., box plots
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="histograms">
+									Histograms
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="bounds">
+									Bounds
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="similarity">
+									Similarity, congruence (no proofs)
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="similarityarea">
+									Area volume of similar shapes
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="inequalities">
+									Inequalities
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="shading">
+									Shading regions
+								</a>
+							</li>
+						</ul>
+						<hr>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="transformations">
+									Transformations
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="probability">
+									(Conditional) Probability
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="speed">
+									Speed/distance-time, curved tangents
+								</a>
+							</li>
+						</ul>
+						<hr>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="plotting">
+									Plotting quadratics
+								</a>
+							</li>
+						</ul>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link" href="#" id="quadratictransformations">
+									Transformations of quadratics
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 
-
-				<div id="spring"></div>
-				<h1 class="text-center">Spring Term</h1>
-				<ul class="list-group-flush">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col">
-								<p id="">Algebraic fractions equations</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Circle theorems</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Intersecting chords</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Constructions</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Sets</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Sets</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Functions, composition, inverse</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Domain, range, piecewise functions</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Coordinate geometry (midpoint, distance, gradient)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Linear and non linear graphs</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-
-
-				<div id="summer"></div>
-				<h1 class="text-center">Summer Term</h1>
-				<ul class="list-group-flush">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col">
-								<p id="">Graphical solution of equations</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Vectors</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Vectors</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">After exams: Transformations of trig graphs</p>
-							</div>
-						</div>
-					</li>
-				</ul>
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+						<div id="content"><h2>Syllabus points</h2></div>
+					</div>
+				</main>
 			</div>
 
+		</div>
 
 
-		<footer>
-			
+
+		<footer class="page-footer fixed-bottom y10">
+			<div class="footer-copyright text-center py-3"></div>
 		</footer>
 		<!--jQuery-->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -249,63 +277,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 			crossorigin="anonymous"></script>
-		<script src="/scripts.js"></script>
-
-		<!-- Below - modal pop ups -->
-		<!-- Surds and Indices -->
-		<div class="modal fade" id="modalSurds" tabindex="-1" role="dialog" aria-labelledby="surdsTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="surdsTitle">Surds</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Understand the meaning of surds
-						<hr>
-						Manipulate surds, including rationalising a denominator
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#surds" ).click(function() {
-				$('#modalSurds').modal("toggle");
-			});
-		</script>
-
-		<!-- Quadratics -->
-		<div class="modal fade" id="modalIndices" tabindex="-1" role="dialog" aria-labelledby="indicesTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="indicesTitle">Indices</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						Use index notation for integer, fractional, negative and zero powers
-						<hr>
-						Use index laws in simple cases e.g. \(x^m\times x^n = x^{m+n}\), \(x^m\div x^n = x^{m-n}\), \((x^m)^n = x^{m\times n}\)
-						<hr>
-						Use index laws to simplify and evaluate numerical expressions involving integer, fractional and negative powers
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#indices" ).click(function() {
-				$('#modalIndices').modal("toggle");
-			});
-		</script>
+		<script src="specificationhigher.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
