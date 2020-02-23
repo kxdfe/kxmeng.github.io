@@ -23,6 +23,15 @@ h1{
 	font-size: 400%;
 }
 
+.cssbanner {
+	position: relative;
+	width: 80%;
+}
+
+.cssbanner:after {
+	content: "1";
+}
+
 .y8 {
 	background: #e9b872;
 }
