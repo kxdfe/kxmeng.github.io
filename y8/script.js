@@ -25,45 +25,67 @@ $("#transformations").click(function() {
 });
 
 $("#fractions").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(fractionstext);
 });
 
 $("#constructions").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(constructionstext);
 });
 
 $("#probability").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(probabilitytext);
 });
 
 $("#graphs").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(graphstext);
 });
 
 $("#speed").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(speedtext);
 });
 
 $("#scales").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(scalestext);
 });
 
 $("#powers").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(powerstext);
 });
 
 $("#inequalities").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(inequalitiestext);
 });
 
 $("#graphical").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(graphicaltext);
 });
 
 $("#quadratic").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(quadratictext);
 });
 
 $("#proof").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(prooftext);
 });
