@@ -319,3 +319,6 @@ var dataProbability = [
 	"apply probability to simple problems"
 ];
 var data = [dataGraphs,dataStats,dataProbability];
+
+var allpoints = [numbers,equations,functions,shapes,vectors,data];
+export {allpoints};
