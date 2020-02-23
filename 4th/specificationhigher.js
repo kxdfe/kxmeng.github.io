@@ -126,7 +126,7 @@ var equationsQuadratic = [
 	"solve quadratic equations by factorisation",
 	"solve quadratic equations by using the formula or completing the square",
 	"form and solve quadratic equations from data given in a context",
-	"solve simultaneous equations in. two unknowns, one being linear and the other being quadratic"
+	"solve simultaneous equations in two unknowns, one being linear and the other being quadratic"
 ];
 var equationsInequalities = [
 	"understand and use the symbols \(>\), \(<\), \(\geq\) and \(\leq\)",
