@@ -135,7 +135,7 @@ var equationsInequalities = [
 	"represent simple linear inequalities on rectangular Cartesian graphs",
 	"identify regions on rectangular Cartesian graphs defined by simple linear inequalities",
 	"solve quadratic inequalities in one unknown and represent the solution set on a number line",
-	"identify harder examples of regions defined by liner inequalities"
+	"identify harder examples of regions defined by linear inequalities"
 ];
 var equations = [equationsSymbols,equationsAlgebra,equationsExpressions,equationsLinear,equationsProportion,equationsSimultaneous,equationsQuadratic,equationsInequalities];
 
@@ -155,7 +155,7 @@ var functionsNotation = [
 ];
 var functionsGraphs = [
 	"interpret information presented in a range of linear and non-linear graphs",
-	"understand and use concentions for rectangular Cartesian coordinates",
+	"understand and use conventions for rectangular Cartesian coordinates",
 	"plot points \((x,y)\) in any of the four quadrants or locate points with given coordinates",
 	"determine the coordinates of points identified by geometrical information",
 	"determine the coordinates of the midpoint of a line segment, given the coordinates of the two end points",
@@ -259,7 +259,7 @@ var shapesSimilarity = [
 var shapes = [shapesAngles,shapesPolygons,shapesSymmetry,shapesMeasures,shapesConstruction,shapesCircles,shapesReasoning,shapesTrigonometry,shapesMensuration,shapes3d,shapesSimilarity];
 
 var vectorsVectors = [
-	"understand that  a  vector has both magnitude and direction",
+	"understand that a vector has both magnitude and direction",
 	"understand and use vector notation including column vectors",
 	"multiply vectors by scalar quantities",
 	"add and subtract vectors",
@@ -286,7 +286,7 @@ var vectors = [vectorsVectors,vectorsTransformations];
 
 var dataGraphs = [
 	"use different methods of presenting data: pictograms, bar charts and pie charts, and two-way tables",
-	"use appropriate methods of tabulation to enable the contructino of statistical diagrams",
+	"use appropriate methods of tabulation to enable the contruction of statistical diagrams",
 	"interpret statistical diagrams",
 	"construct and interpret histograms",
 	"construct cumulative frequency diagrams from tabulated data",
