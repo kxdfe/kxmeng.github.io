@@ -11,9 +11,15 @@ h1{
 	transition: height ease 0.5s, padding-top ease 0.5s;
 	background: white;
 }
+
+.fixed-top {
+	padding-bottom: 80px;
+}
+
 #main div {
 	min-height:100vh;
 }
+
 .col:hover h1 {
 	padding-top: 20%;
 	height: 20%;
