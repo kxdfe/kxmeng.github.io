@@ -64,10 +64,6 @@ $("#algfractions").click(function() {
 	$("#content").html(algfractionstext);
 });
 
-$("#algequations").click(function() {
-	$("#content").html(algequationstext);
-});
-
 $("#circles").click(function() {
 	$("#content").html(circlestext);
 });
