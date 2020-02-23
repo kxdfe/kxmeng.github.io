@@ -1,4 +1,3 @@
-import {allpoints} from "specificationhigher.js";
 var indicestext = "<h2>1</h2><ul><li></li></ul>";
 var standardformtext = "<h2>2</h2><ul><li></li></ul>";
 var pythagorastext = "<h2>3</h2><ul><li></li></ul>";
