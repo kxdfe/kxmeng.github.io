@@ -47,13 +47,9 @@ h1{
 	transition: background ease 1s;
 }
 
-.y8-sidebar .nav-link:hover {
-	background: #e9b872;
+.y9-sidebar .nav-link:hover {
+	background: #90a959;
 	transition: background ease 0.5s;
-}
-
-.sidebar .nav-link.active {
-	color: #007bff;
 }
 
 .col:hover h1 {
