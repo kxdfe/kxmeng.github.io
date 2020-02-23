@@ -13,13 +13,13 @@ var quadratictext = "<h2>Quadratic graphs</h2><ul><li>Understand the parabolic s
 var prooftext = "<h2>Proof</h2><ul><li>Explain, show and justify a mathematical solution</li><li>Identify the difference between giving an example and proving a theory</li><li>Understand how to use mathematical proof</li><li>Present a logical argument using algebra</li></ul>";
 
 $("#shapes").click(function() {
-	$('.active').remove();
+	$('.active').removeClass("active");
 	$(this).addClass("active");
 	$("#content").html(shapestext);
 });
 
 $("#transformations").click(function() {
-	$('.active').remove();
+	$('.active').removeClass("active");
 	$(this).addClass("active");
 	$("#content").html(transformationstext);
 });
