@@ -27,109 +27,163 @@ var plottingtext = "<h2>Plotting quadratics</h2><ul><li>recognise, generate poin
 var quadratictransformationstext = "<h2>Transformations of quadratics</h2><ul><li>apply to the graph of y = f(x) the transformations y = f(x)+a, f(ax), f(x+a), af(x) for linear and quadratic functions</li></ul>";
 
 $("#indices").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(indicestext);
 });
 
 $("#standardform").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(standardformtext);
 });
 
 $("#pythagoras").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(pythagorastext);
 });
 
 $("#trigonometry").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(trigonometrytext);
 });
 
 $("#equations").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(equationstext);
 });
 
 $("#graphs").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(graphstext);
 });
 
 $("#subject").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(subjecttext);
 });
 
 $("#simultaneous").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(simultaneoustext);
 });
 
 $("#brackets").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(bracketstext);
 });
 
 $("#factorising").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(factorisingtext);
 });
 
 $("#quadratics").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(quadraticstext);
 });
 
 $("#percentages").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(percentagestext);
 });
 
 $("#area").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(areatext);
 });
 
 $("#arc").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(arctext);
 });
 
 $("#average").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(averagetext);
 });
 
 $("#cfreq").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(cfreqtext);
 });
 
 $("#histograms").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(histogramstext);
 });
 
 $("#bounds").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(boundstext);
 });
 
 $("#similarity").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(similaritytext);
 });
 
 $("#similarityarea").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(similarityareatext);
 });
 
 $("#inequalities").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(inequalitiestext);
 });
 
 $("#shading").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(shadingtext);
 });
 
 $("#transformations").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(transformationstext);
 });
 
 $("#probability").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(probabilitytext);
 });
 
 $("#speed").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(speedtext);
 });
 
 $("#plotting").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(plottingtext);
 });
 
 $("#quadratictransformations").click(function() {
+	$('.active').removeClass("active");
+	$(this).addClass("active");
 	$("#content").html(quadratictransformationstext);
 });
