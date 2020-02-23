@@ -16,20 +16,20 @@ h1{
 }
 
 .sidebar {
-	font-size:0.75rem;
+	font-size: 0.75rem;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	z-index: 2; /* Behind the navbar */
-	padding: 85.8px 0 0; /* Height of navbar */
+	padding: 91.2px 0 0; /* Height of navbar */
 	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
 .sidebar-sticky {
 	position: relative;
 	top: 0;
-	height: calc(100vh - 117.8px); /* header plus footer height */
+	height: calc(100vh - 123.2px); /* header plus footer height */
 	padding-top: .5rem;
 	overflow-x: hidden;
 	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
