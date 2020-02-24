@@ -48,6 +48,7 @@ a:hover {
 
 main {
 	position: fixed;
+	left: 0;
 }
 
 .sidebar .nav-link {
