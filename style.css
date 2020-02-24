@@ -83,7 +83,7 @@ a:hover {
 
 .y8-sidebar .nav-link:hover {
 	background: #e9b872;
-	transition: background ease 0.5s;
+	transition: background ease 0.2s;
 }
 
 .y8-sidebar .nav-link.active {
@@ -107,7 +107,7 @@ a:hover {
 
 .y9-sidebar .nav-link:hover {
 	background: #90a959;
-	transition: background ease 0.5s;
+	transition: background ease 0.2s;
 }
 
 .y9-sidebar .nav-link.active {
@@ -125,7 +125,7 @@ a:hover {
 
 .y10-sidebar .nav-link:hover {
 	background: #a63d40;
-	transition: background ease 0.5s;
+	transition: background ease 0.2s;
 }
 
 .y10-sidebar .nav-link.active {
@@ -155,7 +155,7 @@ a:hover {
 
 .al-sidebar .nav-link:hover {
 	background: #6494aa;
-	transition: background ease 0.5s;
+	transition: background ease 0.2s;
 }
 
 .al-sidebar .nav-link.active {
@@ -179,7 +179,7 @@ a:hover {
 
 .fm-sidebar .nav-link:hover {
 	background: #2b2d42;
-	transition: background ease 0.5s;
+	transition: background ease 0.2s;
 }
 
 .fm-sidebar .nav-link.active {
