@@ -85,6 +85,15 @@ a:hover {
 	color: #e9b872;
 }
 
+.y8-sidebar .nav-link:hover {
+	background: #e9b872;
+	transition: background ease 0.5s;
+}
+
+.y8-sidebar .nav-link.active {
+	background: #e9b872;
+}
+
 .y9 {
 	background: #90a959;
 	font-family: 'Merienda';
