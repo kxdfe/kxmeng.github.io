@@ -81,10 +81,6 @@ a:hover {
 	font-size: 300%;
 }
 
-.y8 h1 {
-	color: #e9b872;
-}
-
 .y8-sidebar .nav-link:hover {
 	background: #e9b872;
 	transition: background ease 0.5s;
@@ -103,10 +99,6 @@ a:hover {
 	color: #90a959;
 	filter: brightness(150%);
 	font-size: 300%;
-}
-
-.y9 h1 {
-	color: #90a959;
 }
 
 .y9-sidebar .nav-link:hover {
@@ -138,10 +130,6 @@ a:hover {
 	font-size: 300%;
 }
 
-.y10 h1 {
-	color: #a63d40;
-}
-
 .al {
 	background: #6494aa;
 	font-family:'Simonetta';
@@ -153,10 +141,6 @@ a:hover {
 	font-size: 300%;
 }
 
-.al h1 {
-	color: #6494aa;
-}
-
 .fm {
 	background: #2b2d42;
 	font-family:'Cormorant Garamond';
@@ -166,8 +150,4 @@ a:hover {
 	color: #2b2d42;
 	filter: brightness(250%);
 	font-size: 300%;
-}
-
-.fm h1 {
-	color: #2b2d42;
 }
