@@ -114,6 +114,10 @@ a:hover {
 	background: #90a959;
 }
 
+.y9-sidebar-right ul {
+	color: #90a959;
+}
+
 .y10 {
 	background: #a63d40;
 	font-family: 'Caudex';
@@ -134,6 +138,10 @@ a:hover {
 	font-size: 300%;
 }
 
+.y10-sidebar-right ul {
+	color: #a63d40;
+}
+
 .al {
 	background: #6494aa;
 	font-family:'Simonetta';
@@ -145,6 +153,19 @@ a:hover {
 	font-size: 300%;
 }
 
+.al-sidebar .nav-link:hover {
+	background: #6494aa;
+	transition: background ease 0.5s;
+}
+
+.al-sidebar .nav-link.active {
+	background: #6494aa;
+}
+
+.al-sidebar-right ul {
+	color: #6494aa;
+}
+
 .fm {
 	background: #2b2d42;
 	font-family:'Cormorant Garamond';
@@ -154,4 +175,17 @@ a:hover {
 	color: #2b2d42;
 	filter: brightness(250%);
 	font-size: 300%;
+}
+
+.fm-sidebar .nav-link:hover {
+	background: #2b2d42;
+	transition: background ease 0.5s;
+}
+
+.fm-sidebar .nav-link.active {
+	background: #2b2d42;
+}
+
+.fm-sidebar-right ul {
+	color: #2b2d42;
 }
