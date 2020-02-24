@@ -6,6 +6,10 @@ a:hover {
 	text-decoration: none; !important
 }
 
+.navbar {
+	z-index: 100;
+}
+
 #main div {
 	min-height:100vh;
 }

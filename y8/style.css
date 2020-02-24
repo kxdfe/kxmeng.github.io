@@ -1,20 +1,3 @@
-html, body {
-	height:100%;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-.navbar {
-	z-index: 100;
-}
-h1{
-	height: 0px;
-	transition: height ease 0.5s, padding-top ease 0.5s;
-	background: white;
-}
-
 .y8-sidebar .nav-link:hover {
 	background: #e9b872;
 	transition: background ease 0.5s;
