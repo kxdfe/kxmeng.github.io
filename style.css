@@ -47,8 +47,7 @@ a:hover {
 }
 
 main {
-	position: fixed;
-	left: 0;
+	margin-left: 20%;
 }
 
 .sidebar .nav-link {
