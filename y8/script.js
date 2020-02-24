@@ -13,79 +13,79 @@ var quadratictext = "<h2>Quadratic graphs</h2><ul><li>Understand the parabolic s
 var prooftext = "<h2>Proof</h2><ul><li>Explain, show and justify a mathematical solution</li><li>Identify the difference between giving an example and proving a theory</li><li>Understand how to use mathematical proof</li><li>Present a logical argument using algebra</li></ul>";
 
 $("#shapes").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(shapestext);
 });
 
 $("#transformations").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(transformationstext);
 });
 
 $("#fractions").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(fractionstext);
 });
 
 $("#constructions").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(constructionstext);
 });
 
 $("#probability").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(probabilitytext);
 });
 
 $("#graphs").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(graphstext);
 });
 
 $("#speed").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(speedtext);
 });
 
 $("#scales").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(scalestext);
 });
 
 $("#powers").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(powerstext);
 });
 
 $("#inequalities").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(inequalitiestext);
 });
 
 $("#graphical").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(graphicaltext);
 });
 
 $("#quadratic").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(quadratictext);
 });
 
 $("#proof").click(function() {
-	$('.active').removeClass("active");
-	$(this).addClass("active");
+	$('.sidebar-active').removeClass("sidebar-active");
+	$(this).addClass("sidebar-active");
 	$("#content").html(prooftext);
 });

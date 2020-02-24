@@ -90,7 +90,7 @@ main {
 	transition: background ease 0.2s;
 }
 
-.y8-sidebar .nav-link.active {
+.y8-sidebar .nav-link.sidebar-active {
 	background: #e9b872;
 }
 
@@ -108,7 +108,7 @@ main {
 	transition: background ease 0.2s;
 }
 
-.y9-sidebar .nav-link.active {
+.y9-sidebar .nav-link.sidebar-active {
 	background: #90a959;
 }
 
@@ -132,7 +132,7 @@ main {
 	transition: background ease 0.2s;
 }
 
-.y10-sidebar .nav-link.active {
+.y10-sidebar .nav-link.sidebar-active {
 	background: #a63d40;
 }
 
@@ -162,7 +162,7 @@ main {
 	transition: background ease 0.2s;
 }
 
-.al-sidebar .nav-link.active {
+.al-sidebar .nav-link.sidebar-active {
 	background: #6494aa;
 }
 
@@ -186,7 +186,7 @@ main {
 	transition: background ease 0.2s;
 }
 
-.fm-sidebar .nav-link.active {
+.fm-sidebar .nav-link.sidebar-active {
 	background: #2b2d42;
 }
 
