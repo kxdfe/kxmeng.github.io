@@ -90,7 +90,7 @@ a:hover {
 	background: #e9b872;
 }
 
-.y8-sidebar-right ul {
+.y8-sidebar-right a {
 	color: #e9b872;
 }
 
@@ -114,7 +114,7 @@ a:hover {
 	background: #90a959;
 }
 
-.y9-sidebar-right ul {
+.y9-sidebar-right a {
 	color: #90a959;
 }
 
@@ -138,7 +138,7 @@ a:hover {
 	font-size: 300%;
 }
 
-.y10-sidebar-right ul {
+.y10-sidebar-right a {
 	color: #a63d40;
 }
 
@@ -162,7 +162,7 @@ a:hover {
 	background: #6494aa;
 }
 
-.al-sidebar-right ul {
+.al-sidebar-right a {
 	color: #6494aa;
 }
 
@@ -186,6 +186,6 @@ a:hover {
 	background: #2b2d42;
 }
 
-.fm-sidebar-right ul {
+.fm-sidebar-right a {
 	color: #2b2d42;
 }
