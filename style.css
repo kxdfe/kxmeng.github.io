@@ -10,10 +10,6 @@ a:hover {
 	z-index: 100;
 }
 
-#main div {
-	min-height:100vh;
-}
-
 #mainpage .col:hover div {
 	font-size: 400%;
 	padding-top: 10%;
