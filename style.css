@@ -66,6 +66,10 @@ a:hover {
 	padding-left: 0.5%;
 }
 
+#content {
+	padding-bottom: 5px;
+}
+
 .y8 {
 	background: #e9b872;
 	font-family: 'Indie Flower';
