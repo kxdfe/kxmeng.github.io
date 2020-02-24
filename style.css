@@ -37,7 +37,7 @@ a:hover {
 .sidebar-sticky {
 	position: relative;
 	top: 0;
-	height: calc(100vh - 160px); /* header plus footer height */
+	height: calc(100vh - 200px); /* header plus footer height */
 	padding-top: 0;
 	overflow-x: hidden;
 	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
