@@ -52,7 +52,7 @@ main {
 
 .sidebar .nav-link {
 	color: #000;
-	transition: background ease 1s;
+	transition: background ease 0.5s;
 }
 
 .sidebar-right {
