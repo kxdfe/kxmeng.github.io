@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>4th form</title>
+		<!--jQuery-->
+		<script src="../jquery.js"></script>
+		<!--page scripts-->
+		<script src="script.js"></script>
+		<title>Year 8</title>
 		<!--MathJax Config-->
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
@@ -10,70 +14,21 @@
 			});
 		</script>
 		<!--MathJax-->
-		<script type="text/javascript" async
-			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-		</script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="/style.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="../mathjax.js"></script>
+		<!--Bootstrap css-->
+		<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+		<!--Style sheets-->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Caudex&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4 y9">
-				<a class="navbar-brand" href="#">4th form</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/y8" style="font-family: 'Merienda';">Y8</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="/4th" style="font-family: 'Merienda';">4th <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/l5" style="font-family: 'Caudex';">L5</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/al" style="font-family: 'Cormorant Garamond';">AL</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/fm" style="font-family: 'Cormorant Garamond';">FM</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4 fixed-top y9">
-				<a class="navbar-brand" href="#">4th form</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/y8" style="font-family: 'Merienda';">Y8</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="/4th" style="font-family: 'Merienda';">4th <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/l5" style="font-family: 'Caudex';">L5</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/al" style="font-family: 'Cormorant Garamond';">AL</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/fm" style="font-family: 'Cormorant Garamond';">FM</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+		<div id="pageheader">
+		</div>
 
 		<div id="main" class="container-fluid" style="font-family: 'Cormorant Garamond';">
 			<div class="row">
@@ -312,16 +267,12 @@
 		<footer class="page-footer fixed-bottom y9">
 			<div class="footer-copyright text-center py-3"></div>
 		</footer>
-		<!--jQuery-->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-			crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-			crossorigin="anonymous"></script>
-		<script src="script.js"></script>
+
+		<!--Load header-->
+		<script> 
+			$(document).ready(function() {
+				$("#pageheader").load("header.html"); 
+			});
+		</script> 
 	</body>
 </html>
