@@ -7,7 +7,7 @@ body {
 	padding-bottom: 30px; /* Margin bottom by footer height */
 	padding-top: 50px; /* Margin top by header  height*/
 	height: 100vh; /* 100% view port height */
-	font-family: 'Caudex';
+	font-family: 'Cormorant Garamond';
 }
 
 .footer {
@@ -26,7 +26,7 @@ body {
 	height: 50px; /* Set the fixed height of the footer here */
 	line-height: 50px; /* Vertically center the text there */
 	background-color: #a63d40;
-	font-family: 'Merienda';
+	font-family: 'Caudex';
 	padding-left: 20px;
 	color: white;
 }
