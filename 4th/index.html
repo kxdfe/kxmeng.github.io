@@ -3,10 +3,8 @@
 	<head>
 		<!--jQuery-->
 		<script src="../jquery.js"></script>
-		<!--popper.js-->
-		<script src="../popper.js"></script>
 		<!--page scripts-->
-		<script src="script.js"></script>
+		<script src="./script.js"></script>
 		<title>4th form</title>
 		<!--MathJax Config-->
 		<script type="text/x-mathjax-config">
@@ -16,12 +14,12 @@
 			});
 		</script>
 		<!--MathJax-->
-		<script src="../mathjax.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 		<!--Bootstrap css-->
 		<link rel="stylesheet" type="text/css" href="../bootstrap.css">
 		<!--Style sheets-->
 		<link rel="stylesheet" type="text/css" href="./style.css">
-		<link rel="stylesheet" type="text/css" href="../style.css">
 		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Caudex&display=swap" rel="stylesheet">
@@ -29,252 +27,308 @@
 	</head>
 
 	<body>
-		<div id="pageheader">
+		<div class="pageheader">
+			4th Form Maths
 		</div>
 
-		<div id="main" class="container-fluid" style="font-family: 'Cormorant Garamond';">
-			<div class="row">
-				<div class="col-2">
-					<nav class="bg-white sidebar y9-sidebar">
-						<div class="sidebar-sticky">
-							<h6>Autumn term</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="indices">
-										Indices
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="standardform">
-										Standard form
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="pythagoras">
-										Pythagoras
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="trigonometry">
-										Trigonometry
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="equations">
-										Linear equations
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="graphs">
-										Linear graphs
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="subject">
-										Changing the subject
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="simultaneous">
-										Simultaneous equations
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="brackets">
-										Multiplying brackets
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="factorising">
-										Factorising quadratics
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="quadratics">
-										Solving quadratics
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="percentages">
-										Percentages, proportional change
-									</a>
-								</li>
-							</ul>
-							<hr style="margin-left: 10%; margin-right: 10%;">
-							<h6>Spring term</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="area">
-										Area and volume
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="arc">
-										Arc, sector, segment
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="average">
-										Average, range
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="cfreq">
-										Cumulative freq., box plots
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="histograms">
-										Histograms
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="bounds">
-										Bounds
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="similarity">
-										Similarity, congruence (no proofs)
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="similarityarea">
-										Area volume of similar shapes
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="inequalities">
-										Inequalities
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="shading">
-										Shading regions
-									</a>
-								</li>
-							</ul>
-							<hr style="margin-left: 10%; margin-right: 10%;">
-							<h6>Summer term</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="transformations">
-										Transformations
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="probability">
-										(Conditional) Probability
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="speed">
-										Speed/distance-time, curved tangents
-									</a>
-								</li>
-							</ul>
-							<hr style="margin-left: 10%; margin-right: 10%;">
-							<h6>After exams</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="plotting">
-										Plotting quadratics
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="quadratictransformations">
-										Transformations of quadratics
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
+		<div id="main" class="container-fluid row">
+			<div class="col-2 sidebar" id="sidebar-left">
+				<h6>Autumn term</h6>
+				<ul>
+					<li id="indices">Indices</li>
+					<li id="standard">Standard form</li>
+					<li id="pythagoras">Pythagoras</li>
+					<li id="trigonometry">Trigonometry</li>
+					<li id="lineareqn">Linear equations</li>
+					<li id="lineargraphs">Linear graphs</li>
+					<li id="changing">Changing the subject</li>
+					<li id="simultaneous">Simultaneous equations</li>
+					<li id="multiplying">Multiplying brackets</li>
+					<li id="factorisingq">Factorising quadratics</li>
+					<li id="solvingq">Solving quadratics</li>
+					<li id="percentages">Percentages, proportional change</li>
+				</ul>
+				<hr>
+				<h6>Spring term</h6>
+				<ul>
+					<li id="area">Area and volume</li>
+					<li id="arc">Arc, sector, segment</li>
+					<li id="average">Average, range</li>
+					<li id="cf">Cumulative freq., box plots</li>
+					<li id="histograms">Histograms</li>
+					<li id="bounds">Bounds</li>
+					<li id="similarity">Similarity, congruence</li>
+					<li id="areasimilar">Area, volume similar shapes</li>
+					<li id="inequalities">Inequalities</li>
+					<li id="shading">Shading regions</li>
+				</ul>
+				<hr>
+				<h6>Summer term</h6>
+				<ul>
+					<li id="transformations">Transformations</li>
+					<li id="probability">(Conditional) Probability</li>
+					<li id="speed">Speed, distance, time (curved graphs)</li>
+				</ul>
+				<hr>
+				<h6>After exams</h6>
+				<ul>
+					<li id="plotq">Plotting quadratics</li>
+					<li id="transq">Transformations of quadratics</li>
+				</ul>
+			</div>
+
+			<div class="col-8" id="maincontent">
+				<div class="topics" id="indices">
+					<h2>Indices</h2>
+					<ul>
+						<li>use index notation and index laws for multiplication and division of positive and negative integer powers including zero</li>
+						<li>use index laws to simplify and evaluate numerical expressions involving integer, fractional and negative powers</li>
+					</ul>
 				</div>
-
-				<div class="col-8">
-					<main role="main">
-						<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-							<div id="content"><h2>Syllabus points</h2></div>
-						</div>
-					</main>
+				<div class="topics" id="standard">
+					<h2>Standard Form</h2>
+					<ul>
+						<li>calculate with and interpret numbers in standard form</li>
+						<li>solve problems involving standard form</li>
+					</ul>
 				</div>
-
-
-				<div class="col-2">
-					<nav class="bg-white sidebar-right y9-sidebar-right">
-						<div class="sidebar-sticky">
-							<h6>Useful links</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="dfm">
-										coming soon e.g. dr frost maths
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
+				<div class="topics" id="pythagoras">
+					<h2>Pythagoras' Theorem</h2>
+					<ul>
+						<li>know, understand and use Pythagoras' theorem in two and three dimensions</li>
+					</ul>
+				</div>
+				<div class="topics" id="trigonometry">
+					<h2>Trigonometry</h2>
+					<ul>
+						<li>know, understand and use sine, cosine and tangent of acute angles to determine lengths and angles of a right angled triangle</li>
+						<li>understand and use angles of elevation and depression</li>
+					</ul>
+				</div>
+				<div class="topics" id="lineareqn">
+					<h2>Linear equations</h2>
+					<ul>
+						<li>solve linear equations, with integer or fractional coefficients, in one unknown</li>
+						<li>find the equation of a straight line parallel or perpendicular to a given line</li>
+					</ul>
+				</div>
+				<div class="topics" id="lineargraphs">
+					<h2>Linear graphs</h2>
+					<ul>
+						<li>find the gradient of a straight line</li>
+						<li>recognise that equations of the form y = mx + c are straight line graphs with gradient m and intercept on the y-axis (0,c)</li>
+					</ul>
+				</div>
+				<div class="topics" id="changing">
+					<h2>Changing the subject</h2>
+					<ul>
+						<li>understand the process of manipulating formulae or equations to change the subject, to include cases where the subject may appear twice or a power of the subject occurs</li>
+					</ul>
+				</div>
+				<div class="topics" id="simultaneous">
+					<h2>Simultaneous equations</h2>
+					<ul>
+						<li>calculate the exact solution of two simultaneous equations in two unknowns</li>
+						<li>interpret the equations as lines and the common solution as the point of intersection</li>
+					</ul>
+				</div>
+				<div class="topics" id="multiplying">
+					<h2>Multiplying out brackets</h2>
+					<ul>
+						<li>expand the product of two simple linear expressions</li>
+					</ul>
+				</div>
+				<div class="topics" id="factorisingq">
+					<h2>Factorising quadratics</h2>
+					<ul>
+						<li>understand the concept of a quadratic expression and be able to factorise such expressions</li>
+					</ul>
+				</div>
+				<div class="topics" id="solvingq">
+					<h2>Solving quadratics</h2>
+					<ul>
+						<li>solve quadratic equations by factorisation</li>
+						<li>form and solve quadratic equations from data given in a context</li>
+					</ul>
+				</div>
+				<div class="topics" id="percentages">
+					<h2>Percentages, proportional change</h2>
+					<ul>
+						<li>solve simple percentage problems, including percentage increase and decrease</li>
+						<li>use reverse percentages</li>
+						<li>use compound interest and depreciation</li>
+						<li>use repeated percentage change</li>
+						<li>solve compound interest problems</li>
+					</ul>
+				</div>
+				<div class="topics" id="area">
+					<h2>Area and volume</h2>
+					<ul>
+						<li>understand and use the properties of the parallelogram, rectangle, square, rhombus, trapezium and kite</li>
+						<li>find the area of simple shapes using the formulae for the areas of triangles and rectangles</li>
+						<li>find the area of parallelograms and trapezia</li>
+						<li>recognise and give names of: cube, cuboid, prism, pyramid, cylinder, sphere, cone</li>
+						<li>find the surface area of simple shapes using the area formulae for triangles and rectangles</li>
+						<li>find the surface area of a cylinder</li>
+						<li>find the volume of prisms, including cuboids and cylinders, using an appropriate formula</li>
+						<li>convert between units of volume within the metric system</li>
+						<li>find the surface area and volume of a sphere and a right circular cone using relevant formulae</li>
+					</ul>
+				</div>
+				<div class="topics" id="arc">
+					<h2>Arc, sector, segment</h2>
+					<ul>
+						<li>recognise the terms 'centre', 'radius', 'chord', 'diameter', 'circumference', 'tangent', 'arc', 'sector' and 'segment' of a circle</li>
+						<li>find circumferences and areas of circles; find perimeters and areas of sectors of circles</li>
+					</ul>
+				</div>
+				<div class="topics" id="average">
+					<h2>Average, range</h2>
+					<ul>
+						<li>understand the concept of average</li>
+						<li>calculate the mean, median, mode and range for a discrete data set</li>
+						<li>calculate an estimate for the mean for grouped data</li>
+						<li>identify the modal class for grouped data</li>
+						<li>find the interquartile range from a discrete set of data</li>
+					</ul>
+				</div>
+				<div class="topics" id="cf">
+					<h2>Cumulative frequency, box plots</h2>
+					<ul>
+						<li>construct cumulative frequency diagrams from tabulated data</li>
+						<li>use cumulative frequency diagrams</li>
+						<li>estimate the median from a cumulative frequency diagram</li>
+						<li>estimate the interquartile range from a cumulative frequency diagram</li>
+					</ul>
+				</div>
+				<div class="topics" id="histograms">
+					<h2>Histograms</h2>
+					<ul>
+						<li>construct and interpret histograms</li>
+					</ul>
+				</div>
+				<div class="topics" id="bounds">
+					<h2>Bounds</h2>
+					<ul>
+						<li>identify upper and lower bounds where values are given to a degree of accuracy</li>
+						<li>solve problems using upper and lower bounds where values are given to a degree of accuracy</li>
+					</ul>
+				</div>
+				<div class="topics" id="similarity">
+					<h2>Similarity, congruence</h2>
+					<ul>
+						<li>understand congruence as meaning the same shape and size</li>
+						<li>understand that two or more polygons with the same shape and size are said to be congruent to each other</li>
+						<li>understand and use the geometrical properties that similar figures have corresponding lengths in the same ratio but corresponding angles remain unchanged</li>
+					</ul>
+				</div>
+				<div class="topics" id="areasimilar">
+					<h2>Area volume of similar shapes</h2>
+					<ul>
+						<li>understand that areas of similar figures are in the ratio of the square of corresponding sides</li>
+						<li>understand that volumes of similar figures are in the ratio of the cube of corresponding sides</li>
+					</ul>
+				</div>
+				<div class="topics" id="inequalities">
+					<h2>Inequalities</h2>
+					<ul>
+						<li>understand and use the symbols <, >, ≤, ≥</li>
+						<li>understand and use the convention for open and closed intervals on a number line</li>
+						<li>solve simple linear inequalities in one variable and represent the solution set on a number line</li>
+						<li>represent simple linear inequalities on rectangular Cartesian graphs</li>
+					</ul>
+				</div>
+				<div class="topics" id="shading">
+					<h2>Shading regions</h2>
+					<ul>
+						<li>identify regions on rectangular Cartesian graphs defined by simple linear inequalities</li>
+					</ul>
+				</div>
+				<div class="topics" id="transformations">
+					<h2>Transformations</h2>
+					<ul>
+						<li>understand that rotations are specified by a centre and an angle</li>
+						<li>rotate a shape about a point through a given angle</li>
+						<li>recognise that an anti-clockwise rotation is a positive angle of rotation and a clockwise rotation is a negative angle of rotation</li>
+						<li>understand that reflections are specified by a mirror line</li>
+						<li>construct a mirror line given an object and reflect a shape given a mirror line</li>
+						<li>understand that translations are specified by a distance and a direction</li>
+						<li>translate a shape</li>
+						<li>understand and use column vectors in translations</li>
+						<li>understand that rotations, reflections and translations preserve length and angle so that a transformed shape under any of these transformations remains congruent to the original shape</li>
+						<li>understand that enlargements are specified by a centre and a scale factor</li>
+						<li>understand that enlargements preserve angles and not lengths</li>
+						<li>enlarge a shape given the scale factor</li>
+						<li>identify and give complete descriptions of transformations</li>
+					</ul>
+				</div>
+				<div class="topics" id="probability">
+					<h2>Probability</h2>
+					<ul>
+						<li>understand the language of probability: outcomes, equal likelihood, events, random</li>
+						<li>understand and use the probability scale</li>
+						<li>understand and use estimates or measures of probability from theoretical models</li>
+						<li>find probabilities from a Venn diagram</li>
+						<li>understand the concepts of a sample space and an event, and how the probability of an event can be determined from the sample space</li>
+						<li>list all the outcomes for single events and for two successive events in a systematic way</li>
+						<li>estimate probabilities from previously collected data</li>
+						<li>calculate the probability of the complement of an event happening</li>
+						<li>use the addition rule of probability for mutually exclusive events</li>
+						<li>understand and use the term 'expected frequency'</li>
+						<li>draw and use tree diagrams</li>
+						<li>determine the probability that two or more independent events will occur</li>
+						<li>use simple conditional probability when combining events</li>
+					</ul>
+				</div>
+				<div class="topics" id="speed">
+					<h2>Speed, distance, time and curved graphs</h2>
+					<ul>
+						<li>understand and use the relationship between average speed, distance and time</li>
+						<li>find the gradients of non-linear graphs by drawing a tangent</li>
+					</ul>
+				</div>
+				<div class="topics" id="plotq">
+					<h2>Plotting quadratics</h2>
+					<ul>
+						<li>recognise, generate points and plot graphs of linear and quadratic functions</li>
+					</ul>
+				</div>
+				<div class="topics" id="transq">
+					<h2>Transformations of quadratics</h2>
+					<ul>
+						<li>apply to the graph of y = f(x) the transformations y = f(x)+a, f(ax), f(x+a), af(x) for linear and quadratic functions</li>
+					</ul>
 				</div>
 			</div>
 
+			<div class="col-2 sidebar" id="sidebar-right">
+				<h6>Useful links</h6>
+				<ul>
+					<li>
+						Coming soon
+					</li>
+					<li>
+						<a href="#" id="dfm">
+							e.g.dr frost maths
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 
 
-		<footer class="page-footer fixed-bottom y9">
-			<div class="footer-copyright text-center py-3"></div>
-		</footer>
-
-		<!--Load header-->
-		<script> 
-			$(document).ready(function() {
-				$("#pageheader").load("header.html"); 
+		<div class="footer">
+			
+		</div>
+		<script>
+			$("#sidebar-left li").click(function() {
+				$('.sidebar-active').removeClass('sidebar-active');
+				$(this).addClass('sidebar-active');
+				$('.active-topic').removeClass('active-topic');
+				$('div#' + $(this).attr('id')).addClass('active-topic');
 			});
-		</script> 
+		</script>
 	</body>
+
 </html>
