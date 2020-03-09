@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>L6FM</title>
+		<!--jQuery-->
+		<script src="../jquery.js"></script>
+		<!--page scripts-->
+		<script src="./script.js"></script>
+		<title>Further Maths</title>
 		<!--MathJax Config-->
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
@@ -10,1319 +14,167 @@
 			});
 		</script>
 		<!--MathJax-->
-		<script type="text/javascript" async
-			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-		</script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<style>
-			nav {
-				background-color: #293241;
-			}
-			h1 + ul {
-				
-			}
-			p {
-				color: #A8B1C0;
-			}
-			p a {
-				cursor: pointer !important;
-				color: #283447 !important;
-			}
-		</style>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<!--Bootstrap css-->
+		<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+		<!--Style sheets-->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Caudex&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4">
-				<a class="navbar-brand" href="#">L6 Further Maths</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link active" href="index.html">Overview</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="pure.html">Pure</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="mechanics.html">Mechanics</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="statistics.html">Statistics</a>
-						</li>
+		<div class="pageheader">
+			Further Maths
+			<a href="#" class="pure navbar-active">Pure</a>
+			<a href="#" class="mechanics">Mechanics</a>
+			<a href="#" class="statistics">Statistics</a>
+		</div>
+
+		<div id="main" class="container-fluid row">
+			<div class="col-2 sidebar" id="sidebar-left">
+				<h6>Autumn term</h6>
+				<ul class="pure sidebar-visible">
+					<li id="">Transforming graphs, sketching</li>
+					<li id="">Trigonometric functions</li>
+					<li id="">Radians</li>
+					<li id="">Functions</li>
+					<li id="">Trig: reciprocal, inverse</li>
+					<li id="">Trig: addition, double angle</li>
+					<li id="">Trig: \(R\cos(\theta+\alpha)\), modelling</li>
+					<li id="">Trapezium rule</li>
+					<li id="">Iteration</li>
+					<li id="">Newton Raphson</li>
+				</ul>
+				<ul class="mechanics">
+					<li id="">Solving cubics</li>
+					<li id="">Surds, indices</li>
+					<li id="">Differentiation</li>
+					<li id="">Differentiation: applications</li>
+					<li id="">Differentiation: modelling</li>
+					<li id="">Integration</li>
+					<li id="">Integration: areas</li>
+					<li id="">Differentiation: chain, product, quotient</li>
+					<li id="">Integration from year 2</li>
+					<li id="">Differentiation: implicit, parametric</li>
+					<li id="">Second order derivatives, rates of change</li>
+				</ul>
+				<ul class="statistics">
+					<li id="">Coordinate geometry</li>
+					<li id="">Circles</li>
+					<li id="">Inequalities</li>
+					<li id="">Exponentials, logarithms</li>
+					<li id="">e and ln derivatives, graphs</li>
+					<li id="">Plotting log graphs</li>
+					<li id="">Sequences and series</li>
+					<li id="">Binomial expansion</li>
+					<li id="">Parametric equations</li>
+					<li id="">Partial fractions</li>
+				</ul>
+				<hr>
+				<h6>Spring term</h6>
+				<ul class="pure sidebar-visible">
+					<li id="">Complex numbers</li>
+					<li id="">Integration: year 2</li>
+					<li id="">Volume of revolution</li>
+					<li id="">Differential equations</li>
+					<li id="">Vectors</li>
+				</ul>
+				<ul class="mechanics">
+					<li id="">Vectors</li>
+					<li id="">Suvat, graphs</li>
+					<li id="">Freefall, projectiles</li>
+					<li id="">Forces, pulleys</li>
+					<li id="">Resolving forces, friction</li>
+					<li id="">Slopes</li>
+					<li id="">Applications, connected particles</li>
+					<li id="">Variable acceleration</li>
+					<li id="">Moments</li>
+				</ul>
+				<ul class="statistics">
+					<li id="">Measures of spread, coding</li>
+					<li id="">Sampling, representation</li>
+					<li id="">Regression, probability</li>
+					<li id="">Discrete distributions</li>
+					<li id="">Hypothesis testing</li>
+					<li id="">Regression</li>
+					<li id="">Conditional probability, normal distribution</li>
+					<li id="">Normal approx. to binomial</li>
+					<li id="">Hypothesis testing</li>
+				</ul>
+				<hr>
+				<h6>Summer term</h6>
+				<ul class="pure sidebar-visible">
+					<li id="">Matrices</li>
+				</ul>
+				<ul class="mechanics">
+					<li id="">Induction</li>
+				</ul>
+				<ul class="statistics">
+					<li id="">Sums and series, method of differences</li>
+				</ul>
+				<hr>
+				<h6>After exams</h6>
+				<ul class="pure sidebar-visible">
+					<li id="">Matrices</li>
+				</ul>
+				<ul class="mechanics">
+					<li id="">Vieta's formulae</li>
+				</ul>
+			</div>
+
+			<div class="col-9" id="maincontent">
+				<div class="topics" id="transformations">
+					<h2>Transformations</h2>
+					<ul>
+						<li>Describe and carry out translations (including with vectors), reflections (equations for mirror lines), and rotations. Tracing paper may be used</li>
+						<li>Describe and carry out enlargements using positive integer, negative and fractional scale factors</li>
+						<li>Transform 2D shapes using a combination of transformations</li>
 					</ul>
 				</div>
-			</nav>
-		</header>
+			</div>
 
-		<div id="main">
-			<div class="container">
-				<div id="autumn"></div>
-				<h1 class="text-center">Autumn Term</h1>
-				<ul class="list-group-flush">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col">
-								<p id="transformingGraphs"><a>Transforming graphs, sketching</a></p>
-							</div>
-							<div class="col">
-								<p id="">Polynomial division, remainder theorem, solving cubics</p>
-							</div>
-							<div class="col">
-								<p id="">Coordinate geometry (5), circles (6)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p>Graph sketching: repeated roots; infinity; dominant part</p>
-							</div>
-							<div class="col">
-								<p id="">Surds, indices, differentiation, incl. first principles (12)</p>
-							</div>
-							<div class="col">
-								<p id="">Inequalities - quadratics and 2D regions with curves (3)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="trigonometricFunctions"><a>Trigonometric functions</a> (10)</p>
-							</div>
-							<div class="col">
-								<p id="">Applications of differentiation, no second order (12)</p>
-							</div>
-							<div class="col">
-								<p id="">Exponentials and logarithms (14.4-6)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="radians"><a>Radians</a> [5]: sectors, arcs, small angle approximations</p>
-							</div>
-							<div class="col">
-								<p id="">Modelling with differentiation [12]</p>
-							</div>
-							<div class="col">
-								<p id="">e and ln derivatives and graphs (14.1-3, 14.7)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="modulus"><a>Modulus, functions</a> [2]</p>
-							</div>
-							<div class="col">
-								<p id="">Integration (13)</p>
-							</div>
-							<div class="col">
-								<p id="">Plotting log graphs (14.8)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="trigReciprocal">Functions [2], <a>trigonometric reciprocal and inverse</a> [6]</p>
-							</div>
-							<div class="col">
-								<p id="">Integration for finding areas (13)</p>
-							</div>
-							<div class="col">
-								<p id="">Sequences and series [3]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="trigAddition"><a>Trig: addition, double angle formulae, proofs, solving</a> [7]</p>
-							</div>
-							<div class="col">
-								<p id="">Differentiation: chain, product, quotient [9.1-6]</p>
-							</div>
-							<div class="col">
-								<p id="">Sequences and series [3]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="trigPolar"><a>Trig: \(R\sin(\theta+\alpha)\), graph modelling</a> [7]</p>
-							</div>
-							<div class="col">
-								<p id="">Differentiation [9.1-6]</p>
-							</div>
-							<div class="col">
-								<p id="">Binomial expansion for integers (8)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Trigonometry consolidation [7]</p>
-							</div>
-							<div class="col">
-								<p id="">Integration basics [11.1-11.4]</p>
-							</div>
-							<div class="col">
-								<p id="">Binomial rational and negative powers [4]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="trapeziumRule"><a>Trapezium rule</a> [11.9]</p>
-							</div>
-							<div class="col">
-								<p id="">Integration basics [11.1-4]</p>
-							</div>
-							<div class="col">
-								<p id="">Parametric equations [8]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="iteration"><a>Iteration</a> including staircase/cobweb [10]</p>
-							</div>
-							<div class="col">
-								<p id="">Implicit and parametric differentiation (9.8)</p>
-							</div>
-							<div class="col">
-								<p id="">Parametric equations [8]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="newtonRaphson"><a>Newton Raphson</a> [10]</p>
-							</div>
-							<div class="col">
-								<p id="">Second order derivatives and rates of change [9.9-10]</p>
-							</div>
-							<div class="col">
-								<p id="">Algebra: partial fractions [1] incl. binomial exp but no integration</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Consolidation</p>
-							</div>
-							<div class="col">
-								<p id="">Consolidation</p>
-							</div>
-							<div class="col">
-								<p id="">Consolidation</p>
-							</div>
-						</div>
+			<div class="col-1 sidebar" id="sidebar-right">
+				<h6>Useful links</h6>
+				<ul>
+					<li>
+						Coming soon
 					</li>
-				</ul>
-
-
-				<div id="spring"></div>
-				<h1 class="text-center">Spring Term</h1>
-				<ul class="list-group-flush">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col">
-								<p id="complexNumbers"><a>Complex numbers</a> (CP1 ch1)</p>
-							</div>
-							<div class="col">
-								<p id="">Vectors (App 10.1-4), Use (11), [12] for pure vectors homework</p>
-							</div>
-							<div class="col">
-								<p id="">Stats</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Complex numbers</p>
-							</div>
-							<div class="col">
-								<p id="">Vectors, suvat, travel graphs</p>
-							</div>
-							<div class="col">
-								<p id="">Stats measures of spread, coding (App 2)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Complex numbers (CP1 ch5)</p>
-							</div>
-							<div class="col">
-								<p id="">Freefall, projectiles [6]</p>
-							</div>
-							<div class="col">
-								<p id="">Sampling, representation (App 1, 3)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="integrationAdvanced"><a>Integration</a> by partial fractions, substitution [11.5, 11.7]</p>
-							</div>
-							<div class="col">
-								<p id="">Projectiles [6]</p>
-							</div>
-							<div class="col">
-								<p id="">Regression, conditional probability (app 4, 5)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Integration by substitution including trigonometry [11.5]</p>
-							</div>
-							<div class="col">
-								<p id="">Forces horizontal and vertical, including pulleys (10.5-6)</p>
-							</div>
-							<div class="col">
-								<p id="">Discrete distributions (app 6)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Integration by parts [11.6] parametric [not in book]</p>
-							</div>
-							<div class="col">
-								<p id="">Resolving forces including friction [7]</p>
-							</div>
-							<div class="col">
-								<p id="">Hypothesis testing (app 7)</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="volumeRevolution"><a>Volumes of revolution</a></p>
-							</div>
-							<div class="col">
-								<p id="">Resolving forces incl. friction, slopes [7]</p>
-							</div>
-							<div class="col">
-								<p id="">Regresion [app 1]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="differentialEquations"><a>Differential equations [11.10-11]</a></p>
-							</div>
-							<div class="col">
-								<p id="">Applications of forces, equilibrium, connected particles, slopes [7]</p>
-							</div>
-							<div class="col">
-								<p id="">Conditional probability (Bayes'), normal distribution [app 2, 3]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="vectors"><a>Vectors</a> - scalar product, line equation, cross product (CP1 ch7)</p>
-							</div>
-							<div class="col">
-								<p id="">Variable acceleration (9) [8]</p>
-							</div>
-							<div class="col">
-								<p id="">Normal approximation to Binomial [3.1-6]</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Vectors</p>
-							</div>
-							<div class="col">
-								<p id="">Moments [4]</p>
-							</div>
-							<div class="col">
-								<p id="">Hypothethis testing with normal (not incl CLT)</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-
-
-				<div id="summer"></div>
-				<h1 class="text-center">Summer Term</h1>
-				<ul class="list-group-flush">
-					<li class="list-group-item">
-						<div class="row">
-							<div class="col">
-								<p id="matrices"><a>Matrices</a> (multiplication) (CP1 ch2)</p>
-							</div>
-							<div class="col">
-								<p id="">Consolidation</p>
-							</div>
-							<div class="col">
-								<p id="">Consolidation</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="">Matrix transformations (CP1 ch2)</p>
-							</div>
-							<div class="col">
-								<p id="">Induction (CP1 ch4)</p>
-							</div>
-							<div class="col">
-								<p id="">Consolidation</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<p id="matricesAdvanced"><a>After exams: Matrices</a> (CP1 ch6)</p>
-							</div>
-							<div class="col">
-								<p id="">After exams: roots and coefficients of polynomials, up to quartics</p>
-							</div>
-							<div class="col">
-								<p id="">Sum and series, method of differences [CP2]</p>
-							</div>
-						</div>
+					<li>
+						<a href="#" id="dfm">
+							e.g.dr frost maths
+						</a>
 					</li>
 				</ul>
 			</div>
+		</div>
 
 
 
-		<footer>
+		<div class="footer">
 			
-		</footer>
-		<!--jQuery-->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-			crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-			crossorigin="anonymous"></script>
-		<script src="/scripts.js"></script>
-
-		<!-- Below - modal pop ups -->
-		<!-- Transforming graphs and sketching -->
-		<div class="modal fade" id="modalTransformingGraphs" tabindex="-1" role="dialog" aria-labelledby="transformingGraphsTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="transformingGraphsTitle">Transforming Graphs and Sketching</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand and use graphs of functions; sketch curves defined by simple equations including polynomials
-							</div>
-							<div class="col">
-								Graph to include simple cubic and quartic functions, e.g. sketch the graph with equation \(y=x^2(2x-1)^2\) 
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								\(y = \dfrac{a}{x}\) and \(y = \dfrac{a}{x^2}\) (including their horizontal and vertical asymptotes)
-							</div>
-							<div class="col">
-								The asymptotes will be parallel to the axes e.g. the asymptotes of the curve with equation \(y = \dfrac{2}{x+a}+b\) are the lines \(y=b\) and \(x=-a\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and use inverse functions and their graphs
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand the effect of simple transformations on the graph of \(y = f(x)\), including sketching associated graphs:
-								<br>
-								\(y = af(x)\), \(y = f(x) + a\), \(y = f(x + a)\), \(y = f(ax)\) and combinations of these transformations
-							</div>
-							<div class="col">
-								 Students should be able to apply a combination of these transformations to any of the functions in the A Level specification and sketch the resulting graph.
-								 <br>
-								 Given the graph of \(y=f(x)\), students should be able to sketch the graph of e.g. \(y=2f(3x)\) or \(y=f(-x)+1\), and should be able to sketch e.g. \(y=3+\sin 2x\), \(y=-\cos\left(x+\dfrac{\pi}{4}\right)\)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
 		</div>
+		<!--Script to change content in main div to clicked topic-->
 		<script>
-			$( "#transformingGraphs" ).click(function() {
-				$('#modalTransformingGraphs').modal("toggle");
+			$("#sidebar-left li").click(function() {
+				$('.sidebar-active').removeClass('sidebar-active');
+				$(this).addClass('sidebar-active');
+				$('.active-topic').removeClass('active-topic');
+				$('div#' + $(this).attr('id')).addClass('active-topic');
 			});
 		</script>
-
-		<!-- Trigonometric functions -->
-		<div class="modal fade" id="modalTrigonometricFunctions" tabindex="-1" role="dialog" aria-labelledby="trigonometricFunctionsTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigonometricFunctionsTitle">Trigonometric Functions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand and use the definitions of sine, cosine and tangent for all arguments
-							</div>
-							<div class="col">
-								Use of \(x\) and \(y\) coordinates of points on the unit circle to give cosine and sine respectively
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and use the sine, cosine and tangent functions; their graphs, symmetries and periodicity.
-							</div>
-							<div class="col">
-								Knowledge of graphs of curves with equations such as \(y=\sin x\), \(y=\cos(x+30^{\circ})\), \(y=\tan 2x\) is expected
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Know and use exact values of \(\sin\), \(\cos\) and \(\tan\) for \(0, \dfrac{\pi}{6}, \dfrac{\pi}{4}, \dfrac{\pi}{3}, \dfrac{\pi}{2}, \pi\) and multiples thereof
-							</div>
-							<div class="col">
-								
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and use \(\tan\theta = \dfrac{\sin\theta}{\cos\theta}\)
-								<br>
-								Understand and use \(\sin^2\theta + \cos^2\theta = 1\)
-							</div>
-							<div class="col">
-								These identities may be used to solve trigonometric equations (and angles may be in degrees or radians). They may also be used to prove further identities
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Solve simple trigonometric equations in a given interval, including quadratic equations in \(\sin, \cos\) and \(\tan\) and equations involving multiples of the unknown angle
-							</div>
-							<div class="col">
-								Students should be able to solve equations such as
-								<br>
-								\(\sin(x+70^{\circ}) = 0.5\) for \(0 < x < 360^{\circ}\)
-								<br>
-								\(3+5\cos2x=1\) for \(-180^{\circ} < x < 180^{\circ}\)
-								<br>
-								\(6\cos^2x+\sin x -5 = 0\) for \(0 \leq x \leq 180^{\circ}\)
-								<br>
-								These may be in degrees or radians and this will be specified in the question
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Construct proofs involving trigonometric functions and identities
-							</div>
-							<div class="col">
-								Students need to prove identites such as \(\cos x\cos2x + \sin x\sin2x\equiv\cos x\)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!--Script to change sidebar lists-->
 		<script>
-			$( "#trigonometricFunctions" ).click(function() {
-				$('#modalTrigonometricFunctions').modal("toggle");
-			});
-		</script>
-
-		<!-- Radians -->
-		<div class="modal fade" id="modalRadians" tabindex="-1" role="dialog" aria-labelledby="radiansTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="radiansTitle">Radians</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Work with radian measure, including use for arc length and area of sector
-							</div>
-							<div class="col">
-								Use of the formulae \(s=r\theta\) and \(A = \dfrac{1}{2}r^2\theta\) for arc lengths and areas of sectors of a circle
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and use the standard small angle approximations of sine, cosine and tangent
-								<br>
-								\(\sin\theta\approx\theta\), \(\cos\theta\approx 1-\dfrac{\theta^2}{2}\), \(\tan\theta\approx\theta\)
-								<br>
-								where \(\theta\) is in radians
-							</div>
-							<div class="col">
-								Students should be able to approximate e.g. \(\dfrac{\cos 3x-1}{x\sin4x}\) when \(x\) is small to \(-\dfrac{9}{8}\)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#radians" ).click(function() {
-				$('#modalRadians').modal("toggle");
-			});
-		</script>
-
-		<!-- Modulus -->
-		<div class="modal fade" id="modalModulus" tabindex="-1" role="dialog" aria-labelledby="modulusTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="modulusTitle">Modulus, functions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-3">
-								The modulus of a linear function
-							</div>
-							<div class="col">
-								Students should be able to sketch the graphs of \(y=|ax+b|\)
-								<br>
-								They should be able to use their graph e.g. sketch the graph with equation \(y=|2x-1|\) and use the graph to solve the equation \(|2x-1| = x\) or the inequality \(|2x-1| > x\)
-
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col-3">
-								Understand and use composite functions
-							</div>
-							<div class="col">
-								The concept of a function as a one-one or many-one mapping from \(\mathbb{R}\) (or a subset of \(\mathbb{R}\)) to \(\mathbb{R}\). The notation \(f(x)\) and \(f : x \mapsto\) will be used. Domain and range of functions.
-								<br>
-								Students should know that fg will mean 'do g first, then f' and that if \(f^{-1}\) exists, then \(f^{-1}f(x) = ff^{-1}(x) = x\)
-								<br>
-								They should also know that the graph of \(y=f^{-1}(x)\) is the image of the graph of \(y=f(x)\) after reflection in the line \(y=x\)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#modulus" ).click(function() {
-				$('#modalModulus').modal("toggle");
-			});
-		</script>
-
-		<!-- Trig Reciprocal -->
-		<div class="modal fade" id="modalTrigReciprocal" tabindex="-1" role="dialog" aria-labelledby="trigReciprocalTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigReciprocalTitle">Reciprocal trigonometric functions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-9">
-								Understand and use the definitions of secant, cosecant and cotangent and of arcsin, arccos and arctan; their relationships to sine, cosine and tangent; understanding of their graphs; their ranges and domains
-							</div>
-							<div class="col">
-								Angles measured in both degrees and radians
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigReciprocal" ).click(function() {
-				$('#modalTrigReciprocal').modal("toggle");
-			});
-		</script>
-
-		<!-- Trig Addition -->
-		<div class="modal fade" id="modalTrigAddition" tabindex="-1" role="dialog" aria-labelledby="trigAdditionTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigAdditionTitle">Addition Formulae</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand and use double angle formulae; use of formulae for \(\sin (A\pm B)\), \(\cos (A\pm B)\),and \(\tan (A\pm B)\)
-								<br>
-								understand geometrical proofs of these formulae
-							</div>
-							<div class="col">
-								To include application to half angles
-								<br>
-								Knowledge of the \(\tan(\frac{1}{2}\theta)\) formulae will not be required
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigAddition" ).click(function() {
-				$('#modalTrigAddition').modal("toggle");
-			});
-		</script>
-
-		<!-- Trig Polar -->
-		<div class="modal fade" id="modalTrigPolar" tabindex="-1" role="dialog" aria-labelledby="trigPolarTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trigPolarTitle">Polar Trigonometry</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand and use expressions for \(a\cos\theta + b\sin\theta\) in the equivalent forms of \(r\cos (\theta\pm\alpha)\) or \(r \sin (\theta\pm\alpha)\)
-							</div>
-							<div class="col">
-								Students should be able to solve equations such as \(a\cos\theta +b\sin\theta = c\) in a given interval
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trigPolar" ).click(function() {
-				$('#modalTrigPolar').modal("toggle");
-			});
-		</script>
-
-		<!-- Trapezium Rule -->
-		<div class="modal fade" id="modalTrapeziumRule" tabindex="-1" role="dialog" aria-labelledby="trapeziumRuleTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="trapeziumRuleTitle">Trapezium Rule</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-5">
-								Understand and use numerical integration of functions, including the use of the trapezium rule and estimating the approximate area under a curve and limits that it must lie between
-							</div>
-							<div class="col">
-								For example, evaluate \(\displaystyle\int_0^1\sqrt{2x+1}\ \mathrm{d}x\) using the values of \(\sqrt{2x+1}\) at \(x=0,0.25,0.5,0.75,1\) and use a sketch on a given graph to determine whether the trapezium rule gives an over-estimate or and under-estimate.
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#trapeziumRule" ).click(function() {
-				$('#modalTrapeziumRule').modal("toggle");
-			});
-		</script>
-
-		<!-- Iteration -->
-		<div class="modal fade" id="modalIteration" tabindex="-1" role="dialog" aria-labelledby="iterationTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="iterationTitle">Iteration</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-5">
-								Locate roots of \(f(x) = 0\) by considering changes of sign of \(f(x)\) in an interval of \(x\) on which \(f(x)\) is sufficiently well behaved
-							</div>
-							<div class="col">
-								Students should know that sign change is appropriate for continuous functions in a small interval
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col-5">
-								Understand how change of sign methods can fail
-							</div>
-							<div class="col">
-								When the interval is too large sign may not change as there may be an even number of roots.
-								<br>
-								If the function is not continuous, sing may change but there may be an asymptote (not a root)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col-5">
-								Solve equations approximately using simple iterative methods; be able to draw associated cobweb and staircase diagrams
-							</div>
-							<div class="col">
-								Understand that many mathematical problems cannot be solved analytically, but numerical methods permit solution to a required level of accuracy.
-								<br>
-								Use an iteration of the form \(x_{n+1}=f(x_n)\) to find a root of the equation \(x=f(x)\) and show understanding of the convergence in geometrical terms by drawing cobweb and staircase diagrams
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#iteration" ).click(function() {
-				$('#modalIteration').modal("toggle");
-			});
-		</script>
-
-		<!-- Newton Raphson -->
-		<div class="modal fade" id="modalNewtonRaphson" tabindex="-1" role="dialog" aria-labelledby="newtonRaphsonTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="newtonRaphsonTitle">Newton Raphson</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Solve equations using the Newton-Raphson method and other recurrence relations of the form \(x_{n+1}=g(x_n)\)
-								<br>
-								Understand how such methods can fail
-							</div>
-							<div class="col">
-								For the Newton-Raphson method, students should understand its working in geometrical terms, so that they understand its failure near to points where the gradient is small
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#newtonRaphson" ).click(function() {
-				$('#modalNewtonRaphson').modal("toggle");
-			});
-		</script>
-
-		<!-- Complex Numbers -->
-		<div class="modal fade" id="modalComplexNumbers" tabindex="-1" role="dialog" aria-labelledby="complexNumbersTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="complexNumbersTitle">Complex Numbers</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand the language of complex numbers
-							</div>
-							<div class="col">
-								Know the meaning of "real part", "imaginary part", "conjugate", "modulus", and "argument" of a complex number
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to express a complex number \(z\) in either cartesian form \(z=x+iy\) where \(i^2=-1\) or modulus-argument form \(z=r(\cos\theta + i\sin\theta) = [r,\theta] = r\cis\theta\), where \(r\geq 0\) is the modulus of \(z\) and \(\theta\), measured in radians, is the argument of  \(z\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and be able to use the notation \(z, z^*, \mathrm{Re}(z), \mathrm{Im}(z), \mathrm{arg}(z), |z|\)
-							</div>
-							<div class="col">
-								Includes knowing that a complex number is zero if and only if both the real and imaginary parts are zero.
-								<br>
-								The principal argument of a complex number, for uniqueness, will be taken to lie in either of the intervals \([0,2\pi)\) or \((-\pi,\pi]\). Learners may use either as appropriate unless the interval is specified.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to carry out basic arithmetic operations \((+,-,\times,\div)\) on complex numbers in both cartesian and modulus-argument forms.
-							</div>
-							<div class="col">
-								Learners may use the results \(z_1z_2 = [r_1r_2,\theta_1+\theta_2]\) and \(\dfrac{z_1}{z_2} = \left[\dfrac{r_1}{r_2},\theta_1-\theta_2\right]\)
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								Convert between cartesian and modulus-argument forms.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to use and interpret Argand diagrams.
-							</div>
-							<div class="col">
-								e.g. to represent and interpret complex numbers geometrically
-								<br>
-								Understand and use the terms "real axis" and "imaginary axis"
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand the geometrical effects of taking the conjugate of a complex number, and adding and subtracting two complex numbers.
-								<br>
-								Understand the geometrical effects of multiplying and dividing two complex numbers
-							</div>
-							<div class="col">
-								Includes raising complex numbers to positive integer powers
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to illustrate equations and inequalities involving complex numbers by means of loci in an Argand diagram
-								<br>
-								i.e. circle of the form \(|z-a| = k\), half lines of the form \(\mathrm{arg}(z-a) = b\), lines of the form \(\mathrm{Re}(z) = k\), \(\mathrm{Im}(z) = k\) and \(|z-a|=|z-b|\), and regions defined by inequalities in these forms
-							</div>
-							<div class="col">
-								To include the convention of dashed and solid lines to show exclusion and inclusion respectively
-								<br>
-								No shading convention will be assumed. If not directed, learners should indicate clearly which regions are included.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and be able to use set notation in the context of loci
-							</div>
-							<div class="col">
-								e.g. the region \(|z-a| > k\) where \(z = x+iy\), \(a = x_a + iy_a\) and \(k > 0 \) may be represented by the set \({x + iy: (x-x_a)^2 + (y-y_a)^2 > k^2}\)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#complexNumbers" ).click(function() {
-				$('#modalComplexNumbers').modal("toggle");
-			});
-		</script>
-
-		<!-- Advanced Integration -->
-		<div class="modal fade" id="modalIntegrationAdvanced" tabindex="-1" role="dialog" aria-labelledby="integrationAdvancedTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="integrationAdvancedTitle">Integration</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Carry out simple cases of integration by substitution and integration by parts; understand these methods as the inverse processes of the chain and product rules respectively
-							</div>
-							<div class="col">
-								Students should recognise integrations of the form \(\displaystyle\int\dfrac{f'(x)}{f(x)}\ \mathrm{d}x = \ln f(x) + c\)
-								<br>
-								The integral \(\int\ln x\  \mathrm{d}x\) is required
-								<br>
-								Integration by substitution includes finding a suitable substitution and is limited to cases where one substitution will lead to a function which can be integrated; integration by parts includes more than one application of the method but excludes reduction formulae
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Integrate using partial fractions that are linear in the denominator (NB: Further maths: denominator may include quadratic factors of the form \(ax^2+c\) for \(c > 0\), and the degree of the numerator may be equal to, or exceed, the degree of the denominator)
-							</div>
-							<div class="col">
-								Integration of rational expressions such as those arising from partial fractions e.g. \(\dfrac{2}{3x+5}\)
-								<br>
-								Note that integration of other rational expressions, such as \(\dfrac{x}{x^2+5}\) and \(\dfrac{2}{2x-1)^4}\) is also required (see above)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#integrationAdvanced" ).click(function() {
-				$('#modalIntegrationAdvanced').modal("toggle");
-			});
-		</script>
-
-		<!-- Volume of Revolution -->
-		<div class="modal fade" id="modalVolumeRevolution" tabindex="-1" role="dialog" aria-labelledby="volumeRevolutionTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="volumeRevolutionTitle">Volumes of Revolution</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Be able to derive formulae for and calculate volume of solids of revolution
-							</div>
-							<div class="col">
-								To include solids generated using either coordinate axis as the axis of rotation, and the volume of a solid formed by rotation of a region between two curves. This includes curves defined parametrically.
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#volumeRevolution" ).click(function() {
-				$('#modalVolumeRevolution').modal("toggle");
-			});
-		</script>
-
-		<!-- Differential Equations -->
-		<div class="modal fade" id="modalDifferentialEquations" tabindex="-1" role="dialog" aria-labelledby="differentialEquationsTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="differentialEquationsTitle">Differential Equations</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Evaluate the analytical solution of simple first order differential equations with separable variables, including finding particular solutions
-								<br>
-								Separation of variables may require factorisation involving a common factor
-							</div>
-							<div class="col">
-								Students may be asked to sketch members of the family of solution curves
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#differentialEquations" ).click(function() {
-				$('#modalDifferentialEquations').modal("toggle");
-			});
-		</script>
-
-		<!-- Vectors -->
-		<div class="modal fade" id="modalVectors" tabindex="-1" role="dialog" aria-labelledby="vectorsTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="vectorsTitle">Vectors</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand and be able to use the equation of a straight line in 2D and 3D, cartesian and vector form
-								<br>
-								includes being able to convert from one form to another
-							</div>
-							<div class="col">
-								Learners should know and be able to use the forms:
-								<br>
-								\(y = mx + c\), \(ax+by=c\) and \(\mathrm{\textbf{r}} = \mathrm{\textbf{a}} + \lambda\mathrm{\textbf{b}}\) in 2D;
-								<br>
-								\(\dfrac{x-a_1}{u_1} = \dfrac{y-a_2}{u_2} = \dfrac{z-a_3}{u_3} (=\lambda)\) and \(\mathrm{\textbf{r}} = \mathrm{\textbf{a}} + \lambda\mathrm{\textbf{b}}\) in 3D
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to find, where it exists, the point of intersection between two lines
-							</div>
-							<div class="col">
-								Includes determining whether or not lines intersect, are parallel, or are skew
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to calculate the scalar product and use it both to calculate the angles between vectors and/or lines, and also as a test for perpendicularity
-							</div>
-							<div class="col">
-								Includes the notation \(\mathrm{\textbf{a}}.\mathrm{\textbf{b}}\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to use the vector product to find a vector perpendicular to two given vectors
-							</div>
-							<div class="col">
-								Either a calculator or a formula (given) may be used.
-								<br>
-								Includes the notation \(\mathrm{\textbf{a}}\times\mathrm{\textbf{b}}\)
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#vectors" ).click(function() {
-				$('#modalVectors').modal("toggle");
-			});
-		</script>
-
-		<!-- Matrices -->
-		<div class="modal fade" id="modalMatrices" tabindex="-1" role="dialog" aria-labelledby="matricesTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="matricesTitle">Matrices</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Understand the language of matrices
-							</div>
-							<div class="col">
-								Understand the meaning of "conformable", "equal", "square", "rectangular", "m by n", "determinant", "zero" and "null", "transpose", and "identity" when applied to matrices.
-								<br>
-								Learners should be familiar with real matrices and complex matrices.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to add, subtract and multiply conformable matrices; multiply a matrix by a scalar
-							</div>
-							<div class="col">
-								Learners may perform any operations involving entirely numerical matrices by a calculator.
-								<br>
-								Includes raising square matrices to positive integer powers.
-								<br>
-								Learners should understand the effects on a matrix of adding the zero matrix to it, multiplying it by the zero matrix and multiplying it by the identity matrix.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand that matrix multiplication is associative but not commutative
-							</div>
-							<div class="col">
-								Understand the terms "associative" and "commutative"
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to find and use matrices to represent linear transformations in 2D
-							</div>
-							<div class="col">
-								Includes: reflection in either coordinate axis and the lines \(y=\pm x\); rotation about the origin by angle \(\theta\) anticlockwise; enlargement centre the origin (defined by the scale factor); stretch parallel to either coordinate axis (defined by the invariant axis and a scale factor); shear parallel to either coordinate axis (defined by the invariant axis and the image of a transformed point)
-								<br>
-								Includes the terms "object" and "image"
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to find and use matrices to represent successive transformations
-							</div>
-							<div class="col">
-								Includes undestanding and being able to use the result that the matrix product \(\mathrm{\textbf{AB}}\) represents the transformation that results from the transformation represented by \(\mathrm{\textbf{B}}\) followed by the transformation represented by \(\mathrm{\textbf{A}}\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to use matrices to represent single linear transformations in 3D
-							</div>
-							<div class="col">
-								Confined to reflection in one of the planes \(x=0\), \(y=0\), \(z=0\) or rotation about one of the coordinate axes. The direction of positive rotation is taken to be anticlockwise when looking towards the origin from the positive side of the axis of rotation.
-								<br>
-								Includes the terms "plane of reflection" and "axis of rotation"
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to find invariant points and lines for a linear transformation
-							</div>
-							<div class="col">
-								Includes the distinction between invariant lines and lines of invariant points [the 3D transformations are excluded]
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#matrices" ).click(function() {
-				$('#modalMatrices').modal("toggle");
-			});
-		</script>
-
-		<!-- Matrices Advanced -->
-		<div class="modal fade" id="modalMatricesAdvanced" tabindex="-1" role="dialog" aria-labelledby="matricesAdvancedTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-					<h5 class="modal-title" id="matricesAdvancedTitle">Matrices 2</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">
-								Be able to find the determinant of a \(2\times2\) matrix with and without a calculator
-							</div>
-							<div class="col">
-								Use and understand the notation  \(\begin{vmatrix}a&b\\c&d\end{vmatrix}\) or \(|\mathrm{\textbf{M}}|\) or \(\mathrm{det}\ \mathrm{\textbf{M}}\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Know that the determinant of a \(2 \times 2\) matrix is the area scale factor of the transformation defined by that matrix, including the effect on the orientation of the image.
-							</div>
-							<div class="col">
-								Learners should know that a transformation preserves the orientation of the object if the determinant of the matrix which represents it is positive and that the transformation reverses orientation if the determinant is negative, and be able to interpret this geometrically.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to calculate the determinant of a \(3\times3\) matrix with and without a calculator
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Know that the determinant of a \(3 \times 3\) matrix is the volume scale factor of the transformation defined by that matrix, including the effect on the preservation of the orientation of the image.
-							</div>
-							<div class="col">
-								Learners should know that the sign of the determinant determines whether or not the corresponding transformation preserves orientation, but do not need to understand the geometric interpretation of this in 3D.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and be able to use singular and non-singular matrices.
-							</div>
-							<div class="col">
-								Includes understanding the significance of a zero determinant.
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Know and be able to use the result that \(\mathrm{det}\ (\mathrm{\textbf{AB}}) = \mathrm{det} (\mathrm{\textbf{A}}) \times \mathrm{det}\ (\mathrm{\textbf{B}})\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to find and use the inverse of a non singular \(2 \times 2\) or \(3 \times 3\) matrix with and without a calculator
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and be able to use simple properties of inverse matrices e.g. \((\mathrm{\textbf{AB}})^{-1} = \mathrm{\textbf{B}}^{-1}\mathrm{\textbf{A}}^{-1}\)
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Understand and be able to use the connection between inverse matrices and inverse transformations
-							</div>
-						</div>
-						<hr>
-						<div class="row">
-							<div class="col">
-								Be able to solve two or three linear simultaneous equations in two or three variables by the use of an inverse matrix, where a unique solution exists
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			$( "#matricesAdvanced" ).click(function() {
-				$('#modalMatricesAdvanced').modal("toggle");
+			$(".pageheader a").click(function() {
+				$('.navbar-active').removeClass('navbar-active');
+				$('.sidebar-visible').removeClass('sidebar-visible');
+				$('ul.' + $(this).attr('class')).addClass('sidebar-visible');
+				$(this).addClass('navbar-active');
 			});
 		</script>
 	</body>
+
 </html>

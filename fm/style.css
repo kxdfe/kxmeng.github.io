@@ -16,7 +16,7 @@ body {
 	width: 100%;
 	height: 30px; /* Set the fixed height of the footer here */
 	line-height: 30px; /* Vertically center the text there */
-	background-color: #6494aa;
+	background-color: #2b2d42;
 }
 
 .pageheader {
@@ -25,7 +25,7 @@ body {
 	width: 100%;
 	height: 50px; /* Set the fixed height of the footer here */
 	line-height: 50px; /* Vertically center the text there */
-	background-color: #6494aa;
+	background-color: #2b2d42;
 	font-family: 'Merienda';
 	padding-left: 20px;
 	color: white;
@@ -40,7 +40,7 @@ body {
 }
 
 .pageheader a.navbar-active {
-	background-color: #2f4a57;
+	background-color: #151621;
 }
 
 .sidebar ul {
@@ -56,7 +56,7 @@ body {
 }
 
 .sidebar li.sidebar-active {
-	background-color: #6494aa !important;
+	background-color: #2b2d42 !important;
 }
 
 .sidebar {
@@ -73,7 +73,7 @@ body {
 }
 
 #sidebar-left {
-	border-right: 1px solid #6494aa;
+	border-right: 1px solid #2b2d42;
 }
 
 #sidebar-left ul {
@@ -87,16 +87,16 @@ body {
 }
 
 #sidebar-left li:hover {
-	background: #b1c9d4;
+	background: #8589af;
 	transition: background ease 0.2s;
 }
 
 #sidebar-right {
-	border-left: 1px solid #6494aa;
+	border-left: 1px solid #2b2d42;
 }
 
 #sidebar-right a {
-	color: #6494aa;
+	color: #2b2d42;
 }
 
 #maincontent {
