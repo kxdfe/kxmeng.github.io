@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>A Level Maths</title>
+		<!--jQuery-->
+		<script src="../jquery.js"></script>
+		<!--page scripts-->
+		<script src="./script.js"></script>
+		<title>A Level</title>
 		<!--MathJax Config-->
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
@@ -10,253 +14,136 @@
 			});
 		</script>
 		<!--MathJax-->
-		<script type="text/javascript" async
-			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-		</script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="/style.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<!--Bootstrap css-->
+		<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+		<!--Style sheets-->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Caudex&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Simonetta&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4 al">
-				<a class="navbar-brand" href="#">A Level Maths</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/y8" style="font-family: 'Merienda';">Y8</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/4th" style="font-family: 'Merienda';">4th</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/l5" style="font-family: 'Caudex';">L5</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="/al" style="font-family: 'Cormorant Garamond';">AL <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/fm" style="font-family: 'Cormorant Garamond';">FM</a>
-						</li>
+		<div class="pageheader">
+			A Level Maths
+			<a href="#" class="stats navbar-active">Stats</a>
+			<a href="#" class="pure">Pure</a>
+		</div>
+
+		<div id="main" class="container-fluid row">
+			<div class="col-2 sidebar" id="sidebar-left">
+				<h6>Autumn term</h6>
+				<ul class="stats sidebar-visible">
+					<li id="surds">Surds and indices</li>
+					<li id="">Quadratics</li>
+					<li id="">Differentiation</li>
+					<li id="">Graph Sketching</li>
+					<li id="">Transformations</li>
+					<li id="">Differentiation (applications)</li>
+					<li id="">Exponentials, logarithms</li>
+					<li id="">Integration of polynomials</li>
+				</ul>
+				<ul class="pure">
+					<li id="">Coordinate geometry</li>
+					<li id="">Circles</li>
+					<li id="">Quadratic inequalities</li>
+					<li id="">Simultaneous equations</li>
+					<li id="">Binomial expansion</li>
+					<li id="">Trigonometric equations</li>
+					<li id="">Transformations of trig graphs</li>
+					<li id="">Factor theorem, algebraic division</li>
+				</ul>
+				<hr>
+				<h6>Spring term</h6>
+				<ul class="stats sidebar-visible">
+					<li id="">Integration and areas</li>
+					<li id="">Measures of location, spread</li>
+					<li id="">Sampling, representation</li>
+					<li id="">Regression, probability</li>
+					<li id="">Discrete distributions</li>
+					<li id="">Hypothesis testing</li>
+					<li id="">Differentiation of e and ln</li>
+				</ul>
+				<ul class="pure">
+					<li id="">Log graphs</li>
+					<li id="">Functions</li>
+					<li id="">Radians</li>
+					<li id="">Reciprocal, inverse trig</li>
+					<li id="">Compound, double angle</li>
+					<li id="">\(r\cos(\theta+\alpha)\)</li>
+					<li id="">Sequences and series</li>
+				</ul>
+				<hr>
+				<h6>Summer term</h6>
+				<ul class="stats sidebar-visible">
+					<li id="">Chain, product, quotient rules</li>
+					<li id="">Modelling questions</li>
+				</ul>
+				<ul class="pure">
+					<li id="">Sequences and series</li>
+				</ul>
+				<hr>
+				<h6>After exams</h6>
+				<ul class="stats sidebar-visible">
+					<li id="">Proof</li>
+				</ul>
+				<ul class="pure">
+					<li id="">Trig differentiation</li>
+				</ul>
+			</div>
+
+			<div class="col-9" id="maincontent">
+				<div class="topics" id="transformations">
+					<h2>Transformations</h2>
+					<ul>
+						<li>Describe and carry out translations (including with vectors), reflections (equations for mirror lines), and rotations. Tracing paper may be used</li>
+						<li>Describe and carry out enlargements using positive integer, negative and fractional scale factors</li>
+						<li>Transform 2D shapes using a combination of transformations</li>
 					</ul>
 				</div>
-			</nav>
-			<nav class="navbar navbar-expand-lg navbar-dark mb-4 fixed-top al">
-				<a class="navbar-brand" href="#">A Level Maths</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse flex-md-column" id="navbarNavAltMarkup">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/y8" style="font-family: 'Merienda';">Y8</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/4th" style="font-family: 'Merienda';">4th</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/l5" style="font-family: 'Caudex';">L5</a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="/al" style="font-family: 'Cormorant Garamond';">AL <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/fm" style="font-family: 'Cormorant Garamond';">FM</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+			</div>
 
-		<div id="main" class="container-fluid" style="font-family: 'Cormorant Garamond';">
-			<div class="row">
-				<div class="col-2">
-					<nav class="bg-white sidebar al-sidebar">
-						<div class="sidebar-sticky">
-							<h6>Autumn term</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="surds">
-										Surds and indices
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="quadratics">
-										Quadratics
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="differentiation">
-										Differentiation
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="sketching">
-										Graph sketching
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="transformations">
-										Transformations
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="differentiationapp">
-										Differentiation: applications
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="exponentials">
-										Exponentials, logarithms
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="integration">
-										Integration
-									</a>
-								</li>
-							</ul>
-							<hr style="margin-left: 10%; margin-right: 10%;">
-							<h6>Spring term</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="areas">
-										Integration: areas
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="location">
-										Stats: location, spread
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="sampling">
-										Stats: sampling, representation
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="regression">
-										Stats: regression, probability
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="discrete">
-										Stats: discrete distributions
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="discrete">
-										Stats: hypothesis tests
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="differentiationexp">
-										Differentiation: e, ln
-									</a>
-								</li>
-							</ul>
-							<hr style="margin-left: 10%; margin-right: 10%;">
-							<h6>Summer term</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="graphical">
-										Graphical solutions
-									</a>
-								</li>
-							</ul>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="differentiationchain">
-										Differentiation: chain, product, quotient
-									</a>
-								</li>
-							</ul>
-							<hr style="margin-left: 10%; margin-right: 10%;">
-							<h6>After exams</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="proof">
-										Proof
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-
-				<div class="col-8">
-					<main role="main">
-						<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-							<div id="content"><h2>Syllabus points</h2></div>
-						</div>
-					</main>
-				</div>
-
-				<div class="col-2">
-					<nav class="bg-white sidebar-right al-sidebar-right">
-						<div class="sidebar-sticky">
-							<h6>Useful links</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#" id="dfm">
-										coming soon e.g. dr frost maths
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
+			<div class="col-1 sidebar" id="sidebar-right">
+				<h6>Useful links</h6>
+				<ul>
+					<li>
+						Coming soon
+					</li>
+					<li>
+						<a href="#" id="dfm">
+							e.g.dr frost maths
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
 
 
-		<footer class="page-footer fixed-bottom al">
-			<div class="footer-copyright text-center py-3"></div>
-		</footer>
-		<!--jQuery-->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-			crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-			crossorigin="anonymous"></script>
-		<script src="script.js"></script>
+		<div class="footer">
+			
+		</div>
+		<!--Script to change content in main div to clicked topic-->
+		<script>
+			$("#sidebar-left li").click(function() {
+				$('.sidebar-active').removeClass('sidebar-active');
+				$(this).addClass('sidebar-active');
+				$('.active-topic').removeClass('active-topic');
+				$('div#' + $(this).attr('id')).addClass('active-topic');
+			});
+		</script>
+		<!--Script to change sidebar lists-->
+		<script>
+			$(".pageheader a").click(function() {
+				$('.navbar-active').removeClass('navbar-active');
+				$('.sidebar-visible').removeClass('sidebar-visible');
+				$('ul.' + $(this).attr('class')).addClass('sidebar-visible');
+				$(this).addClass('navbar-active');
+			});
+		</script>
 	</body>
+
 </html>
