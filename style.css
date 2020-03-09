@@ -81,6 +81,10 @@ body {
 	padding-top: 20px;
 }
 
+#maincontent ul {
+	list-style-type: none;
+}
+
 .topics {
 	height: 0px;
 	overflow: hidden;
