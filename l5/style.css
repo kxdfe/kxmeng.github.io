@@ -45,6 +45,7 @@ body {
 
 .sidebar li.sidebar-active {
 	background-color: #a63d40 !important;
+	color: white;
 }
 
 .sidebar {

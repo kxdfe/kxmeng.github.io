@@ -29,8 +29,8 @@
 	<body>
 		<div class="pageheader">
 			A Level Maths
-			<a href="#" class="stats navbar-active">Stats (4/week)</a>
-			<a href="#" class="pure">Pure (3/week)</a>
+			<span class="stats navbar-active">Stats (SBM)</span>
+			<span class="pure">Pure (KXM)</span>
 		</div>
 
 		<div id="main" class="container-fluid row">
@@ -477,18 +477,10 @@
 		<div class="footer">
 			
 		</div>
-		<!--Script to change content in main div to clicked topic-->
-		<script>
-			$("#sidebar-left li").click(function() {
-				$('.sidebar-active').removeClass('sidebar-active');
-				$(this).addClass('sidebar-active');
-				$('.active-topic').removeClass('active-topic');
-				$('div#' + $(this).attr('id')).addClass('active-topic');
-			});
-		</script>
+		<script src="../scripts.js"></script>
 		<!--Script to change sidebar lists-->
 		<script>
-			$(".pageheader a").click(function() {
+			$(".pageheader span").click(function() {
 				$('.navbar-active').removeClass('navbar-active');
 				$('.sidebar-visible').removeClass('sidebar-visible');
 				$('ul.' + $(this).attr('class')).addClass('sidebar-visible');
