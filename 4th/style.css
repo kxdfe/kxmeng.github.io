@@ -91,3 +91,8 @@ body {
 	height: 100%;
 	transition: height ease 1s;
 }
+
+.learn a {
+	text-decoration: none;
+	color: #90a959;
+}
