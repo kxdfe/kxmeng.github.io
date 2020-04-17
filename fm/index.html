@@ -26,6 +26,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Caudex&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+		<style>
+			.matrixdefinitions {
+				color: #adb0ca;
+				cursor: pointer;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -106,7 +112,7 @@
 				<hr>
 				<h6>Summer term</h6>
 				<ul class="pure sidebar-visible">
-					<li id="matrices">Matrices</li>
+					<li id="matrices">Matrices 1</li>
 				</ul>
 				<ul class="mechanics">
 					<li id="induction">Induction</li>
@@ -116,6 +122,9 @@
 				</ul>
 				<hr>
 				<h6>After exams</h6>
+				<ul class="pure sidebar-visible">
+					<li id="matrices2">Matrices 2</li>
+				</ul>
 				<ul class="mechanics">
 					<li id="vieta">Vieta's formulae</li>
 				</ul>
@@ -350,12 +359,16 @@
 				<div class="topics" id="matrices">
 					<h2>Matrices</h2>
 					<ol>
-						<li>Understand the meaning of "conformable", "equal", "square", "rectangular", "m by n", "determinant", "zero" and "null", "transpose" and "identity" when applied to matrices</li>
+						<li>Understand the meaning of <b class="matrixdefinitions" id="conformable">conformable</b>, <b class="matrixdefinitions" id="equal">equal</b>, <b class="matrixdefinitions" id="square">square</b>, <b class="matrixdefinitions" id="rectangular">rectangular</b>, <b class="matrixdefinitions" id="mbyn">m by n</b>, <b class="matrixdefinitions" id="determinant">determinant</b>, <b class="matrixdefinitions" id="zero">zero</b> and <b class="matrixdefinitions" id="null">null</b>, <b class="matrixdefinitions" id="transpose">transpose</b> and <b class="matrixdefinitions" id="identity">identity</b> when applied to matrices
+							<ul>
+								<li>Definitions: <i><span id="matrixdefinitions">Click a word above to see definnitions</span></i></li>
+							</ul>
+						</li>
 						<li>Be able to add, subtract and multiply conformable matrices; multiply a matrix by a scalar</li>
 						<li>Understand that matrix multiplication is associative but not commutative</li>
-						<li>Be able to find and use matrices to represent linear transformations in 2D: reflections in either axis or the line \(y=\pm x\), rotation about the origin, enlargement centred at the origin, stretch or shear parallel to either axis</li>
+						<li>Be able to find and use matrices to represent linear transformations in 2D: reflections in either axis or the line \(y=\pm x\), rotation about the origin, enlargement centred at the origin, stretch or shear parallel to either axis. Understand the terms "object" and "image"</li>
 						<li>Be able to find and use matrices to represent successive transformations, including understanding that the matrix product AB is the transformation B followed by A</li>
-						<li>Be able to use matrices to represent single linear transformations in 3D</li>
+						<li>Be able to use matrices to represent single linear transformations in 3D, confined to: reflection in one of the planes \(x=0,\ y=0,\ z=0\) or rotation about one of the axes. The direction of positive rotation is taken to be anticlockwise when looking towards the origin from the positive side of the axis of rotation</li>
 						<li>Be able to find invariant points and lines for a linear transformation</li>
 					</ol>
 					<hr>
@@ -366,7 +379,27 @@
 						Videos: <a href="https://www.youtube.com/watch?v=kqWCwwyeE6k" class="video" target="_blank">Operations (4:40)</a>, <a href="https://www.youtube.com/watch?v=kYB8IZa5AuE" class="video" target="_blank">Transformations (10:58)</a>, <a href="https://www.youtube.com/watch?v=XkY2DOUCWMU" class="video" target="_blank">Multiple transformations (10:03)</a>, <a href="https://www.youtube.com/watch?v=rHLEWRxRGiM" class="video" target="_blank">3D Transformations (4:45)</a>
 					</div>
 					<div class="learn">
-						Bonus videos: <a href="https://www.youtube.com/watch?v=GxF2hDA9fxg" class="video" target="_blank">Calculator use (2:31)</a>, <a href="https://www.youtube.com/watch?v=OMA2Mwo0aZg" class="video" target="_blank">Alternative matrix multiplication method (5:28)</a>, <a href="https://www.youtube.com/watch?v=sYlOjyPyX3g" class="video" target="_blank">More examples of matrix multiplication (9:37)</a>
+						Bonus videos: <a href="https://www.youtube.com/watch?v=GxF2hDA9fxg" class="video" target="_blank">Calculator use (2:31)</a>, <a href="https://www.youtube.com/watch?v=OMA2Mwo0aZg" class="video" target="_blank">Matrix multiplication method 3 (5:28)</a>, <a href="https://www.youtube.com/watch?v=sYlOjyPyX3g" class="video" target="_blank">Matrix multiplication method 3 examples (9:37)</a>
+					</div>
+				</div>
+				<div class="topics" id="matrices2">
+					<h2>Matrices</h2>
+					<ol>
+						<li>Be able to find the determinant of a \(2\times 2\) or \(3\times3\) matrix with and without a calculator (including notation)</li>
+						<li>Know that the determinant of a \(2\times 2\) matrix is the area scale factor of the transformation defined by that matrix, and that the determinant of a \(3\times3\) matrix is the volume scale factor of the transformation defined by that matrix, including the effect on the orientation of the image. (for 3D determinants, learners do not need to understand the geometric interpretation of a change in orientation)</li>
+						<li>Understan and be able to use singular and non singular matrices, including the significance of a zero determinant</li>
+						<li>Know and be able to use the result that \(\mathrm{det}(\mathrm{\textbf{AB}}) = \mathrm{det}(\mathrm{\textbf{A}}) \times\mathrm{det}(\mathrm{\textbf{B}})\)</li>
+						<li>Be able to find and use the inverse of a non-singular \(2\times2\) or \(3\times3\) matrix with and without a calculator</li>
+						<li>Understand and use simple properties of inverse matrices e.g. \((\mathrm{\textbf{AB}})^{-1} = \mathrm{\textbf{B}}^{-1}\mathrm{\textbf{A}}^{-1}\)</li>
+						<li>Understand and be able to use the connection between inverse matrices and inverse transformations</li>
+						<li>Be able to solve two or three linear simultaneous equations in two or three variables by the use of an inverse matrix, where a unique solution exists</li>
+					</ol>
+					<hr>
+					<div class="learn textbook">
+						Textbook: FM Year 1 book
+					</div>
+					<div class="learn">
+						Videos: coming soon
 					</div>
 				</div>
 
@@ -963,6 +996,39 @@
 				$('.sidebar-visible').removeClass('sidebar-visible');
 				$('ul.' + $(this).attr('class')).addClass('sidebar-visible');
 				$(this).addClass('navbar-active');
+			});
+		</script>
+		<!--Script to change matrix definitions-->
+		<script>
+			$("#conformable").click(function() {
+				$("#matrixdefinitions").html('Two matrices are conformable if they are the right sizes for an operation e.g. two matrices are conformable for addition if they have the same number of rows and columns.');
+			});
+			$("#equal").click(function() {
+				$("#matrixdefinitions").html('Two matrices are equal if they are the same size and every entry is the same');
+			});
+			$("#square").click(function() {
+				$("#matrixdefinitions").html('A matrix is square if it has the same number of rows as columns');
+			});
+			$("#rectangular").click(function() {
+				$("#matrixdefinitions").html('A matrix is rectangular if it has different numbers of rows as columns');
+			});
+			$("#mbyn").click(function() {
+				$("#matrixdefinitions").html('An m by n matrix has m rows and n columns');
+			});
+			$("#determinant").click(function() {
+				$("#matrixdefinitions").html('We will cover this at a later date');
+			});
+			$("#zero").click(function() {
+				$("#matrixdefinitions").html('A zero matrix only has 0s as its entries');
+			});
+			$("#null").click(function() {
+				$("#matrixdefinitions").html('See: zero matrix');
+			});
+			$("#transpose").click(function() {
+				$("#matrixdefinitions").html('We will cover this at a later date');
+			});
+			$("#identity").click(function() {
+				$("#matrixdefinitions").html('An identity matrix has 0s everywhere except down the top left-bottom right diagonal, which is filled with 1s');
 			});
 		</script>
 	</body>
