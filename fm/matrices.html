@@ -38,6 +38,15 @@
 				<div class="topics active-topic" id="testsolutions">
 					<h2>Matrices Solutions</h2>
 					<ul>
+						<li>2.4 Q12<br>
+							\(\textbf{D}^2 = \begin{pmatrix}a^2-b^2 & -2ab\\2ab & a^2-b^2\end{pmatrix}\)<br>
+							Comparing the matrices: \(a^2-b^2 = \dfrac{1}{\sqrt{2}} \Rightarrow a^2 = \dfrac{\sqrt{2}}{2} + b^2\) and \(2ab = \dfrac{1}{\sqrt{2}} \Rightarrow a^2b^2 = \dfrac{1}{8} \Rightarrow a^2 = \dfrac{1}{8b^2}\)<br>
+							\(\dfrac{\sqrt{2}}{2} + b^2 = \dfrac{1}{8b^2} \Rightarrow 8b^4 + 4\sqrt{2}b^2 - 1 = 0\)<br>
+							Quadratic formula: \(b^2 = \dfrac{-4\sqrt{2}\pm\sqrt{32 + 32}}{16} = \dfrac{-4\sqrt{2}+8}{16} = \dfrac{2-\sqrt{2}}{4}\) (\(b\) is a real number so \(b^2 > 0\)) and \(a^2 = \dfrac{4}{8(2-\sqrt{2})} = \dfrac{4(2+\sqrt{2})}{8(4-2)} = \dfrac{2+\sqrt{2}}{4}\)<br>
+							\(a = \dfrac{\sqrt{2+\sqrt{2}}}{2},\ b = \dfrac{\sqrt{2-\sqrt{2}}}{2}\)<br>
+							Note that you can rationalise the denominator in the solution for \(b\) given in the textbook.
+						</li>
+						<hr>
 						<li>2.5 Q7<br>
 							If line \(y=mx\) is invariant, every point that satisfies this equation must be unchanged by the transformation. These points have coordinates \((x, y) = (x, mx)\), and we can apply the transformation to these points:<br>
 							\(\begin{pmatrix}\dfrac{1-m^2}{1+m^2}&&\dfrac{2m}{1+m^2}\\\dfrac{2m}{1+m^2}&&\dfrac{m^2-1}{1+m^2}\end{pmatrix}\renewcommand\arraystretch{2}\begin{pmatrix}\color{white}\dfrac{1^2}{1^2}\color{black}x\color{white}\dfrac{1^2}{1^2}\color{black}\\\color{white}\dfrac{1^2}{1^2}\color{black}mx\color{white}\dfrac{1^2}{1^2}\color{black}\end{pmatrix} = \begin{pmatrix}\dfrac{x(1-m^2)+2m^2x}{1+m^2}\\\dfrac{2mx + mx(m^2-1)}{1+m^2}\end{pmatrix} = \begin{pmatrix}\dfrac{x(1-m^2+2m^2)}{1+m^2}\\\dfrac{mx(2 + m^2-1)}{1+m^2}\end{pmatrix} = \begin{pmatrix}\dfrac{x(1+m^2)}{1+m^2}\\\dfrac{mx(1 + m^2)}{1+m^2}\end{pmatrix}\)<br>
